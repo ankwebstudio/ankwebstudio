@@ -43,6 +43,19 @@
         -webkit-transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
     }
 }
+/* MOBILE HERO FIX */
+@media (max-width: 991.98px){
+
+    body{
+        padding-top: 90px; /* navbar height */
+    }
+
+    .carousel-item{
+        height: calc(100vh - 90px);
+        min-height: calc(100vh - 90px);
+    }
+
+}
 
 #spinner {
     opacity: 0;
@@ -66,6 +79,7 @@
 .carousel-item{
     height:100vh;
     min-height:650px;
+    margin-top:0;
 }
 
 .carousel-item img{
