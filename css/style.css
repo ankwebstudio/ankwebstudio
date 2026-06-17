@@ -692,3 +692,26 @@ h6,
     }
 
 }
+
+/*portfolio*/
+
+.portfolio-card{
+    background:#fff;
+    transition:0.4s;
+}
+
+.portfolio-card img{
+    width:100%;
+    height:250px;
+    object-fit:cover;
+}
+
+.portfolio-card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 20px 40px rgba(0,0,0,0.15)!important;
+}
+
+.filter-btn{
+    border-radius:30px;
+    padding:8px 20px;
+}
