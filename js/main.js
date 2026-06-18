@@ -124,3 +124,76 @@
     
 })(jQuery);
 
+const searchItems = [
+    { keywords: ["home"], target: "#header-carousel" },
+
+    { keywords: ["about", "about us"], target: "#about" },
+
+    { keywords: ["service", "services", "website", "web design",
+                 "development", "seo", "responsive"],
+      target: "#services" },
+
+    { keywords: ["portfolio", "projects", "fitness",
+                 "gym", "coconut", "resort",
+                 "aamiz", "clothz", "techmaster",
+                 "education", "learning"],
+      target: "#projects" },
+
+    { keywords: ["technology", "technologies", "html",
+                 "css", "javascript", "bootstrap",
+                 "react", "wordpress", "shopify"],
+      target: "#technologies" },
+
+    { keywords: ["contact", "phone", "email", "quote"],
+      target: "#contact" }
+];
+
+function performSearch() {
+
+    const value = document
+        .getElementById("searchInput")
+        .value
+        .trim()
+        .toLowerCase();
+
+    if (!value) return;
+
+    const result = searchItems.find(item =>
+        item.keywords.some(keyword => keyword.includes(value) || value.includes(keyword))
+    );
+
+    if (result) {
+
+        const modal = bootstrap.Modal.getInstance(
+            document.getElementById("searchModal")
+        );
+
+        if (modal) modal.hide();
+
+        setTimeout(() => {
+            document.querySelector(result.target).scrollIntoView({
+                behavior: "smooth",
+                block: "start"
+            });
+        }, 300);
+
+    } else {
+
+        alert("No matching content found.");
+
+    }
+}
+
+document.getElementById("searchBtn")
+.addEventListener("click", performSearch);
+
+document.getElementById("searchInput")
+.addEventListener("keydown", function(e){
+
+    if(e.key === "Enter"){
+        e.preventDefault();
+        performSearch();
+    }
+
+});
+
