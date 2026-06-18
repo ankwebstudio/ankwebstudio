@@ -267,7 +267,7 @@
                         </p>
 
                     </div>
-
+                    <!--
                     <form>
 
                         <div class="row g-3">
@@ -323,7 +323,77 @@
 
                         </div>
 
-                    </form>
+                    </form> -->
+
+                    <form id="quoteForm" class="w-100">
+
+    <div class="row g-3">
+
+        <div class="col-xl-12">
+            <input
+                type="text"
+                name="name"
+                class="form-control bg-light border-0"
+                placeholder="Your Full Name"
+                style="height:55px;"
+                required>
+        </div>
+
+        <div class="col-12">
+            <input
+                type="email"
+                name="email"
+                class="form-control bg-light border-0"
+                placeholder="Your Email Address"
+                style="height:55px;"
+                required>
+        </div>
+
+        <div class="col-12">
+            <input
+                type="tel"
+                name="phone"
+                class="form-control bg-light border-0"
+                placeholder="Your Phone Number"
+                style="height:55px;"
+                required>
+        </div>
+
+        <div class="col-12">
+            <select
+                name="service"
+                class="form-select bg-light border-0"
+                style="height:55px;"
+                required>
+
+                <option value="" selected disabled>Select Web Service</option>
+                <option>Business Website</option>
+                <option>Ecommerce Website</option>
+                <option>Portfolio Website</option>
+                <option>SEO Optimization</option>
+                <option>Website Redesign</option>
+
+            </select>
+        </div>
+
+        <div class="col-12">
+            <textarea
+                name="message"
+                class="form-control bg-light border-0"
+                rows="4"
+                placeholder="Tell us about your project"
+                required></textarea>
+        </div>
+
+        <div class="col-12">
+            <button class="btn btn-dark w-100 py-3" type="submit">
+               Send Message
+            </button>
+        </div>
+
+    </div>
+
+</form>
 
                 </div>
 
@@ -639,6 +709,54 @@
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+<script>
+emailjs.init("2SovASVB7YebUwY__");
+
+document.getElementById("quoteForm").addEventListener("submit", function(e){
+
+    e.preventDefault();
+
+    const form=this;
+
+    const data={
+        name:form.name.value,
+        email:form.email.value,
+        phone:form.phone.value,
+        service:form.service.value,
+        message:form.message.value
+    };
+
+    // Admin email
+    emailjs.send(
+        "service_4pmocl8",
+        "template_deehx57",
+        data
+    ).then(function(){
+
+        // Auto reply
+        emailjs.send(
+            "service_4pmocl8",
+            "template_18whk5e",
+            data
+        ).then(function(){
+
+            window.location.href="thankyou.html";
+
+        });
+
+    }).catch(function(error){
+
+        alert("Something went wrong. Please try again.");
+
+        console.log(error);
+
+    });
+
+});
+</script>
 </body>
 
 </html>
