@@ -222,7 +222,7 @@
                     d-flex align-items-center p-5 wow zoomIn"
                     data-wow-delay="0.9s">
 
-                    <form class="w-100">
+                    <form class="w-100" id="quoteForm">
 
                         <div class="row g-3">
 
@@ -230,6 +230,7 @@
                             <div class="col-xl-12">
 
                                 <input type="text"
+                                    name="name"
                                     class="form-control bg-light border-0"
                                     placeholder="Your Name"
                                     style="height: 55px;"
@@ -241,6 +242,7 @@
                             <div class="col-12">
 
                                 <input type="email"
+                                    name="email"
                                     class="form-control bg-light border-0"
                                     placeholder="Your Email"
                                     style="height: 55px;"
@@ -252,9 +254,11 @@
                             <div class="col-12">
 
                                 <select class="form-select bg-light border-0"
-                                    style="height: 55px;">
+                                    name="service"
+                                    style="height: 55px;"
+                                    required>
 
-                                    <option selected>
+                                    <option value="" selected disabled>
                                         Select Website Type
                                     </option>
 
@@ -286,6 +290,7 @@
                             <div class="col-12">
 
                                 <textarea
+                                    name="message"
                                     class="form-control bg-light border-0"
                                     rows="4"
                                     placeholder="Tell us about your project"></textarea>
@@ -352,22 +357,31 @@
                     </p>
 
                     <!-- Newsletter -->
-                    <form action="" class="w-100">
+                    <!-- Newsletter -->
+                    <form action="https://formsubmit.co/ankwebstudio@gmail.com" method="POST" class="w-100">
 
-                        <div class="input-group">
+    <!-- Hidden Fields -->
+    <input type="hidden" name="_subject" value="New Newsletter Subscriber">
+    <input type="hidden" name="_captcha" value="false">
+    <input type="hidden" name="_template" value="table">
+    <input type="hidden" name="_next" value="https://ankwebstudio.in/subscribe-success.html">
 
-                            <input type="email"
-                                class="form-control border-white p-3"
-                                placeholder="Enter Your Email"
-                                required>
+    <div class="input-group">
 
-                            <button class="btn btn-dark px-4">
-                                Subscribe
-                            </button>
+        <input
+            type="email"
+            name="Subscriber Email"
+            class="form-control border-white p-3"
+            placeholder="Enter Your Email"
+            required>
 
-                        </div>
+        <button class="btn btn-dark px-4" type="submit">
+            Subscribe
+        </button>
 
-                    </form>
+    </div>
+
+</form>
 
                 </div>
 
@@ -600,6 +614,53 @@
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
+       <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+<script>
+emailjs.init("2SovASVB7YebUwY__");
+
+document.getElementById("quoteForm").addEventListener("submit", function(e){
+
+    e.preventDefault();
+
+    const form=this;
+
+    const data={
+        name:form.name.value,
+        email:form.email.value,
+        phone:form.phone.value,
+        service:form.service.value,
+        message:form.message.value
+    };
+
+    // Admin email
+    emailjs.send(
+        "service_4pmocl8",
+        "template_deehx57",
+        data
+    ).then(function(){
+
+        // Auto reply
+        emailjs.send(
+            "service_4pmocl8",
+            "template_18whk5e",
+            data
+        ).then(function(){
+
+            window.location.href="thankyou.html";
+
+        });
+
+    }).catch(function(error){
+
+        alert("Something went wrong. Please try again.");
+
+        console.log(error);
+
+    });
+
+});
+</script>
 </body>
 
 </html>
