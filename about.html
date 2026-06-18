@@ -399,22 +399,31 @@
                     </p>
 
                     <!-- Newsletter -->
-                    <form action="" class="w-100">
+                    <!-- Newsletter -->
+                    <form action="https://formsubmit.co/ankwebstudio@gmail.com" method="POST" class="w-100">
 
-                        <div class="input-group">
+    <!-- Hidden Fields -->
+    <input type="hidden" name="_subject" value="New Newsletter Subscriber">
+    <input type="hidden" name="_captcha" value="false">
+    <input type="hidden" name="_template" value="table">
+    <input type="hidden" name="_next" value="https://ankwebstudio.in/subscribe-success.html">
 
-                            <input type="email"
-                                class="form-control border-white p-3"
-                                placeholder="Enter Your Email"
-                                required>
+    <div class="input-group">
 
-                            <button class="btn btn-dark px-4">
-                                Subscribe
-                            </button>
+        <input
+            type="email"
+            name="Subscriber Email"
+            class="form-control border-white p-3"
+            placeholder="Enter Your Email"
+            required>
 
-                        </div>
+        <button class="btn btn-dark px-4" type="submit">
+            Subscribe
+        </button>
 
-                    </form>
+    </div>
+
+</form>
 
                 </div>
 
