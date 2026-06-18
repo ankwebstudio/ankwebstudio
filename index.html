@@ -904,20 +904,14 @@ content="web design Kerala, web designer Palakkad, website development Kerala, S
                 </div>
             </div>
 
-           <form action="https://formsubmit.co/ankwebstudio@gmail.com" method="POST" class="w-100">
-
-    <!-- Hidden Fields -->
-    <input type="hidden" name="_subject" value="New Website Enquiry - ANK Web Studio">
-    <input type="hidden" name="_captcha" value="false">
-    <input type="hidden" name="_template" value="table">
-    <input type="hidden" name="_next" value="https://ankwebstudio.github.io/thankyou.html">
+          <form id="quoteForm" class="w-100">
 
     <div class="row g-3">
 
         <div class="col-xl-12">
             <input
                 type="text"
-                name="Name"
+                name="name"
                 class="form-control bg-light border-0"
                 placeholder="Your Full Name"
                 style="height:55px;"
@@ -927,7 +921,7 @@ content="web design Kerala, web designer Palakkad, website development Kerala, S
         <div class="col-12">
             <input
                 type="email"
-                name="Email"
+                name="email"
                 class="form-control bg-light border-0"
                 placeholder="Your Email Address"
                 style="height:55px;"
@@ -937,7 +931,7 @@ content="web design Kerala, web designer Palakkad, website development Kerala, S
         <div class="col-12">
             <input
                 type="tel"
-                name="Phone"
+                name="phone"
                 class="form-control bg-light border-0"
                 placeholder="Your Phone Number"
                 style="height:55px;"
@@ -946,7 +940,7 @@ content="web design Kerala, web designer Palakkad, website development Kerala, S
 
         <div class="col-12">
             <select
-                name="Service"
+                name="service"
                 class="form-select bg-light border-0"
                 style="height:55px;"
                 required>
@@ -963,7 +957,7 @@ content="web design Kerala, web designer Palakkad, website development Kerala, S
 
         <div class="col-12">
             <textarea
-                name="Message"
+                name="message"
                 class="form-control bg-light border-0"
                 rows="4"
                 placeholder="Tell us about your project"
@@ -1681,6 +1675,54 @@ filterBtns.forEach(btn => {
 
 });
 
+</script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+<script>
+emailjs.init("2SovASVB7YebUwY__");
+
+document.getElementById("quoteForm").addEventListener("submit", function(e){
+
+    e.preventDefault();
+
+    const form=this;
+
+    const data={
+        name:form.name.value,
+        email:form.email.value,
+        phone:form.phone.value,
+        service:form.service.value,
+        message:form.message.value
+    };
+
+    // Admin email
+    emailjs.send(
+        "service_4pmocl8",
+        "template_deehx57",
+        data
+    ).then(function(){
+
+        // Auto reply
+        emailjs.send(
+            "service_4pmocl8",
+            "template_18whk5e",
+            data
+        ).then(function(){
+
+            window.location.href="thankyou.html";
+
+        });
+
+    }).catch(function(error){
+
+        alert("Something went wrong. Please try again.");
+
+        console.log(error);
+
+    });
+
+});
 </script>
 </body>
 
