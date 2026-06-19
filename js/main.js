@@ -145,7 +145,10 @@ const searchItems = [
       target: "#technologies" },
 
     { keywords: ["contact", "phone", "email", "quote"],
-      target: "#contact" }
+      target: "#contact" },
+    
+    { keywords: ["price", "redesign", "domain", "hosting"],
+      target: "#faq" }
 ];
 
 function performSearch() {
