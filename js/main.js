@@ -147,8 +147,36 @@ const searchItems = [
     { keywords: ["contact", "phone", "email", "quote"],
       target: "#contact" },
     
-    { keywords: ["price", "redesign", "domain", "hosting"],
-      target: "#faq" }
+    {
+    keywords: [
+        "faq",
+        "question",
+        "questions",
+        "help",
+        "support",
+        "price",
+        "pricing",
+        "cost",
+        "website cost",
+        "business website cost",
+        "redesign",
+        "website redesign",
+        "domain",
+        "hosting",
+        "ssl",
+        "maintenance",
+        "update",
+        "seo",
+        "mobile",
+        "responsive",
+        "ecommerce",
+        "delivery",
+        "time",
+        "how long",
+        "support after launch"
+    ],
+    target: "#faq"
+}
 ];
 
 function performSearch() {
@@ -162,29 +190,30 @@ function performSearch() {
     if (!value) return;
 
     const result = searchItems.find(item =>
-        item.keywords.some(keyword => keyword.includes(value) || value.includes(keyword))
+        item.keywords.some(keyword =>
+            keyword.includes(value) || value.includes(keyword)
+        )
     );
 
-    if (result) {
+    // Close search modal
+    const modal = bootstrap.Modal.getInstance(
+        document.getElementById("searchModal")
+    );
 
-        const modal = bootstrap.Modal.getInstance(
-            document.getElementById("searchModal")
-        );
+    if (modal) modal.hide();
 
-        if (modal) modal.hide();
+    // If a match is found, go to that section.
+    // Otherwise, go to FAQ.
+    const target = result ? result.target : "#faq";
 
-        setTimeout(() => {
-            document.querySelector(result.target).scrollIntoView({
-                behavior: "smooth",
-                block: "start"
-            });
-        }, 300);
+    setTimeout(() => {
 
-    } else {
+        document.querySelector(target).scrollIntoView({
+            behavior: "smooth",
+            block: "start"
+        });
 
-        alert("No matching content found.");
-
-    }
+    }, 300);
 }
 
 document.getElementById("searchBtn")
