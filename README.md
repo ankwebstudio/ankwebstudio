@@ -1,8 +1,8 @@
 # ANK WebStudio
 
-### Professional Web Design & Website Development Studio
+###  Freelance Web Design & Website Development Studio in Kerala, India
 
-Building modern, responsive, SEO-friendly websites for startups, businesses, hotels, gyms, educational institutions, and professionals.
+ANK WebStudio is a freelance web design and website development studio based in Kerala, India. We create responsive, SEO-friendly, AI-ready business websites, portfolio websites, eCommerce stores, landing pages, and custom web solutions for startups, local businesses, hotels, fitness centers, educational institutions, and professionals.
 
 <p align="center">
   <a href="https://ankwebstudio.in">
@@ -42,6 +42,7 @@ Our goal is to build websites that not only look professional but also deliver m
 * Landing Pages
 * Website Redesign
 * Website Maintenance & Support
+
 
 ---
 
