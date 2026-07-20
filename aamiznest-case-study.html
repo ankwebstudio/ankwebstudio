@@ -2,126 +2,290 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>AamizNest | Shopify Dropshipping Store | ANK Web Studio</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <meta name="description"
-        content="AamizNest is a personal Shopify Dropshipping Store developed by ANK Web Studio showcasing modern e-commerce UI, responsive design and Shopify development skills.">
+<title>AamizNest | Shopify Dropshipping Store | ANK Web Studio</title>
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<meta name="description"
+content="AamizNest is a personal Shopify Dropshipping Store developed by ANK Web Studio showcasing modern Shopify store development and e-commerce UI.">
 
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" rel="stylesheet">
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link href="css/style.css" rel="stylesheet">
 
-    <style>
-        body{
-            font-family:Arial,Helvetica,sans-serif;
-            background:#f8f9fa;
-            color:#333;
-        }
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" rel="stylesheet">
 
-        section{
-            padding:80px 0;
-        }
+<style>
 
-        .hero{
-            background:linear-gradient(135deg,#198754,#0d6efd);
-            color:#fff;
-            padding:100px 0;
-        }
+body{
+    background:#f8f9fa;
+    color:#333;
+}
 
-        .hero img{
-            border-radius:15px;
-            box-shadow:0 15px 35px rgba(0,0,0,.25);
-        }
+section{
+    padding:90px 0;
+}
 
-        .section-title{
-            font-weight:700;
-            margin-bottom:15px;
-        }
+.section-title{
+    font-weight:700;
+    margin-bottom:15px;
+}
 
-        .underline{
-            width:80px;
-            height:4px;
-            background:#198754;
-            margin-bottom:30px;
-            border-radius:20px;
-        }
+.underline{
+    width:90px;
+    height:4px;
+    background:#06A3DA;
+    border-radius:50px;
+    margin-bottom:35px;
+}
 
-        .info-card{
-            background:#fff;
-            border-radius:15px;
-            padding:25px;
-            height:100%;
-            box-shadow:0 10px 25px rgba(0,0,0,.08);
-            transition:.3s;
-        }
+.hero-section{
 
-        .info-card:hover{
-            transform:translateY(-8px);
-        }
+background:linear-gradient(135deg,#06A3DA,#0B2154);
+color:white;
+padding:120px 0;
 
-        .info-card i{
-            font-size:35px;
-            color:#198754;
-            margin-bottom:15px;
-        }
+}
 
-        .project-image{
-            border-radius:15px;
-            overflow:hidden;
-            box-shadow:0 15px 35px rgba(0,0,0,.15);
-            transition:.3s;
-        }
+.hero-section img{
 
-        .project-image:hover{
-            transform:scale(1.02);
-        }
+border-radius:20px;
+box-shadow:0 20px 45px rgba(0,0,0,.25);
 
-        .project-image img{
-            width:100%;
-        }
+}
 
-        .badge{
-            font-size:14px;
-            padding:8px 15px;
-        }
+.project-card{
 
-        .highlight-box{
-            background:white;
-            border-left:5px solid #198754;
-            padding:20px;
-            border-radius:10px;
-            margin-bottom:20px;
-            box-shadow:0 5px 15px rgba(0,0,0,.08);
-        }
+background:white;
+padding:30px;
+border-radius:15px;
+box-shadow:0 15px 35px rgba(0,0,0,.08);
+transition:.3s;
+height:100%;
 
-        .gallery img{
-            border-radius:12px;
-            transition:.3s;
-            box-shadow:0 10px 20px rgba(0,0,0,.12);
-        }
+}
 
-        .gallery img:hover{
-            transform:scale(1.04);
-        }
+.project-card:hover{
 
-        footer{
-            background:#111;
-            color:white;
-            padding:30px 0;
-            text-align:center;
-        }
-    </style>
+transform:translateY(-8px);
+
+}
+
+.project-card i{
+
+font-size:40px;
+color:#06A3DA;
+margin-bottom:20px;
+
+}
+
+.project-image{
+
+border-radius:20px;
+overflow:hidden;
+box-shadow:0 20px 40px rgba(0,0,0,.15);
+
+}
+
+.project-image img{
+
+width:100%;
+
+}
+
+.badge{
+
+padding:10px 18px;
+font-size:14px;
+
+}
+
+.highlight-box{
+
+background:white;
+padding:25px;
+border-left:5px solid #06A3DA;
+border-radius:12px;
+box-shadow:0 8px 20px rgba(0,0,0,.08);
+
+}
+
+</style>
 
 </head>
 
 <body>
 
+<!-- Spinner Start -->
+
+<div id="spinner"
+class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+
+<div class="spinner"></div>
+
+</div>
+
+<!-- Spinner End -->
+
+<!-- Topbar Start -->
+
+<div class="container-fluid bg-dark px-5 d-none d-lg-block">
+
+<div class="row gx-0">
+
+<div class="col-lg-8 text-center text-lg-start mb-2 mb-lg-0">
+
+<div class="d-inline-flex align-items-center" style="height:45px;">
+
+<small class="me-3 text-light">
+
+<i class="fa fa-map-marker-alt me-2"></i>
+
+Cherpulassery, Palakkad, Kerala
+
+</small>
+
+<small class="me-3 text-light">
+
+<i class="fa fa-phone-alt me-2"></i>
+
++91 9656141993
+
+</small>
+
+<small class="text-light">
+
+<i class="fa fa-envelope-open me-2"></i>
+
+ankwebstudio@gmail.com
+
+</small>
+
+</div>
+
+</div>
+
+<div class="col-lg-4 text-center text-lg-end">
+
+<div class="d-inline-flex align-items-center" style="height:45px;">
+
+<a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" href="#">
+<i class="fab fa-facebook-f"></i>
+</a>
+
+<a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2"
+href="https://www.instagram.com/ankwebstudio">
+
+<i class="fab fa-instagram"></i>
+
+</a>
+
+<a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle"
+
+href="https://www.linkedin.com/in/amrutha-m-p-15759a420/">
+
+<i class="fab fa-linkedin-in"></i>
+
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- Topbar End -->
+
+<!-- Navbar -->
+
+<div class="container-fluid position-relative p-0">
+
+<nav class="navbar navbar-expand-lg navbar-dark px-5 py-3 py-lg-0">
+
+<a class="navbar-brand d-flex align-items-center"
+href="index.html">
+
+<img src="img/ank-logo.png"
+class="nav-logo"
+alt="ANK Web Studio">
+
+</a>
+
+<button class="navbar-toggler"
+type="button"
+data-bs-toggle="collapse"
+data-bs-target="#navbarCollapse">
+
+<span class="fa fa-bars"></span>
+
+</button>
+
+<div class="collapse navbar-collapse"
+id="navbarCollapse">
+
+<div class="navbar-nav ms-auto py-0">
+
+<a href="index.html"
+class="nav-item nav-link">
+
+Home
+
+</a>
+
+<a href="about.html"
+class="nav-item nav-link">
+
+About
+
+</a>
+
+<a href="service.html"
+class="nav-item nav-link">
+
+Services
+
+</a>
+
+<a href="index.html#projects"
+class="nav-item nav-link active">
+
+Portfolio
+
+</a>
+
+<a href="contact.html"
+class="nav-item nav-link">
+
+Contact
+
+</a>
+
+</div>
+
+<button type="button"
+class="btn text-primary ms-3">
+
+<i class="fa fa-search"></i>
+
+</button>
+
+<a href="https://wa.me/919656141993"
+class="btn btn-primary py-2 px-4 ms-3">
+
+Let's Talk
+
+</a>
+
+</div>
+
+</nav>
+
 <!-- Hero -->
 
-<section class="hero">
+<section class="hero-section">
 
 <div class="container">
 
@@ -129,27 +293,43 @@
 
 <div class="col-lg-6">
 
-<h1 class="display-4 fw-bold mb-4">
+<img src="img/aamiznest-logo.png"
+width="220"
+class="mb-4">
+
+<h1 class="display-4 fw-bold">
 
 AamizNest
 
 </h1>
 
-<p class="lead">
+<p class="lead mt-4">
 
-Personal Shopify Dropshipping Store developed to explore
-modern e-commerce website design, responsive layouts,
-and Shopify customization.
+A personal Shopify Dropshipping Store created to explore modern
+e-commerce website design, responsive layouts, Shopify customization,
+and seamless online shopping experiences.
 
 </p>
 
 <div class="mt-4">
 
-<span class="badge bg-success">Shopify</span>
+<span class="badge bg-success">
 
-<span class="badge bg-primary">Dropshipping</span>
+Shopify
 
-<span class="badge bg-dark">Archived</span>
+</span>
+
+<span class="badge bg-primary">
+
+Dropshipping
+
+</span>
+
+<span class="badge bg-dark">
+
+Archived
+
+</span>
 
 </div>
 
@@ -157,7 +337,7 @@ and Shopify customization.
 
 <div class="col-lg-6 mt-5 mt-lg-0">
 
-<img src="img/aamiznest-logo.png"
+<img src="img/aamiznest-homepage.png"
 class="img-fluid">
 
 </div>
@@ -184,15 +364,15 @@ About The Project
 
 <p class="fs-5">
 
-AamizNest is a personal Shopify Dropshipping Store created by
-ANK Web Studio. This project demonstrates my ability to build
-professional e-commerce websites with modern UI, responsive
-layouts, product collections, shopping cart functionality,
-and mobile-friendly design.
+AamizNest is a personal Shopify dropshipping store designed and
+developed by ANK Web Studio. This project demonstrates my ability
+to build modern Shopify stores with responsive layouts,
+professional branding, product management, shopping cart
+integration, and an optimized user experience.
 
-Although the store is currently archived,
-it represents my practical experience with Shopify store
-development and customization.
+Although the live store is currently archived, it remains an
+important portfolio project showcasing my Shopify development
+skills and e-commerce design capabilities.
 
 </p>
 
@@ -200,7 +380,7 @@ development and customization.
 
 </section>
 
-<!-- Project Highlights -->
+<!-- Project Information -->
 
 <section class="bg-light">
 
@@ -208,7 +388,7 @@ development and customization.
 
 <h2 class="section-title">
 
-Project Highlights
+Project Overview
 
 </h2>
 
@@ -216,22 +396,21 @@ Project Highlights
 
 <div class="row g-4">
 
-<div class="col-md-4">
+<div class="col-md-3">
 
-<div class="info-card text-center">
+<div class="project-card text-center">
 
 <i class="fas fa-store"></i>
 
-<h4>
+<h5>
 
-Modern Store Design
+Platform
 
-</h4>
+</h5>
 
 <p>
 
-Professional Shopify storefront
-designed with a clean and user-friendly layout.
+Shopify
 
 </p>
 
@@ -239,47 +418,65 @@ designed with a clean and user-friendly layout.
 
 </div>
 
-<div class="col-md-4">
+<div class="col-md-3">
 
-<div class="info-card text-center">
-
-<i class="fas fa-mobile-screen-button"></i>
-
-<h4>
-
-Responsive Layout
-
-</h4>
-
-<p>
-
-Optimized for desktop,
-tablet and mobile devices.
-
-</p>
-
-</div>
-
-</div>
-
-<div class="col-md-4">
-
-<div class="info-card text-center">
+<div class="project-card text-center">
 
 <i class="fas fa-cart-shopping"></i>
 
-<h4>
+<h5>
 
-Shopping Experience
+Project Type
 
-</h4>
+</h5>
 
 <p>
 
-Product pages,
-collections,
-cart,
-and customer-friendly shopping flow.
+Dropshipping
+
+</p>
+
+</div>
+
+</div>
+
+<div class="col-md-3">
+
+<div class="project-card text-center">
+
+<i class="fas fa-layer-group"></i>
+
+<h5>
+
+Industry
+
+</h5>
+
+<p>
+
+Home & Kitchen
+
+</p>
+
+</div>
+
+</div>
+
+<div class="col-md-3">
+
+<div class="project-card text-center">
+
+<i class="fas fa-folder-open"></i>
+
+<h5>
+
+Status
+
+</h5>
+
+<p>
+
+Archived
 
 </p>
 
@@ -293,7 +490,7 @@ and customer-friendly shopping flow.
 
 </section>
 
-<!-- Homepage -->
+<!-- Homepage Preview -->
 
 <section>
 
@@ -309,32 +506,32 @@ Homepage Preview
 
 <div class="project-image">
 
-<img src="img/aamiznest-homepage.jpeg"
-alt="Homepage">
+<img src="img/aamiznest-homepage.png"
+alt="AamizNest Homepage">
 
 </div>
 
-<div class="highlight-box mt-4">
+<div class="highlight-box mt-5">
 
-<h5>
+<h4 class="mb-3">
 
 Homepage Features
 
-</h5>
+</h4>
 
 <ul>
 
-<li>Modern Hero Banner</li>
+<li>Modern Shopify Hero Banner</li>
 
-<li>Clean Navigation</li>
+<li>Professional Navigation Bar</li>
 
-<li>Free Shipping Banner</li>
+<li>Free Shipping Announcement</li>
 
-<li>Product Categories</li>
+<li>Featured Products</li>
 
 <li>Responsive Layout</li>
 
-<li>Professional Branding</li>
+<li>Clean & Minimal User Interface</li>
 
 </ul>
 
@@ -343,329 +540,189 @@ Homepage Features
 </div>
 
 </section>
-<!-- Product Showcase -->
+    <!-- Features Start -->
+    <section class="py-5">
+        <div class="container">
+
+            <div class="text-center mb-5">
+                <h2 class="fw-bold">Key Features</h2>
+                <p class="text-muted">
+                    Features implemented in the Shopify store.
+                </p>
+            </div>
+
+            <div class="row g-4">
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="border rounded p-4 h-100 shadow-sm">
+                        <i class="fas fa-store fa-2x text-success mb-3"></i>
+                        <h5>Responsive Shopify Store</h5>
+                        <p class="text-muted mb-0">
+                            Fully responsive design optimized for desktop,
+                            tablet and mobile devices.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="border rounded p-4 h-100 shadow-sm">
+                        <i class="fas fa-home fa-2x text-success mb-3"></i>
+                        <h5>Modern Homepage</h5>
+                        <p class="text-muted mb-0">
+                            Clean hero banner with featured products and
+                            promotional sections.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="border rounded p-4 h-100 shadow-sm">
+                        <i class="fas fa-shopping-cart fa-2x text-success mb-3"></i>
+                        <h5>Shopping Cart</h5>
+                        <p class="text-muted mb-0">
+                            Shopify cart functionality with smooth customer
+                            checkout experience.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="border rounded p-4 h-100 shadow-sm">
+                        <i class="fas fa-box-open fa-2x text-success mb-3"></i>
+                        <h5>Product Pages</h5>
+                        <p class="text-muted mb-0">
+                            Organized product collections with detailed
+                            descriptions and images.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="border rounded p-4 h-100 shadow-sm">
+                        <i class="fas fa-search fa-2x text-success mb-3"></i>
+                        <h5>Search Functionality</h5>
+                        <p class="text-muted mb-0">
+                            Product search for a better shopping experience.
+                        </p>
+                    </div>
+                </div>
 
-<section class="bg-light">
+                <div class="col-md-6 col-lg-4">
+                    <div class="border rounded p-4 h-100 shadow-sm">
+                        <i class="fab fa-whatsapp fa-2x text-success mb-3"></i>
+                        <h5>WhatsApp Integration</h5>
+                        <p class="text-muted mb-0">
+                            Direct WhatsApp support for customer inquiries.
+                        </p>
+                    </div>
+                </div>
 
-<div class="container">
+            </div>
 
-<h2 class="section-title">
+        </div>
+    </section>
+    <!-- Features End -->
 
-Product Showcase
 
-</h2>
+    <!-- Back Button -->
+    <section class="py-5 bg-light">
+        <div class="container text-center">
 
-<div class="underline"></div>
+            <a href="index.html#projects"
+               class="btn btn-success btn-lg px-5">
 
-<div class="row gallery g-4">
+                ← Back to Portfolio
 
-<div class="col-md-4">
-    <img src="img/product1.jpeg" class="img-fluid" alt="Product 1">
-</div>
+            </a>
 
-<div class="col-md-4">
-    <img src="img/product2.jpeg" class="img-fluid" alt="Product 2">
-</div>
+        </div>
+    </section>
 
-<div class="col-md-4">
-    <img src="img/product3.png" class="img-fluid" alt="Product 3">
-</div>
 
-<div class="col-md-4">
-    <img src="img/product4.png" class="img-fluid" alt="Product 4">
-</div>
+    <!-- Footer Start -->
+    <footer>
 
-<div class="col-md-4">
-    <img src="img/product5.jpg" class="img-fluid" alt="Product 5">
-</div>
-<!--
-<div class="col-md-4">
-    <img src="img/product6.jpg" class="img-fluid" alt="Product 6">
-</div>-->
+        <div class="container-fluid bg-dark text-light py-5">
 
-</div>
+            <div class="container text-center">
 
-</div>
+                <img src="img/ank-logo.png"
+                     alt="ANK Web Studio"
+                     style="height:70px;">
 
-</section>
+                <h4 class="text-white mt-4">
+                    ANK Web Studio
+                </h4>
 
+                <p class="mt-3">
 
+                    Freelance Web Design & Development Studio based in Kerala,
+                    building modern websites, Shopify stores, portfolio
+                    websites and business websites.
 
-<!-- Mobile View -->
+                </p>
 
-<section>
+                <div class="mt-4">
 
-<div class="container">
+                    <a href="https://www.instagram.com/ankwebstudio"
+                       class="btn btn-outline-light btn-sm rounded-circle me-2">
+                        <i class="fab fa-instagram"></i>
+                    </a>
 
-<h2 class="section-title">
+                    <a href="https://www.linkedin.com/in/amrutha-m-p-15759a420/"
+                       class="btn btn-outline-light btn-sm rounded-circle me-2">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
 
-Mobile Responsive Design
+                    <a href="https://github.com/"
+                       class="btn btn-outline-light btn-sm rounded-circle">
+                        <i class="fab fa-github"></i>
+                    </a>
 
-</h2>
+                </div>
 
-<div class="underline"></div>
+            </div>
 
-<div class="row align-items-center">
+        </div>
 
-<div class="col-lg-6 mb-4">
+        <div class="container-fluid bg-black text-center text-white py-3">
 
-<img src="img/mobile-home.jpeg"
-class="img-fluid rounded shadow">
+            © 2026 ANK Web Studio. All Rights Reserved.
 
-</div>
+        </div>
 
-<div class="col-lg-6">
+    </footer>
+    <!-- Footer End -->
 
-<img src="img/mobile-product.jpeg"
-class="img-fluid rounded shadow">
 
-</div>
+    <!-- Back To Top -->
 
-</div>
+    <a href="#"
+       class="btn btn-lg btn-success btn-lg-square rounded back-to-top">
 
-<div class="highlight-box mt-4">
+        <i class="bi bi-arrow-up"></i>
 
-<h5>Optimized for Every Device</h5>
+    </a>
 
-<p>
 
-AamizNest was designed with a fully responsive layout,
-providing a smooth shopping experience across desktop,
-tablet and mobile devices.
+    <!-- JavaScript Libraries -->
 
-</p>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
-</div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
-</div>
+    <script src="lib/wow/wow.min.js"></script>
 
-</section>
+    <script src="lib/easing/easing.min.js"></script>
 
+    <script src="lib/waypoints/waypoints.min.js"></script>
 
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
 
-<!-- Features -->
 
-<section class="bg-light">
+    <!-- Template Javascript -->
 
-<div class="container">
-
-<h2 class="section-title">
-
-Key Features
-
-</h2>
-
-<div class="underline"></div>
-
-<div class="row g-4">
-
-<div class="col-md-4">
-
-<div class="info-card">
-
-<i class="fas fa-check-circle"></i>
-
-<h5>Responsive Design</h5>
-
-<p>Works perfectly on all screen sizes.</p>
-
-</div>
-
-</div>
-
-<div class="col-md-4">
-
-<div class="info-card">
-
-<i class="fas fa-box-open"></i>
-
-<h5>Product Management</h5>
-
-<p>Well-organized product collections and pages.</p>
-
-</div>
-
-</div>
-
-<div class="col-md-4">
-
-<div class="info-card">
-
-<i class="fas fa-cart-plus"></i>
-
-<h5>Shopping Cart</h5>
-
-<p>Easy cart management with customer-friendly checkout.</p>
-
-</div>
-
-</div>
-
-<div class="col-md-4">
-
-<div class="info-card">
-
-<i class="fas fa-magnifying-glass"></i>
-
-<h5>Search Function</h5>
-
-<p>Quick product searching for better usability.</p>
-
-</div>
-
-</div>
-
-<div class="col-md-4">
-
-<div class="info-card">
-
-<i class="fab fa-whatsapp"></i>
-
-<h5>WhatsApp Support</h5>
-
-<p>Integrated customer communication.</p>
-
-</div>
-
-</div>
-
-<div class="col-md-4">
-
-<div class="info-card">
-
-<i class="fas fa-shield-halved"></i>
-
-<h5>Secure Checkout</h5>
-
-<p>Designed for a safe and trusted shopping experience.</p>
-
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-
-
-<!-- Technologies -->
-
-<section>
-
-<div class="container text-center">
-
-<h2 class="section-title">
-
-Technologies Used
-
-</h2>
-
-<div class="underline mx-auto"></div>
-
-<span class="badge bg-success me-2">Shopify</span>
-
-<span class="badge bg-primary me-2">Liquid</span>
-
-<span class="badge bg-danger me-2">HTML5</span>
-
-<span class="badge bg-info text-dark me-2">CSS3</span>
-
-<span class="badge bg-warning text-dark me-2">JavaScript</span>
-
-</div>
-
-</section>
-
-
-
-<!-- Project Status -->
-
-<section class="bg-light">
-
-<div class="container">
-
-<div class="alert alert-secondary text-center shadow-sm">
-
-<h4 class="mb-3">
-
-<i class="fas fa-folder-open me-2"></i>
-
-Project Archived
-
-</h4>
-
-<p class="mb-0">
-
-This Shopify store is currently inactive. This page is maintained
-as a portfolio showcase to demonstrate my Shopify development,
-responsive design, and e-commerce website creation skills.
-
-</p>
-
-</div>
-
-</div>
-
-</section>
-
-
-
-<!-- Back -->
-
-<section>
-
-<div class="container text-center">
-
-<a href="index.html#portfolio"
-class="btn btn-success btn-lg px-5">
-
-<i class="fas fa-arrow-left me-2"></i>
-
-Back to Portfolio
-
-</a>
-
-</div>
-
-</section>
-
-
-
-<!-- Footer -->
-
-<footer>
-
-<div class="container">
-
-<h4 class="mb-3">
-
-ANK Web Studio
-
-</h4>
-
-<p>
-
-Building Modern Websites • Shopify Stores • Business Websites • Portfolio Websites
-
-</p>
-
-<p class="mb-0">
-
-© 2026 ANK Web Studio. All Rights Reserved.
-
-</p>
-
-</div>
-
-</footer>
-
-
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
 
 </body>
-
 </html>
