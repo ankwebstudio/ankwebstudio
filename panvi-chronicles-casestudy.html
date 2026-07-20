@@ -1,0 +1,1521 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Panvi Chronicles | Travel Blog Website | ANK Web Studio</title>
+
+<meta name="description"
+content="Panvi Chronicles is a modern travel blog website designed and developed by ANK Web Studio. Explore this case study showcasing responsive web design, destination storytelling, and engaging user experiences.">
+
+<meta name="keywords"
+content="Travel Blog Website, Web Design Kerala, ANK Web Studio, Responsive Website, Portfolio, Travel Website">
+
+<meta name="author"
+content="ANK Web Studio">
+
+<link rel="icon" href="img/favicon.ico">
+
+<!-- Google Fonts -->
+
+<link rel="preconnect"
+href="https://fonts.googleapis.com">
+
+<link rel="preconnect"
+href="https://fonts.gstatic.com"
+crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&family=Rubik:wght@400;500;700&display=swap"
+rel="stylesheet">
+
+<!-- Bootstrap Icons -->
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"
+rel="stylesheet">
+
+<!-- Font Awesome -->
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+rel="stylesheet">
+
+<!-- Animation -->
+
+<link href="lib/animate/animate.min.css"
+rel="stylesheet">
+
+<!-- Owl Carousel -->
+
+<link href="lib/owlcarousel/assets/owl.carousel.min.css"
+rel="stylesheet">
+
+<!-- Bootstrap -->
+
+<link href="css/bootstrap.min.css"
+rel="stylesheet">
+
+<!-- Main Style -->
+
+<link href="css/style.css"
+rel="stylesheet">
+
+<style>
+
+/**********************
+GENERAL
+**********************/
+
+body{
+
+font-family:'Nunito',sans-serif;
+background:#f8f9fa;
+color:#555;
+line-height:1.8;
+
+}
+
+section{
+
+padding:90px 0;
+
+}
+
+img{
+
+max-width:100%;
+
+}
+
+/**********************
+PAGE HEADER
+**********************/
+
+.bg-header{
+
+background:
+linear-gradient(rgba(9,30,62,.85),
+rgba(9,30,62,.85)),
+url(img/carousel-1.jpg);
+
+background-size:cover;
+background-position:center;
+
+}
+
+/**********************
+SECTION TITLE
+**********************/
+
+.section-title{
+
+font-weight:800;
+color:#0B2154;
+
+}
+
+.underline{
+
+width:90px;
+height:4px;
+background:#06A3DA;
+border-radius:50px;
+margin:20px auto 40px;
+
+}
+
+/**********************
+PROJECT IMAGE
+**********************/
+
+.project-image{
+
+border-radius:20px;
+overflow:hidden;
+box-shadow:0 20px 45px rgba(0,0,0,.12);
+
+}
+
+.project-image img{
+
+transition:.4s;
+
+}
+
+.project-image:hover img{
+
+transform:scale(1.02);
+
+}
+
+/**********************
+INFO CARD
+**********************/
+
+.info-card{
+
+background:#fff;
+border-radius:18px;
+padding:35px;
+box-shadow:0 10px 30px rgba(0,0,0,.08);
+height:100%;
+transition:.35s;
+
+}
+
+.info-card:hover{
+
+transform:translateY(-8px);
+
+}
+
+.info-card i{
+
+font-size:45px;
+color:#06A3DA;
+margin-bottom:20px;
+
+}
+
+/**********************
+FEATURE CARD
+**********************/
+
+.feature-card{
+
+background:#fff;
+border-radius:18px;
+padding:30px;
+text-align:center;
+box-shadow:0 10px 30px rgba(0,0,0,.08);
+height:100%;
+transition:.35s;
+
+}
+
+.feature-card:hover{
+
+transform:translateY(-8px);
+
+}
+
+.feature-card i{
+
+font-size:40px;
+color:#06A3DA;
+margin-bottom:20px;
+
+}
+
+/**********************
+SCREENSHOTS
+**********************/
+
+.screenshot{
+
+border-radius:18px;
+overflow:hidden;
+box-shadow:0 20px 40px rgba(0,0,0,.12);
+
+}
+
+.screenshot img{
+
+transition:.4s;
+
+}
+
+.screenshot:hover img{
+
+transform:scale(1.03);
+
+}
+
+/**********************
+TECH BADGE
+**********************/
+
+.tech{
+
+display:inline-block;
+padding:10px 22px;
+margin:8px;
+background:#06A3DA;
+color:#fff;
+border-radius:40px;
+font-weight:700;
+
+}
+
+/**********************
+CTA
+**********************/
+
+.cta{
+
+background:#06A3DA;
+color:#fff;
+border-radius:25px;
+padding:60px;
+
+}
+
+/**********************
+RESPONSIVE
+**********************/
+
+@media(max-width:991px){
+
+section{
+
+padding:70px 0;
+
+}
+
+.info-card{
+
+margin-bottom:20px;
+
+}
+
+}
+
+</style>
+
+</head>
+<body>
+
+<!-- Spinner Start -->
+<div id="spinner"
+     class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+
+    <div class="spinner"></div>
+
+</div>
+<!-- Spinner End -->
+
+
+<!-- Topbar Start -->
+<div class="container-fluid bg-dark px-5 d-none d-lg-block">
+
+    <div class="row gx-0">
+
+        <div class="col-lg-8 text-center text-lg-start mb-2 mb-lg-0">
+
+            <div class="d-inline-flex align-items-center"
+                 style="height:45px;">
+
+                <small class="me-3 text-light">
+                    <i class="fa fa-map-marker-alt me-2"></i>
+                    Cherpulassery, Palakkad, Kerala
+                </small>
+
+                <small class="me-3 text-light">
+                    <i class="fa fa-phone-alt me-2"></i>
+                    +91 9656141993
+                </small>
+
+                <small class="text-light">
+                    <i class="fa fa-envelope-open me-2"></i>
+                    ankwebstudio@gmail.com
+                </small>
+
+            </div>
+
+        </div>
+
+        <div class="col-lg-4 text-center text-lg-end">
+
+            <div class="d-inline-flex align-items-center"
+                 style="height:45px;">
+
+                <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2"
+                   href="#">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+
+                <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2"
+                   href="https://www.instagram.com/ankwebstudio">
+
+                    <i class="fab fa-instagram"></i>
+
+                </a>
+
+                <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle"
+                   href="https://www.linkedin.com/in/amrutha-m-p-15759a420/">
+
+                    <i class="fab fa-linkedin-in"></i>
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+<!-- Topbar End -->
+
+
+<!-- Navbar Start -->
+
+<div class="container-fluid position-relative p-0">
+
+    <nav class="navbar navbar-expand-lg navbar-dark px-5 py-3 py-lg-0">
+
+        <a href="index.html"
+           class="navbar-brand d-flex align-items-center">
+
+            <img src="img/ank-logo.png"
+                 class="nav-logo"
+                 alt="ANK Web Studio Logo">
+
+        </a>
+
+        <button class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarCollapse">
+
+            <span class="fa fa-bars"></span>
+
+        </button>
+
+        <div class="collapse navbar-collapse"
+             id="navbarCollapse">
+
+            <div class="navbar-nav ms-auto py-0">
+
+                <a href="index.html"
+                   class="nav-item nav-link">
+
+                    Home
+
+                </a>
+
+                <a href="about.html"
+                   class="nav-item nav-link">
+
+                    About
+
+                </a>
+
+                <a href="service.html"
+                   class="nav-item nav-link">
+
+                    Services
+
+                </a>
+
+                <a href="index.html#projects"
+                   class="nav-item nav-link active">
+
+                    Portfolio
+
+                </a>
+
+                <a href="contact.html"
+                   class="nav-item nav-link">
+
+                    Contact
+
+                </a>
+
+            </div>
+
+            <a href="https://wa.me/919656141993"
+               class="btn btn-primary py-2 px-4 ms-3">
+
+                Let's Talk
+
+            </a>
+
+        </div>
+
+    </nav>
+
+</div>
+
+<!-- Navbar End -->
+
+
+<!-- Page Header Start -->
+
+<div class="container-fluid bg-primary py-5 bg-header">
+
+    <div class="row py-5">
+
+        <div class="col-12 text-center pt-lg-5 mt-lg-5">
+
+            <h1 class="display-3 text-white animated zoomIn fw-bold">
+
+                Panvi Chronicles
+
+            </h1>
+
+            <p class="text-white fs-4">
+
+                Travel Blog Website Case Study
+
+            </p>
+
+            <span class="badge bg-success me-2">
+
+                Client Project
+
+            </span>
+
+            <span class="badge bg-warning text-dark me-2">
+
+                Responsive
+
+            </span>
+
+            <span class="badge bg-info">
+
+                Live Website
+
+            </span>
+
+        </div>
+
+    </div>
+
+</div>
+
+<!-- Page Header End -->
+
+
+<!-- Hero Start -->
+
+<section>
+
+    <div class="container">
+
+        <div class="row align-items-center g-5">
+
+            <div class="col-lg-6">
+
+                <img src="img/panvi-logo.png"
+                     alt="Panvi Chronicles Logo"
+                     style="max-width:220px;"
+                     class="mb-4">
+
+                <h2 class="fw-bold mb-4">
+
+                    A Modern Travel Blog Website
+
+                </h2>
+
+                <p class="lead">
+
+                    Panvi Chronicles is a modern travel blog developed
+                    for a travel creator to showcase destinations,
+                    stories, adventures and travel experiences
+                    through a clean and engaging website.
+
+                </p>
+
+                <p>
+
+                    The website was designed with a focus on
+                    storytelling, responsive layouts, SEO-friendly
+                    structure and seamless browsing across all
+                    devices.
+
+                </p>
+
+                <div class="mt-4">
+
+                    <a href="https://panvichronicles.com"
+                       target="_blank"
+                       class="btn btn-primary btn-lg me-3">
+
+                        Visit Website
+
+                    </a>
+
+                    <a href="#overview"
+                       class="btn btn-outline-primary btn-lg">
+
+                        Explore Case Study
+
+                    </a>
+
+                </div>
+
+            </div>
+
+            <div class="col-lg-6">
+
+                <div class="project-image">
+
+                    <img src="img/panvi-homepage.png"
+                         class="img-fluid"
+                         alt="Panvi Chronicles Homepage">
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- Hero End -->
+  <!-- ================= About Project Start ================= -->
+
+<section id="overview" class="py-5 bg-light">
+
+    <div class="container">
+
+        <div class="text-center mb-5">
+
+            <h2 class="section-title">
+                About the Project
+            </h2>
+
+            <div class="underline mx-auto"></div>
+
+            <p class="text-muted col-lg-8 mx-auto">
+                Panvi Chronicles is a travel blogging website developed for a
+                travel content creator to showcase journeys, destination guides,
+                travel stories, and adventures through an engaging digital
+                experience.
+            </p>
+
+        </div>
+
+        <div class="row align-items-center g-5">
+
+            <div class="col-lg-7">
+
+                <h3 class="fw-bold mb-4">
+                    Project Summary
+                </h3>
+
+                <p>
+
+                    The objective of this project was to create a modern,
+                    visually engaging travel blog that reflects the client's
+                    passion for travel while providing readers with a smooth and
+                    enjoyable browsing experience.
+
+                </p>
+
+                <p>
+
+                    The website includes destination showcases, travel blogs,
+                    YouTube integration, testimonials, contact information,
+                    responsive layouts and SEO-friendly development.
+
+                </p>
+
+                <p>
+
+                    Every section was carefully designed to create a premium
+                    experience for visitors while strengthening the client's
+                    personal brand.
+
+                </p>
+
+            </div>
+
+            <div class="col-lg-5">
+
+                <div class="info-card">
+
+                    <h4 class="mb-4">
+
+                        Project Details
+
+                    </h4>
+
+                    <hr>
+
+                    <p>
+                        <strong>Client</strong><br>
+                        Panvi Chronicles
+                    </p>
+
+                    <hr>
+
+                    <p>
+                        <strong>Industry</strong><br>
+                        Travel Blogging
+                    </p>
+
+                    <hr>
+
+                    <p>
+                        <strong>Website Type</strong><br>
+                        Personal Brand
+                    </p>
+
+                    <hr>
+
+                    <p>
+                        <strong>Status</strong><br>
+                        Live Website
+                    </p>
+
+                    <hr>
+
+                    <p class="mb-0">
+                        <strong>Developer</strong><br>
+                        ANK Web Studio
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ================= About Project End ================= -->
+
+
+<!-- ================= Project Goals ================= -->
+
+<section class="py-5">
+
+    <div class="container">
+
+        <div class="text-center mb-5">
+
+            <h2 class="section-title">
+
+                Project Goals
+
+            </h2>
+
+            <div class="underline mx-auto"></div>
+
+        </div>
+
+        <div class="row g-4">
+
+            <div class="col-md-4">
+
+                <div class="feature-card">
+
+                    <i class="fas fa-globe-asia"></i>
+
+                    <h5 class="mt-3">
+
+                        Travel Showcase
+
+                    </h5>
+
+                    <p>
+
+                        Present destinations and travel experiences
+                        through an attractive website.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="col-md-4">
+
+                <div class="feature-card">
+
+                    <i class="fas fa-book-open"></i>
+
+                    <h5 class="mt-3">
+
+                        Storytelling
+
+                    </h5>
+
+                    <p>
+
+                        Organize travel blogs and experiences in a clean
+                        reading format.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="col-md-4">
+
+                <div class="feature-card">
+
+                    <i class="fas fa-mobile-alt"></i>
+
+                    <h5 class="mt-3">
+
+                        Responsive Design
+
+                    </h5>
+
+                    <p>
+
+                        Deliver a seamless experience across desktop,
+                        tablet and mobile devices.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="col-md-4">
+
+                <div class="feature-card">
+
+                    <i class="fab fa-youtube"></i>
+
+                    <h5 class="mt-3">
+
+                        YouTube Integration
+
+                    </h5>
+
+                    <p>
+
+                        Showcase travel videos directly from the website.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="col-md-4">
+
+                <div class="feature-card">
+
+                    <i class="fas fa-map-marker-alt"></i>
+
+                    <h5 class="mt-3">
+
+                        Destination Guides
+
+                    </h5>
+
+                    <p>
+
+                        Highlight travel locations with engaging visuals
+                        and information.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="col-md-4">
+
+                <div class="feature-card">
+
+                    <i class="fas fa-search"></i>
+
+                    <h5 class="mt-3">
+
+                        SEO Friendly
+
+                    </h5>
+
+                    <p>
+
+                        Built using SEO best practices for improved search
+                        engine visibility.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ================= Project Goals End ================= -->
+
+
+<!-- ================= Homepage Preview ================= -->
+
+<section class="py-5 bg-light">
+
+    <div class="container">
+
+        <div class="text-center mb-5">
+
+            <h2 class="section-title">
+
+                Homepage Preview
+
+            </h2>
+
+            <div class="underline mx-auto"></div>
+
+            <p class="text-muted">
+
+                The homepage was designed to immediately engage visitors with
+                beautiful visuals and easy navigation.
+
+            </p>
+
+        </div>
+
+        <div class="row align-items-center g-5">
+
+            <div class="col-lg-8">
+
+                <div class="project-image">
+
+                    <img src="img/panvi-homepage.png"
+                         class="img-fluid"
+                         alt="Panvi Chronicles Homepage">
+
+                </div>
+
+            </div>
+
+            <div class="col-lg-4">
+
+                <div class="highlight-box">
+
+                    <h4 class="mb-4">
+
+                        Homepage Highlights
+
+                    </h4>
+
+                    <ul class="list-unstyled">
+
+                        <li class="mb-3">✔ Premium Hero Banner</li>
+
+                        <li class="mb-3">✔ Featured Destinations</li>
+
+                        <li class="mb-3">✔ Travel Blog Section</li>
+
+                        <li class="mb-3">✔ YouTube Integration</li>
+
+                        <li class="mb-3">✔ Testimonials</li>
+
+                        <li class="mb-3">✔ Contact Section</li>
+
+                        <li>✔ Fully Responsive Layout</li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ================= Homepage Preview End ================= -->
+  <!-- ================= Website Sections Start ================= -->
+
+<section class="py-5">
+
+    <div class="container">
+
+        <div class="text-center mb-5">
+
+            <h2 class="section-title">
+                Website Sections
+            </h2>
+
+            <div class="underline mx-auto"></div>
+
+            <p class="text-muted">
+                The website was carefully structured to provide an engaging
+                experience for visitors while highlighting travel stories,
+                destinations and multimedia content.
+            </p>
+
+        </div>
+
+        <div class="row g-4">
+
+            <div class="col-lg-4 col-md-6">
+
+                <div class="project-image">
+
+                    <img src="img/panvi-hero.png"
+                         alt="Hero Section">
+
+                </div>
+
+                <h5 class="text-center mt-3">
+                    Hero Section
+                </h5>
+
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+
+                <div class="project-image">
+
+                    <img src="img/panvi-destinations.png"
+                         alt="Destinations">
+
+                </div>
+
+                <h5 class="text-center mt-3">
+                    Featured Destinations
+                </h5>
+
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+
+                <div class="project-image">
+
+                    <img src="img/panvi-blogs.png"
+                         alt="Blogs">
+
+                </div>
+
+                <h5 class="text-center mt-3">
+                    Travel Blogs
+                </h5>
+
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+
+                <div class="project-image">
+
+                    <img src="img/panvi-testimonials.png"
+                         alt="Testimonials">
+
+                </div>
+
+                <h5 class="text-center mt-3">
+                    Testimonials
+                </h5>
+
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+
+                <div class="project-image">
+
+                    <img src="img/panvi-youtube.png"
+                         alt="YouTube">
+
+                </div>
+
+                <h5 class="text-center mt-3">
+                    YouTube Integration
+                </h5>
+
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+
+                <div class="project-image">
+
+                    <img src="img/panvi-contact.png"
+                         alt="Contact">
+
+                </div>
+
+                <h5 class="text-center mt-3">
+                    Contact Section
+                </h5>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ================= Website Sections End ================= -->
+
+
+<!-- ================= Responsive Design ================= -->
+
+<section class="py-5 bg-light">
+
+    <div class="container">
+
+        <div class="text-center mb-5">
+
+            <h2 class="section-title">
+                Responsive Design
+            </h2>
+
+            <div class="underline mx-auto"></div>
+
+            <p class="text-muted">
+                Optimized for desktops, tablets and smartphones to ensure a
+                consistent browsing experience across all devices.
+            </p>
+
+        </div>
+
+        <div class="row align-items-center">
+
+            <div class="col-lg-6">
+
+                <div class="project-image">
+
+                    <img src="img/panvi-desktop.png"
+                         alt="Desktop View">
+
+                </div>
+
+            </div>
+
+            <div class="col-lg-6">
+
+                <div class="project-image">
+
+                    <img src="img/panvi-mobile.png"
+                         alt="Mobile View">
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ================= Responsive Design End ================= -->
+
+
+<!-- ================= Technologies Used ================= -->
+
+<section class="py-5">
+
+    <div class="container">
+
+        <div class="text-center mb-5">
+
+            <h2 class="section-title">
+                Technologies Used
+            </h2>
+
+            <div class="underline mx-auto"></div>
+
+        </div>
+
+        <div class="text-center">
+
+            <span class="tech">HTML5</span>
+
+            <span class="tech">CSS3</span>
+
+            <span class="tech">Bootstrap 5</span>
+
+            <span class="tech">JavaScript</span>
+
+            <span class="tech">Responsive Design</span>
+
+            <span class="tech">SEO Ready</span>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ================= Technologies End ================= -->
+
+
+<!-- ================= Features Start ================= -->
+
+<section class="py-5 bg-light">
+
+    <div class="container">
+
+        <div class="text-center mb-5">
+
+            <h2 class="section-title">
+                Key Features
+            </h2>
+
+            <div class="underline mx-auto"></div>
+
+        </div>
+
+        <div class="row g-4">
+
+            <div class="col-lg-3 col-md-6">
+
+                <div class="feature-card">
+
+                    <i class="fas fa-mobile-alt"></i>
+
+                    <h5>Responsive Layout</h5>
+
+                </div>
+
+            </div>
+
+            <div class="col-lg-3 col-md-6">
+
+                <div class="feature-card">
+
+                    <i class="fas fa-map-marked-alt"></i>
+
+                    <h5>Destination Showcase</h5>
+
+                </div>
+
+            </div>
+
+            <div class="col-lg-3 col-md-6">
+
+                <div class="feature-card">
+
+                    <i class="fas fa-blog"></i>
+
+                    <h5>Travel Blogs</h5>
+
+                </div>
+
+            </div>
+
+            <div class="col-lg-3 col-md-6">
+
+                <div class="feature-card">
+
+                    <i class="fab fa-youtube"></i>
+
+                    <h5>YouTube Videos</h5>
+
+                </div>
+
+            </div>
+
+            <div class="col-lg-3 col-md-6">
+
+                <div class="feature-card">
+
+                    <i class="fas fa-users"></i>
+
+                    <h5>Testimonials</h5>
+
+                </div>
+
+            </div>
+
+            <div class="col-lg-3 col-md-6">
+
+                <div class="feature-card">
+
+                    <i class="fas fa-envelope"></i>
+
+                    <h5>Contact Form</h5>
+
+                </div>
+
+            </div>
+
+            <div class="col-lg-3 col-md-6">
+
+                <div class="feature-card">
+
+                    <i class="fas fa-search"></i>
+
+                    <h5>SEO Optimized</h5>
+
+                </div>
+
+            </div>
+
+            <div class="col-lg-3 col-md-6">
+
+                <div class="feature-card">
+
+                    <i class="fas fa-bolt"></i>
+
+                    <h5>Fast Loading</h5>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ================= Features End ================= -->
+  <!-- ================= Development Process ================= -->
+
+<section class="py-5">
+
+    <div class="container">
+
+        <div class="text-center mb-5">
+
+            <h2 class="section-title">
+                Development Process
+            </h2>
+
+            <div class="underline mx-auto"></div>
+
+            <p class="text-muted">
+                A structured workflow was followed to deliver a modern,
+                responsive and engaging travel website.
+            </p>
+
+        </div>
+
+        <div class="row g-4">
+
+            <div class="col-md-4">
+                <div class="feature-card">
+                    <i class="fas fa-comments"></i>
+                    <h5>Requirement Analysis</h5>
+                    <p class="mb-0">
+                        Understanding the client's goals, audience and content.
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="feature-card">
+                    <i class="fas fa-pencil-ruler"></i>
+                    <h5>UI / UX Design</h5>
+                    <p class="mb-0">
+                        Designing a clean and engaging travel blog interface.
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="feature-card">
+                    <i class="fas fa-code"></i>
+                    <h5>Development</h5>
+                    <p class="mb-0">
+                        Responsive front-end development with Bootstrap.
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="feature-card">
+                    <i class="fas fa-vial"></i>
+                    <h5>Testing</h5>
+                    <p class="mb-0">
+                        Cross-browser and responsive device testing.
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="feature-card">
+                    <i class="fas fa-rocket"></i>
+                    <h5>Deployment</h5>
+                    <p class="mb-0">
+                        Website optimized and published for the client.
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="feature-card">
+                    <i class="fas fa-headset"></i>
+                    <h5>Support</h5>
+                    <p class="mb-0">
+                        Ongoing improvements and maintenance support.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ================= Project Outcome ================= -->
+
+<section class="py-5 bg-light">
+
+    <div class="container">
+
+        <div class="text-center mb-5">
+
+            <h2 class="section-title">
+                Project Outcome
+            </h2>
+
+            <div class="underline mx-auto"></div>
+
+        </div>
+
+        <div class="row align-items-center">
+
+            <div class="col-lg-6">
+
+                <img src="img/panvi-homepage.png"
+                     class="img-fluid rounded shadow"
+                     alt="Project Result">
+
+            </div>
+
+            <div class="col-lg-6">
+
+                <ul class="list-group list-group-flush shadow rounded">
+
+                    <li class="list-group-item">
+                        ✅ Professional Travel Blog Website
+                    </li>
+
+                    <li class="list-group-item">
+                        ✅ Responsive Across All Devices
+                    </li>
+
+                    <li class="list-group-item">
+                        ✅ Modern User Interface
+                    </li>
+
+                    <li class="list-group-item">
+                        ✅ SEO-Friendly Structure
+                    </li>
+
+                    <li class="list-group-item">
+                        ✅ Optimized Performance
+                    </li>
+
+                    <li class="list-group-item">
+                        ✅ Enhanced Online Presence
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ================= Call To Action ================= -->
+
+<section class="py-5">
+
+    <div class="container">
+
+        <div class="cta text-center">
+
+            <h2 class="text-white fw-bold mb-3">
+
+                Like This Website?
+
+            </h2>
+
+            <p class="text-white fs-5 mb-4">
+
+                Let's build a modern website that helps your business
+                stand out online.
+
+            </p>
+
+            <a href="contact.html"
+               class="btn btn-light btn-lg me-3">
+
+                Start Your Project
+
+            </a>
+
+            <a href="https://wa.me/919656141993"
+               target="_blank"
+               class="btn btn-outline-light btn-lg">
+
+                WhatsApp Us
+
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ================= Back Button ================= -->
+
+<section class="pb-5">
+
+    <div class="container text-center">
+
+        <a href="index.html#projects"
+           class="btn btn-primary btn-lg">
+
+            <i class="fas fa-arrow-left me-2"></i>
+
+            Back to Portfolio
+
+        </a>
+
+    </div>
+
+</section>
+
+<!-- ================= Footer ================= -->
+
+<footer>
+
+    <!-- 
+        RECOMMENDED:
+        Copy the COMPLETE footer from your existing index.html here.
+        This keeps branding, newsletter, contact info, quick links,
+        services and copyright identical across your website.
+    -->
+
+</footer>
+
+<!-- ================= Back To Top ================= -->
+
+<a href="#"
+   class="btn btn-lg btn-primary btn-lg-square rounded back-to-top">
+
+    <i class="bi bi-arrow-up"></i>
+
+</a>
+
+<!-- ================= JavaScript ================= -->
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<script src="js/bootstrap.bundle.min.js"></script>
+
+<script src="lib/wow/wow.min.js"></script>
+
+<script src="lib/easing/easing.min.js"></script>
+
+<script src="lib/waypoints/waypoints.min.js"></script>
+
+<script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+<script src="js/main.js"></script>
+
+</body>
+
+</html>
