@@ -66,13 +66,52 @@ rel="stylesheet">
 /**********************
 GENERAL
 **********************/
+     :root{
+
+    --primary:#2F855A;      /* Forest Green */
+    --secondary:#2B6CB0;    /* Ocean Blue */
+    --accent:#F6AD55;       /* Sunset Gold */
+
+    --dark:#1A365D;
+    --light:#FAF8F3;
+    --text:#5C6770;
+    --white:#FFFFFF;
+
+}
 
 body{
 
 font-family:'Nunito',sans-serif;
-background:#f8f9fa;
-color:#555;
+background:var(--light);
+color:var(--text);
 line-height:1.8;
+
+}
+     .btn-primary{
+
+    background:var(--primary);
+    border-color:var(--primary);
+
+}
+
+.btn-primary:hover{
+
+    background:#256D49;
+    border-color:#256D49;
+
+}
+
+.btn-outline-primary{
+
+    color:var(--primary);
+    border-color:var(--primary);
+
+}
+
+.btn-outline-primary:hover{
+
+    background:var(--primary);
+    color:#fff;
 
 }
 
@@ -111,17 +150,22 @@ SECTION TITLE
 .section-title{
 
 font-weight:800;
-color:#0B2154;
+color:var(--dark);
 
 }
 
 .underline{
 
-width:90px;
-height:4px;
-background:#06A3DA;
-border-radius:50px;
-margin:20px auto 40px;
+    width:90px;
+    height:4px;
+
+    background:linear-gradient(
+        90deg,
+        var(--primary),
+        var(--secondary)
+    );
+
+    border-radius:50px;
 
 }
 
@@ -173,7 +217,7 @@ transform:translateY(-8px);
 .info-card i{
 
 font-size:45px;
-color:#06A3DA;
+color:var(--primary);
 margin-bottom:20px;
 
 }
@@ -203,7 +247,7 @@ transform:translateY(-8px);
 .feature-card i{
 
 font-size:40px;
-color:#06A3DA;
+color:var(--primary);
 margin-bottom:20px;
 
 }
@@ -241,7 +285,7 @@ TECH BADGE
 display:inline-block;
 padding:10px 22px;
 margin:8px;
-background:#06A3DA;
+background:var(--primary);
 color:#fff;
 border-radius:40px;
 font-weight:700;
@@ -254,7 +298,11 @@ CTA
 
 .cta{
 
-background:#06A3DA;
+  background:linear-gradient(
+        135deg,
+        var(--primary),
+        var(--secondary)
+    );
 color:#fff;
 border-radius:25px;
 padding:60px;
