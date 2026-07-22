@@ -858,6 +858,155 @@ color:var(--primary);
 margin-bottom:20px;
 
 }
+     /*==========================================
+Final Section
+==========================================*/
+
+.project-summary{
+
+    padding:120px 0;
+
+    background:#ffffff;
+
+}
+
+.summary-card{
+
+    background:#fff;
+
+    border-radius:22px;
+
+    padding:40px;
+
+    box-shadow:0 20px 60px rgba(0,0,0,.08);
+
+    height:100%;
+
+}
+
+.summary-card h4{
+
+    font-weight:800;
+
+    color:#17324D;
+
+}
+
+.tech-grid{
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    gap:15px;
+
+}
+
+.tech-grid span{
+
+    background:#F3F7F4;
+
+    padding:14px 20px;
+
+    border-radius:50px;
+
+    font-weight:700;
+
+    color:#2F855A;
+
+    transition:.3s;
+
+}
+
+.tech-grid span:hover{
+
+    background:linear-gradient(135deg,#2F855A,#2B6CB0);
+
+    color:#fff;
+
+}
+
+.tech-grid i{
+
+    margin-right:8px;
+
+}
+
+.highlight-list{
+
+    list-style:none;
+
+    padding:0;
+
+    margin:0;
+
+}
+
+.highlight-list li{
+
+    padding:12px 0;
+
+    font-weight:600;
+
+    display:flex;
+
+    align-items:center;
+
+}
+
+.highlight-list i{
+
+    color:#2F855A;
+
+    margin-right:15px;
+
+    font-size:18px;
+
+}
+
+.cta-box{
+
+    margin-top:90px;
+
+    padding:80px 50px;
+
+    border-radius:30px;
+
+    background:linear-gradient(135deg,#2F855A,#2B6CB0);
+
+    color:#fff;
+
+    box-shadow:0 35px 80px rgba(0,0,0,.15);
+
+}
+
+.cta-box h2{
+
+    color:#fff;
+
+    font-size:42px;
+
+    font-weight:800;
+
+    margin-bottom:20px;
+
+}
+
+.cta-box p{
+
+    max-width:700px;
+
+    margin:0 auto 35px;
+
+    color:rgba(255,255,255,.9);
+
+}
+
+.cta-box .btn{
+
+    margin:8px;
+
+}
 
 /**********************
 FEATURE CARD
@@ -2592,35 +2741,174 @@ Responsive Showcase
 <!-- ================= Development Process End ================= -->
 
 
-<!-- ================= Technologies Used ================= -->
+<!-- ================= Final Section Start ================= -->
 
-<section class="py-5">
+<section class="project-summary">
 
     <div class="container">
 
         <div class="text-center mb-5">
 
+            <span class="section-subtitle">
+
+                PROJECT OUTCOME
+
+            </span>
+
             <h2 class="section-title">
-                Technologies Used
+
+                Built for Performance & Growth
+
             </h2>
 
-            <div class="underline mx-auto"></div>
+            <div class="underline"></div>
+
+            <p class="section-description mx-auto">
+
+                Panvi Chronicles was designed with a strong focus on visual
+                storytelling, responsive design and user experience while
+                maintaining high performance and SEO best practices.
+
+            </p>
 
         </div>
 
-        <div class="text-center">
+        <div class="row g-5">
 
-            <span class="tech">HTML5</span>
+            <!-- Technology Stack -->
 
-            <span class="tech">CSS3</span>
+            <div class="col-lg-6">
 
-            <span class="tech">Bootstrap 5</span>
+                <div class="summary-card">
 
-            <span class="tech">JavaScript</span>
+                    <h4 class="mb-4">
 
-            <span class="tech">Responsive Design</span>
+                        Technology Stack
 
-            <span class="tech">SEO Ready</span>
+                    </h4>
+
+                    <div class="tech-grid">
+
+                        <span><i class="fab fa-html5"></i> HTML5</span>
+
+                        <span><i class="fab fa-css3-alt"></i> CSS3</span>
+
+                        <span><i class="fab fa-js-square"></i> JavaScript</span>
+
+                        <span><i class="fab fa-bootstrap"></i> Bootstrap 5</span>
+
+                        <span><i class="fas fa-mobile-alt"></i> Responsive Design</span>
+
+                        <span><i class="fas fa-search"></i> SEO Ready</span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- Project Highlights -->
+
+            <div class="col-lg-6">
+
+                <div class="summary-card">
+
+                    <h4 class="mb-4">
+
+                        Project Highlights
+
+                    </h4>
+
+                    <ul class="highlight-list">
+
+                        <li>
+
+                            <i class="fas fa-check-circle"></i>
+
+                            Premium Travel Blog Design
+
+                        </li>
+
+                        <li>
+
+                            <i class="fas fa-check-circle"></i>
+
+                            Fully Responsive Layout
+
+                        </li>
+
+                        <li>
+
+                            <i class="fas fa-check-circle"></i>
+
+                            Modern UI / UX Experience
+
+                        </li>
+
+                        <li>
+
+                            <i class="fas fa-check-circle"></i>
+
+                            SEO Optimized Structure
+
+                        </li>
+
+                        <li>
+
+                            <i class="fas fa-check-circle"></i>
+
+                            Performance Focused
+
+                        </li>
+
+                        <li>
+
+                            <i class="fas fa-check-circle"></i>
+
+                            Cross Browser Compatible
+
+                        </li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- CTA -->
+
+        <div class="cta-box text-center">
+
+            <h2>
+
+                Ready to Build Your Next Website?
+
+            </h2>
+
+            <p>
+
+                Looking for a modern, responsive and high-performing website
+                for your business? Let's create something exceptional together.
+
+            </p>
+
+            <a href="contact.html" class="btn btn-light btn-lg rounded-pill px-5 me-3">
+
+                Start Your Project
+
+            </a>
+
+            <a href="https://panvichronicles.com"
+
+               target="_blank"
+
+               class="btn btn-outline-light btn-lg rounded-pill px-5">
+
+                Visit Live Website
+
+            </a>
 
         </div>
 
@@ -2628,7 +2916,7 @@ Responsive Showcase
 
 </section>
 
-<!-- ================= Technologies End ================= -->
+<!-- ================= Final Section End ================= -->
 
 
 <!-- ================= Features Start ================= -->
