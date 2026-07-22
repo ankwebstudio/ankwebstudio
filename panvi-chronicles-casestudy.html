@@ -558,6 +558,172 @@ PROJECT GOALS
 
 }
 
+     /*=====================================
+Homepage Preview
+======================================*/
+
+.homepage-preview{
+
+    padding:120px 0;
+
+    background:#ffffff;
+
+}
+
+.browser-window{
+
+    background:#fff;
+
+    border-radius:22px;
+
+    overflow:hidden;
+
+    box-shadow:0 30px 80px rgba(0,0,0,.12);
+
+    transition:.4s;
+
+}
+
+.browser-window:hover{
+
+    transform:translateY(-8px);
+
+}
+
+.browser-header{
+
+    background:#F3F5F7;
+
+    padding:16px 20px;
+
+    display:flex;
+
+    align-items:center;
+
+    border-bottom:1px solid #e9ecef;
+
+}
+
+.dot{
+
+    width:12px;
+
+    height:12px;
+
+    border-radius:50%;
+
+    margin-right:8px;
+
+}
+
+.red{
+
+    background:#FF5F57;
+
+}
+
+.yellow{
+
+    background:#FEBC2E;
+
+}
+
+.green{
+
+    background:#28C840;
+
+}
+
+.browser-url{
+
+    margin-left:20px;
+
+    background:#fff;
+
+    padding:8px 18px;
+
+    border-radius:30px;
+
+    font-size:14px;
+
+    color:#777;
+
+    flex:1;
+
+}
+
+.browser-window img{
+
+    width:100%;
+
+    display:block;
+
+}
+
+.preview-card{
+
+    background:#fff;
+
+    padding:40px;
+
+    border-radius:22px;
+
+    box-shadow:0 20px 60px rgba(0,0,0,.08);
+
+    border-top:5px solid var(--primary);
+
+}
+
+.preview-card h4{
+
+    margin-bottom:20px;
+
+    font-weight:800;
+
+}
+
+.preview-card p{
+
+    margin-bottom:30px;
+
+}
+
+.feature-list{
+
+    list-style:none;
+
+    padding:0;
+
+    margin:0;
+
+}
+
+.feature-list li{
+
+    display:flex;
+
+    align-items:center;
+
+    margin-bottom:18px;
+
+    font-size:16px;
+
+    font-weight:600;
+
+    color:#444;
+
+}
+
+.feature-list i{
+
+    color:var(--primary);
+
+    margin-right:12px;
+
+    font-size:18px;
+
+}
+
 /**********************
 INFO CARD
 **********************/
@@ -1378,26 +1544,32 @@ margin-bottom:20px;
 <!-- ================= Project Goals End ================= -->
 
 
-<!-- ================= Homepage Preview ================= -->
+<!-- ================= Homepage Preview Start ================= -->
 
-<section class="py-5 bg-light">
+<section class="homepage-preview">
 
     <div class="container">
 
         <div class="text-center mb-5">
 
+            <span class="section-subtitle">
+
+                WEBSITE SHOWCASE
+
+            </span>
+
             <h2 class="section-title">
 
-                Homepage Preview
+                Homepage Experience
 
             </h2>
 
-            <div class="underline mx-auto"></div>
+            <div class="underline"></div>
 
-            <p class="text-muted">
+            <p class="section-description mx-auto">
 
-                The homepage was designed to immediately engage visitors with
-                beautiful visuals and easy navigation.
+                The homepage was carefully crafted to capture attention from the
+                very first scroll while creating an immersive travel experience.
 
             </p>
 
@@ -1405,9 +1577,25 @@ margin-bottom:20px;
 
         <div class="row align-items-center g-5">
 
+            <!-- Screenshot -->
+
             <div class="col-lg-8">
 
-                <div class="project-image">
+                <div class="browser-window">
+
+                    <div class="browser-header">
+
+                        <span class="dot red"></span>
+                        <span class="dot yellow"></span>
+                        <span class="dot green"></span>
+
+                        <div class="browser-url">
+
+                            https://panvichronicles.com
+
+                        </div>
+
+                    </div>
 
                     <img src="img/panvi.png"
                          class="img-fluid"
@@ -1417,31 +1605,61 @@ margin-bottom:20px;
 
             </div>
 
+            <!-- Features -->
+
             <div class="col-lg-4">
 
-                <div class="highlight-box">
+                <div class="preview-card">
 
-                    <h4 class="mb-4">
+                    <h4>
 
                         Homepage Highlights
 
                     </h4>
 
-                    <ul class="list-unstyled">
+                    <p>
 
-                        <li class="mb-3">✔ Premium Hero Banner</li>
+                        The homepage combines storytelling, beautiful imagery
+                        and user-friendly navigation to inspire every visitor.
 
-                        <li class="mb-3">✔ Featured Destinations</li>
+                    </p>
 
-                        <li class="mb-3">✔ Travel Blog Section</li>
+                    <ul class="feature-list">
 
-                        <li class="mb-3">✔ YouTube Integration</li>
+                        <li>
+                            <i class="fas fa-check-circle"></i>
+                            Premium Hero Banner
+                        </li>
 
-                        <li class="mb-3">✔ Testimonials</li>
+                        <li>
+                            <i class="fas fa-check-circle"></i>
+                            Destination Showcase
+                        </li>
 
-                        <li class="mb-3">✔ Contact Section</li>
+                        <li>
+                            <i class="fas fa-check-circle"></i>
+                            Travel Blog Layout
+                        </li>
 
-                        <li>✔ Fully Responsive Layout</li>
+                        <li>
+                            <i class="fas fa-check-circle"></i>
+                            YouTube Integration
+                        </li>
+
+                        <li>
+                            <i class="fas fa-check-circle"></i>
+                            Testimonial Section
+                        </li>
+
+                        <li>
+                            <i class="fas fa-check-circle"></i>
+                            Contact & Social Links
+                        </li>
+
+                        <li>
+                            <i class="fas fa-check-circle"></i>
+                            Mobile Responsive Design
+                        </li>
 
                     </ul>
 
@@ -1456,6 +1674,7 @@ margin-bottom:20px;
 </section>
 
 <!-- ================= Homepage Preview End ================= -->
+     
   <!-- ================= Website Sections Start ================= -->
 
 <section class="py-5">
