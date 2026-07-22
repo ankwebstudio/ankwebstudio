@@ -724,6 +724,112 @@ Homepage Preview
 
 }
 
+     /*==========================================
+Website Sections
+==========================================*/
+
+.website-sections{
+
+    padding:120px 0;
+
+    background:#F8FAF8;
+
+}
+
+.showcase-card{
+
+    background:#fff;
+
+    border-radius:22px;
+
+    overflow:hidden;
+
+    box-shadow:0 18px 45px rgba(0,0,0,.08);
+
+    transition:.4s;
+
+    height:100%;
+
+}
+
+.showcase-card:hover{
+
+    transform:translateY(-10px);
+
+    box-shadow:0 30px 70px rgba(0,0,0,.12);
+
+}
+
+.showcase-image{
+
+    overflow:hidden;
+
+}
+
+.showcase-image img{
+
+    width:100%;
+
+    transition:.6s;
+
+}
+
+.showcase-card:hover img{
+
+    transform:scale(1.05);
+
+}
+
+.showcase-content{
+
+    padding:30px;
+
+}
+
+.showcase-content span{
+
+    display:inline-flex;
+
+    width:42px;
+
+    height:42px;
+
+    border-radius:50%;
+
+    align-items:center;
+
+    justify-content:center;
+
+    background:linear-gradient(135deg,#2F855A,#2B6CB0);
+
+    color:#fff;
+
+    font-weight:700;
+
+    margin-bottom:18px;
+
+}
+
+.showcase-content h4{
+
+    font-weight:800;
+
+    margin-bottom:15px;
+
+    color:#17324D;
+
+}
+
+.showcase-content p{
+
+    color:#5F6B73;
+
+    margin-bottom:0;
+
+    line-height:1.8;
+
+}
+
 /**********************
 INFO CARD
 **********************/
@@ -1675,121 +1781,238 @@ margin-bottom:20px;
 
 <!-- ================= Homepage Preview End ================= -->
      
-  <!-- ================= Website Sections Start ================= -->
+ <!-- ================= Website Sections Start ================= -->
 
-<section class="py-5">
+<section class="website-sections">
 
     <div class="container">
 
         <div class="text-center mb-5">
 
+            <span class="section-subtitle">
+
+                WEBSITE SHOWCASE
+
+            </span>
+
             <h2 class="section-title">
-                Website Sections
+
+                Explore Every Section
+
             </h2>
 
-            <div class="underline mx-auto"></div>
+            <div class="underline"></div>
 
-            <p class="text-muted">
-                The website was carefully structured to provide an engaging
-                experience for visitors while highlighting travel stories,
-                destinations and multimedia content.
+            <p class="section-description mx-auto">
+
+                Every page was thoughtfully designed to create an engaging
+                travel experience while maintaining visual consistency,
+                storytelling and seamless navigation.
+
             </p>
 
         </div>
 
         <div class="row g-4">
 
-            <div class="col-lg-4 col-md-6">
+            <!-- About -->
 
-                <div class="project-image">
+            <div class="col-lg-6">
 
-                    <img src="img/panvi.png"
-                         alt="Hero Section">
+                <div class="showcase-card">
 
-                </div>
+                    <div class="showcase-image">
 
-                <h5 class="text-center mt-3">
-                    Hero Section
-                </h5>
+                        <img src="img/panvi-about.png"
+                             class="img-fluid"
+                             alt="About Section">
 
-            </div>
+                    </div>
 
-             <div class="col-lg-4 col-md-6">
+                    <div class="showcase-content">
 
-                <div class="project-image">
+                        <span>01</span>
 
-                    <img src="img/panvi-about.png"
-                         alt="about">
+                        <h4>About the Traveller</h4>
 
-                </div>
+                        <p>
 
-                <h5 class="text-center mt-3">
-                    About Section
-                </h5>
+                            A welcoming introduction that builds trust,
+                            shares the travel journey and creates a personal
+                            connection with visitors.
 
-            </div>
+                        </p>
 
-            <div class="col-lg-4 col-md-6">
-
-                <div class="project-image">
-
-                    <img src="img/panvi-destination.png"
-                         alt="Destinations">
+                    </div>
 
                 </div>
 
-                <h5 class="text-center mt-3">
-                    Featured Destinations
-                </h5>
-
             </div>
 
-            <div class="col-lg-4 col-md-6">
+            <!-- Destinations -->
 
-                <div class="project-image">
+            <div class="col-lg-6">
 
-                    <img src="img/panvi-blog.png"
-                         alt="Blogs">
+                <div class="showcase-card">
+
+                    <div class="showcase-image">
+
+                        <img src="img/panvi-destination.png"
+                             class="img-fluid"
+                             alt="Destinations">
+
+                    </div>
+
+                    <div class="showcase-content">
+
+                        <span>02</span>
+
+                        <h4>Destination Showcase</h4>
+
+                        <p>
+
+                            Beautiful travel destinations presented through
+                            immersive imagery and structured content.
+
+                        </p>
+
+                    </div>
 
                 </div>
 
-                <h5 class="text-center mt-3">
-                    Travel Blogs
-                </h5>
-
             </div>
 
-            <div class="col-lg-4 col-md-6">
+            <!-- Blogs -->
 
-                <div class="project-image">
+            <div class="col-lg-6">
 
-                    <img src="img/panvi-gallery.png"
-                         alt="instagram feed">
+                <div class="showcase-card">
+
+                    <div class="showcase-image">
+
+                        <img src="img/panvi-blog.png"
+                             class="img-fluid"
+                             alt="Blog Section">
+
+                    </div>
+
+                    <div class="showcase-content">
+
+                        <span>03</span>
+
+                        <h4>Travel Stories</h4>
+
+                        <p>
+
+                            Organized blog layout for sharing experiences,
+                            adventures and useful travel insights.
+
+                        </p>
+
+                    </div>
 
                 </div>
 
-                <h5 class="text-center mt-3">
-                    Gallery
-                </h5>
-
             </div>
 
-            <div class="col-lg-4 col-md-6">
+            <!-- Gallery -->
 
-                <div class="project-image">
+            <div class="col-lg-6">
 
-                    <img src="img/panvi-youtube.png"
-                         alt="YouTube">
+                <div class="showcase-card">
+
+                    <div class="showcase-image">
+
+                        <img src="img/panvi-gallery.png"
+                             class="img-fluid"
+                             alt="Gallery">
+
+                    </div>
+
+                    <div class="showcase-content">
+
+                        <span>04</span>
+
+                        <h4>Photo Gallery</h4>
+
+                        <p>
+
+                            A visually engaging gallery highlighting memorable
+                            travel moments and destinations.
+
+                        </p>
+
+                    </div>
 
                 </div>
 
-                <h5 class="text-center mt-3">
-                    YouTube Integration
-                </h5>
+            </div>
+
+            <!-- Testimonials -->
+
+            <div class="col-lg-6">
+
+                <div class="showcase-card">
+
+                    <div class="showcase-image">
+
+                        <img src="img/panvi-testimonial.png"
+                             class="img-fluid"
+                             alt="Testimonials">
+
+                    </div>
+
+                    <div class="showcase-content">
+
+                        <span>05</span>
+
+                        <h4>Testimonials</h4>
+
+                        <p>
+
+                            Authentic visitor feedback that builds credibility
+                            and strengthens trust.
+
+                        </p>
+
+                    </div>
+
+                </div>
 
             </div>
 
-            
+            <!-- Contact -->
+
+            <div class="col-lg-6">
+
+                <div class="showcase-card">
+
+                    <div class="showcase-image">
+
+                        <img src="img/panvi-contact.png"
+                             class="img-fluid"
+                             alt="Contact Section">
+
+                    </div>
+
+                    <div class="showcase-content">
+
+                        <span>06</span>
+
+                        <h4>Contact & Social Links</h4>
+
+                        <p>
+
+                            A clean contact experience allowing visitors to
+                            connect through multiple channels.
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
 
         </div>
 
