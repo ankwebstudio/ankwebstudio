@@ -121,6 +121,7 @@ section{
 padding:90px 0;
 
 }
+ 
 
 img{
 
@@ -418,9 +419,18 @@ SECTION TITLE
 
 font-weight:800;
 color:var(--dark);
+      position: relative;
+    display: inline-block;
 
 }
+.text-center .section-title::before{
+    left: 50%;
+    transform: translateX(-50%);
+}
 
+.text-center .section-title::after{
+    left: 50%;
+}
 /*.underline{
 
     width:90px;
