@@ -695,7 +695,7 @@ h6,
 
 /* ==========================================
             Portfolio
-========================================== */
+========================================== 
 
 .portfolio-item{
     display: flex;
@@ -758,16 +758,16 @@ h6,
     padding:.5rem 1.25rem;
 }
 
-/* Filter Buttons */
+/* Filter Buttons 
 
 .filter-btn{
     border-radius:30px;
     padding:8px 22px;
     margin:5px;
-}
+}*/
 
 /* Mobile */
-
+/*
 @media (max-width:768px){
 
     .portfolio-card{
@@ -791,4 +791,102 @@ h6,
 .filter-btn{
     border-radius:30px;
     padding:8px 20px;
+}
+*/
+
+/* ==========================================
+   INDUSTRIES WE SERVE
+========================================== */
+
+#industries{
+    background:#f8fbff;
+}
+
+#industries .section-title h1{
+    font-weight:700;
+}
+
+#industries .section-title p{
+    max-width:650px;
+    margin:auto;
+    color:#6c757d;
+    font-size:16px;
+}
+
+#industries .industry-card{
+    background:#fff;
+    border-radius:18px;
+    padding:35px 25px;
+    text-align:center;
+    height:100%;
+    transition:.35s ease;
+    border:1px solid #eef2f7;
+    box-shadow:0 8px 30px rgba(0,0,0,.05);
+}
+
+#industries .industry-card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 20px 40px rgba(0,153,204,.15);
+    border-color:#0099cc;
+}
+
+#industries .industry-icon{
+    width:75px;
+    height:75px;
+    margin:0 auto 20px;
+    border-radius:50%;
+    background:rgba(0,153,204,.08);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    transition:.35s;
+}
+
+#industries .industry-card:hover .industry-icon{
+    background:#0099cc;
+}
+
+#industries .industry-icon i{
+    font-size:32px;
+    color:#0099cc;
+    transition:.35s;
+}
+
+#industries .industry-card:hover .industry-icon i{
+    color:#fff;
+}
+
+#industries h5{
+    font-weight:700;
+    color:#0b2c5f;
+    margin-bottom:12px;
+}
+
+#industries p{
+    color:#6c757d;
+    font-size:15px;
+    line-height:1.7;
+    margin-bottom:0;
+}
+
+#industries .btn-primary{
+    background:#0099cc;
+    border-color:#0099cc;
+    border-radius:50px;
+    padding:12px 35px;
+    transition:.3s;
+}
+
+#industries .btn-primary:hover{
+    background:#007faa;
+    border-color:#007faa;
+    transform:translateY(-3px);
+}
+
+@media(max-width:991px){
+
+#industries .industry-card{
+    padding:30px 20px;
+}
+
 }
