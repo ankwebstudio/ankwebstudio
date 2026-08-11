@@ -1057,3 +1057,46 @@ font-size:17px;
 }
 
 }
+
+/* =========================================
+   FOUNDER IMAGE
+========================================= */
+
+.founder-image-wrapper {
+    position: relative;
+    width: 100%;
+    max-width: 420px;
+    margin: 0 auto;
+    background: #fff;
+    overflow: hidden;
+}
+
+/* Image */
+.founder-image {
+    width: 100%;
+    height: auto;
+    display: block;
+
+    /* Soft rounded corners */
+    border-radius: 28px;
+
+    /* Subtle soft appearance */
+    filter: saturate(0.98);
+
+    /* White fade around the image */
+    -webkit-mask-image: radial-gradient(
+        ellipse at center,
+        black 65%,
+        rgba(0, 0, 0, 0.95) 76%,
+        rgba(0, 0, 0, 0.55) 88%,
+        transparent 100%
+    );
+
+    mask-image: radial-gradient(
+        ellipse at center,
+        black 65%,
+        rgba(0, 0, 0, 0.95) 76%,
+        rgba(0, 0, 0, 0.55) 88%,
+        transparent 100%
+    );
+}
