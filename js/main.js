@@ -229,3 +229,92 @@ document.getElementById("searchInput")
 
 });
 
+/* =========================================================
+   CASE STUDIES INTERACTION
+========================================================= */
+
+document.addEventListener("DOMContentLoaded", function () {
+
+    const caseItems = document.querySelectorAll(".case-study-item");
+    const caseDetails = document.querySelectorAll(".case-study-detail");
+    const closeButtons = document.querySelectorAll(".case-study-close");
+
+
+    /* Open Case Study */
+
+    caseItems.forEach(function (item) {
+
+        item.addEventListener("click", function () {
+
+            const targetId = item.getAttribute("data-target");
+            const target = document.getElementById(targetId);
+
+            if (!target) return;
+
+
+            /* Close all other case studies */
+
+            caseDetails.forEach(function (detail) {
+                detail.classList.remove("active");
+            });
+
+
+            /* Remove active state from cards */
+
+            caseItems.forEach(function (card) {
+                card.classList.remove("active");
+            });
+
+
+            /* Open selected */
+
+            target.classList.add("active");
+            item.classList.add("active");
+
+
+            /* Scroll to detail */
+
+            setTimeout(function () {
+
+                target.scrollIntoView({
+                    behavior: "smooth",
+                    block: "center"
+                });
+
+            }, 100);
+
+        });
+
+    });
+
+
+    /* Close Case Study */
+
+    closeButtons.forEach(function (button) {
+
+        button.addEventListener("click", function (event) {
+
+            event.stopPropagation();
+
+            const detail = button.closest(".case-study-detail");
+
+            detail.classList.remove("active");
+
+
+            /* Remove active card */
+
+            const targetId = detail.id;
+
+            const activeCard = document.querySelector(
+                '.case-study-item[data-target="' + targetId + '"]'
+            );
+
+            if (activeCard) {
+                activeCard.classList.remove("active");
+            }
+
+        });
+
+    });
+
+});
