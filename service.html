@@ -80,7 +80,48 @@
                 <div class="navbar-nav ms-auto py-0">
                     <a href="index.html" class="nav-item nav-link">Home</a>
                     <a href="about.html" class="nav-item nav-link">About</a>
-                    <a href="service.html" class="nav-item nav-link active">Services</a>
+                    <div class="nav-item dropdown services-dropdown">
+
+                        <a href="#service" class="nav-link dropdown-toggle">
+                            Services
+                        </a>
+
+                        <div class="dropdown-menu services-menu">
+
+                            <a href="service.html#web-design" class="dropdown-item">
+                            Web Design Services
+                            </a>
+
+                            <a href="service.html#website-development" class="dropdown-item">
+                            Website Development
+                            </a>
+
+                            <a href="service.html#responsive-design" class="dropdown-item">
+                                Responsive Web Design
+                            </a>
+                    
+                            <a href="service.html#website-redesign" class="dropdown-item">
+                                Website Redesign
+                            </a>
+                    
+                            <a href="service.html#seo" class="dropdown-item">
+                                SEO Services
+                            </a>
+                    
+                            <a href="service.html#geo" class="dropdown-item">
+                                GEO Optimization
+                            </a>
+                    
+                            <a href="service.html#aeo" class="dropdown-item">
+                                AEO Optimization
+                            </a>
+                    
+                            <a href="service.html#website-performance" class="dropdown-item">
+                                Website Performance Optimization
+                            </a>
+                    
+                        </div>
+                    </div>
                     <a href="index.html#industries" class="nav-item nav-link">Solutions</a>
                     <!--
                     <div class="nav-item dropdown">
@@ -133,100 +174,404 @@
     <!-- Full Screen Search End -->
 
 
-    <!-- Service Start -->
-    <div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
-        <div class="container py-5">
-            <div class="section-title text-center position-relative pb-3 mb-5 mx-auto" style="max-width: 600px;">
-                <h5 class="fw-bold text-primary text-uppercase">Our Web Design & Digital Services</h5>
-                <h1 class="mb-0">Professional Website Development & SEO Solutions for Business Growth</h1>
-                <p class="text-muted mb-0">
-                ANK Web Studio provides responsive web design, SEO optimization, business website development,
-                and modern digital solutions to help businesses grow online and attract more customers.
+     <!-- =========================
+     Service Start
+========================= -->
+
+<div id="services" class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
+
+    <div class="container py-5">
+
+        <!-- Section Heading -->
+        <div class="section-title text-center position-relative pb-3 mb-4 mx-auto"
+             style="max-width: 750px;">
+
+            <h5 class="fw-bold text-primary text-uppercase">
+                Our Web Design & Digital Services
+            </h5>
+
+            <h1 class="mb-3">
+                Web Design, Development & Digital Optimization Services
+            </h1>
+
+            <p class="text-muted mb-0">
+                ANK Web Studio provides professional web design, website development,
+                responsive web design, website redesign, SEO, GEO, AEO, and website
+                performance optimization services to help businesses build a stronger
+                and more discoverable online presence.
             </p>
+
+        </div>
+
+
+        <!-- =========================
+             Service Filters
+        ========================== -->
+
+        <div class="service-filter-wrapper text-center mb-5">
+
+            <button class="service-filter active"
+                    data-filter="all">
+                All Services
+            </button>
+
+            <button class="service-filter"
+                    data-filter="web-design">
+                Web Design
+            </button>
+
+            <button class="service-filter"
+                    data-filter="development">
+                Development
+            </button>
+
+            <button class="service-filter"
+                    data-filter="redesign">
+                Redesign
+            </button>
+
+            <button class="service-filter"
+                    data-filter="seo">
+                SEO
+            </button>
+
+            <button class="service-filter"
+                    data-filter="ai-search">
+                AI Search
+            </button>
+
+            <button class="service-filter"
+                    data-filter="performance">
+                Performance
+            </button>
+
+        </div>
+
+
+        <!-- =========================
+             Services Grid
+        ========================== -->
+
+        <div class="row g-5 service-grid">
+
+
+            <!-- =========================
+                 01. Professional Web Design
+            ========================== -->
+
+            <div class="col-lg-4 col-md-6 service-card"
+                 data-category="web-design">
+
+                <div id="web-design"
+                     class="service-item bg-light rounded d-flex flex-column
+                            align-items-center justify-content-center text-center">
+
+                    <div class="service-icon">
+                        <i class="fa fa-laptop-code text-primary"></i>
+                    </div>
+
+                    <h4 class="mb-3">
+                        Professional Web Design Services
+                    </h4>
+
+                    <p class="m-0">
+                        We create modern, user-friendly, and visually attractive
+                        websites designed to improve branding, customer engagement,
+                        and online business growth.
+                    </p>
+
+                    <a class="btn btn-lg btn-primary rounded mt-4"
+                       href="#web-design">
+                        <i class="bi bi-arrow-right"></i>
+                    </a>
+
+                </div>
+
             </div>
-            <div class="row g-5">
-                <div class="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.3s">
-                    <div class="service-item bg-light rounded d-flex flex-column align-items-center justify-content-center text-center">
-                        <div class="service-icon">
-                            <i class="fa fa-laptop-code text-primary "></i>
-                        </div>
-                        <h4 class="mb-3">Professional Web Design Services.</h4>
-                        <p class="m-0"> We create modern, user-friendly, and visually attractive websites designed to improve
-                        branding, customer engagement, and online business growth.</p>
-                        <a class="btn btn-lg btn-primary rounded" href="">
-                            <i class="bi bi-arrow-right"></i>
-                        </a>
+
+
+            <!-- =========================
+                 02. Business Website Development
+            ========================== -->
+
+            <div class="col-lg-4 col-md-6 service-card"
+                 data-category="development">
+
+                <div id="website-development"
+                     class="service-item bg-light rounded d-flex flex-column
+                            align-items-center justify-content-center text-center">
+
+                    <div class="service-icon">
+                        <i class="fa fa-briefcase text-primary"></i>
                     </div>
+
+                    <h4 class="mb-3">
+                        Business Website Development
+                    </h4>
+
+                    <p class="m-0">
+                        High-performance business websites built to generate leads,
+                        increase trust, and showcase your products or services
+                        professionally.
+                    </p>
+
+                    <a class="btn btn-lg btn-primary rounded mt-4"
+                       href="#website-development">
+                        <i class="bi bi-arrow-right"></i>
+                    </a>
+
                 </div>
-                <div class="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.6s">
-                    <div class="service-item bg-light rounded d-flex flex-column align-items-center justify-content-center text-center">
-                        <div class="service-icon">
-                            <i class="fa fa-briefcase text-primary "></i>
-                        </div>
-                        <h4 class="mb-3">Business Website Development.</h4>
-                        <p class="m-0">High-performance business websites built to generate leads, increase trust,
-                        and showcase your products or services professionally.</p>
-                        <a class="btn btn-lg btn-primary rounded" href="">
-                            <i class="bi bi-arrow-right"></i>
-                        </a>
+
+            </div>
+
+
+            <!-- =========================
+                 03. Responsive Web Design
+            ========================== -->
+
+            <div class="col-lg-4 col-md-6 service-card"
+                 data-category="web-design">
+
+                <div id="responsive-design"
+                     class="service-item bg-light rounded d-flex flex-column
+                            align-items-center justify-content-center text-center">
+
+                    <div class="service-icon">
+                        <i class="fa fa-mobile-alt text-primary"></i>
                     </div>
+
+                    <h4 class="mb-3">
+                        Responsive Web Design
+                    </h4>
+
+                    <p class="m-0">
+                        Fully responsive websites optimized for mobile phones,
+                        tablets, laptops, and desktop devices for a seamless
+                        user experience.
+                    </p>
+
+                    <a class="btn btn-lg btn-primary rounded mt-4"
+                       href="#responsive-design">
+                        <i class="bi bi-arrow-right"></i>
+                    </a>
+
                 </div>
-                <div class="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.9s">
-                    <div class="service-item bg-light rounded d-flex flex-column align-items-center justify-content-center text-center">
-                        <div class="service-icon">
-                           <i class="fa fa-mobile-alt text-primary "></i>
-                        </div>
-                        <h4 class="mb-3">Responsive Website Design</h4>
-                        <p class="m-0">Fully responsive websites optimized for mobile phones, tablets, laptops,
-                        and desktop devices for a seamless user experience.</p>
-                        <a class="btn btn-lg btn-primary rounded" href="">
-                            <i class="bi bi-arrow-right"></i>
-                        </a>
+
+            </div>
+
+
+            <!-- =========================
+                 04. Website Redesign
+            ========================== -->
+
+            <div class="col-lg-4 col-md-6 service-card"
+                 data-category="redesign">
+
+                <div id="website-redesign"
+                     class="service-item bg-light rounded d-flex flex-column
+                            align-items-center justify-content-center text-center">
+
+                    <div class="service-icon">
+                        <i class="fa fa-paint-brush text-primary"></i>
                     </div>
+
+                    <h4 class="mb-3">
+                        Website Redesign Services
+                    </h4>
+
+                    <p class="m-0">
+                        Modernize outdated websites with improved design,
+                        user experience, mobile responsiveness, performance,
+                        and conversion-focused layouts.
+                    </p>
+
+                    <a class="btn btn-lg btn-primary rounded mt-4"
+                       href="#website-redesign">
+                        <i class="bi bi-arrow-right"></i>
+                    </a>
+
                 </div>
-                <div class="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.3s">
-                    <div class="service-item bg-light rounded d-flex flex-column align-items-center justify-content-center text-center">
-                        <div class="service-icon">
-                           <i class="fa fa-search text-primary "></i>
-                        </div>
-                        <h4 class="mb-3">SEO Optimization Services</h4>
-                        <p class="m-0">SEO-friendly website structure and optimization techniques to improve Google rankings,
-                        increase organic traffic, and generate quality leads.</p>
-                        <a class="btn btn-lg btn-primary rounded" href="">
-                            <i class="bi bi-arrow-right"></i>
-                        </a>
+
+            </div>
+
+
+            <!-- =========================
+                 05. SEO
+            ========================== -->
+
+            <div class="col-lg-4 col-md-6 service-card"
+                 data-category="seo">
+
+                <div id="seo"
+                     class="service-item bg-light rounded d-flex flex-column
+                            align-items-center justify-content-center text-center">
+
+                    <div class="service-icon">
+                        <i class="fa fa-search text-primary"></i>
                     </div>
+
+                    <h4 class="mb-3">
+                        SEO Optimization Services
+                    </h4>
+
+                    <p class="m-0">
+                        SEO-friendly website structure and optimization techniques
+                        to improve search visibility, organic traffic,
+                        Google rankings, and quality leads.
+                    </p>
+
+                    <a class="btn btn-lg btn-primary rounded mt-4"
+                       href="#seo">
+                        <i class="bi bi-arrow-right"></i>
+                    </a>
+
                 </div>
-                <div class="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.6s">
-                    <div class="service-item bg-light rounded d-flex flex-column align-items-center justify-content-center text-center">
-                        <div class="service-icon">
-                            <i class="fa fa-tachometer-alt text-primary "></i>
-                        </div>
-                        <h4 class="mb-3">Fast Loading Website Performance</h4>
-                        <p class="m-0">Speed-optimized websites with clean code and performance improvements
-                        for better user experience and higher search engine rankings.</p>
-                        <a class="btn btn-lg btn-primary rounded" href="">
-                            <i class="bi bi-arrow-right"></i>
-                        </a>
+
+            </div>
+
+
+            <!-- =========================
+                 06. GEO
+            ========================== -->
+
+            <div class="col-lg-4 col-md-6 service-card"
+                 data-category="ai-search">
+
+                <div id="geo"
+                     class="service-item bg-light rounded d-flex flex-column
+                            align-items-center justify-content-center text-center">
+
+                    <div class="service-icon">
+                        <i class="fa fa-globe text-primary"></i>
                     </div>
+
+                    <h4 class="mb-3">
+                        GEO Optimization
+                    </h4>
+
+                    <p class="m-0">
+                        Generative Engine Optimization strategies that help
+                        your website content become more discoverable across
+                        AI-powered search and answer platforms.
+                    </p>
+
+                    <a class="btn btn-lg btn-primary rounded mt-4"
+                       href="#geo">
+                        <i class="bi bi-arrow-right"></i>
+                    </a>
+
                 </div>
-                <div class="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.9s" data-wow-duration="1.5s">
-                    <div class="position-relative bg-primary rounded h-100 d-flex flex-column align-items-center justify-content-center text-center p-5">
-                        <h3 class="text-white mb-3">Need a Professional Website?</h3>
-                        <p class="text-white mb-3">Contact ANK Web Studio today for custom web design, SEO services,
-                        and business website solutions tailored to your brand.</p>
-                        <a href="tel:+91 9656141993"
-                       class="btn btn-light text-primary fw-bold px-4 py-2 rounded-pill btn-lg btn-primary" >
+
+            </div>
+
+
+            <!-- =========================
+                 07. AEO
+            ========================== -->
+
+            <div class="col-lg-4 col-md-6 service-card"
+                 data-category="ai-search">
+
+                <div id="aeo"
+                     class="service-item bg-light rounded d-flex flex-column
+                            align-items-center justify-content-center text-center">
+
+                    <div class="service-icon">
+                        <i class="fa fa-question-circle text-primary"></i>
+                    </div>
+
+                    <h4 class="mb-3">
+                        AEO Optimization
+                    </h4>
+
+                    <p class="m-0">
+                        Answer Engine Optimization that structures website
+                        content for better understanding and visibility
+                        in search engines and AI-generated answers.
+                    </p>
+
+                    <a class="btn btn-lg btn-primary rounded mt-4"
+                       href="#aeo">
+                        <i class="bi bi-arrow-right"></i>
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- =========================
+                 08. Website Performance
+            ========================== -->
+
+            <div class="col-lg-4 col-md-6 service-card"
+                 data-category="performance">
+
+                <div id="performance"
+                     class="service-item bg-light rounded d-flex flex-column
+                            align-items-center justify-content-center text-center">
+
+                    <div class="service-icon">
+                        <i class="fa fa-tachometer-alt text-primary"></i>
+                    </div>
+
+                    <h4 class="mb-3">
+                        Website Performance Optimization
+                    </h4>
+
+                    <p class="m-0">
+                        Speed-optimized websites with clean code and performance
+                        improvements for a faster user experience and
+                        better search performance.
+                    </p>
+
+                    <a class="btn btn-lg btn-primary rounded mt-4"
+                       href="#performance">
+                        <i class="bi bi-arrow-right"></i>
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- =========================
+                 CTA
+            ========================== -->
+
+            <div class="col-lg-4 col-md-6">
+
+                <div class="position-relative bg-primary rounded h-100
+                            d-flex flex-column align-items-center
+                            justify-content-center text-center p-5">
+
+                    <h3 class="text-white mb-3">
+                        Need a Professional Website?
+                    </h3>
+
+                    <p class="text-white mb-3">
+                        Contact ANK Web Studio today for custom web design,
+                        SEO, GEO, AEO, and business website solutions
+                        tailored to your brand.
+                    </p>
+
+                    <a href="tel:+919656141993"
+                       class="btn btn-light text-primary fw-bold
+                              px-4 py-2 rounded-pill btn-lg">
                         Call Now
                     </a>
-                        <!--<h2 class="text-white mb-0">+91 9656141993</h2>-->
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Service End -->
 
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<!-- Service End -->
 
    <!-- Why Work With Us Start -->
 <div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
