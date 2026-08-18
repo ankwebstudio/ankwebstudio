@@ -496,6 +496,135 @@ h6,
     opacity: 1;
 }
 
+/* =========================================
+   SERVICE FILTER
+========================================= */
+
+.service-filter-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.service-filter {
+    border: 1px solid #0099cc;
+    background: transparent;
+    color: #0099cc;
+
+    padding: 9px 20px;
+
+    border-radius: 30px;
+
+    font-size: 14px;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: all 0.3s ease;
+}
+
+
+/* Hover */
+
+.service-filter:hover {
+    background: #0099cc;
+    color: #fff;
+}
+
+
+/* Active */
+
+.service-filter.active {
+    background: #0099cc;
+    color: #fff;
+}
+
+
+/* =========================================
+   SERVICE CARD ANIMATION
+========================================= */
+
+.service-card {
+    transition:
+        opacity 0.35s ease,
+        transform 0.35s ease;
+}
+
+.service-card.service-hidden {
+    display: none;
+}
+
+
+/* =========================================
+   SERVICE ITEM
+========================================= */
+
+.service-item {
+    height: 100%;
+    min-height: 330px;
+    padding: 40px 30px;
+
+    transition: all 0.35s ease;
+}
+
+.service-item:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.08);
+}
+
+
+/* Service icon */
+
+.service-item .service-icon {
+    width: 70px;
+    height: 70px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-bottom: 20px;
+
+    border-radius: 50%;
+
+    background: rgba(0, 153, 204, 0.10);
+}
+
+.service-item .service-icon i {
+    font-size: 28px;
+}
+
+
+/* Service heading */
+
+.service-item h4 {
+    line-height: 1.4;
+}
+
+
+/* =========================================
+   MOBILE FILTER
+========================================= */
+
+@media (max-width: 767px) {
+
+    .service-filter-wrapper {
+        gap: 8px;
+    }
+
+    .service-filter {
+        padding: 8px 14px;
+        font-size: 13px;
+    }
+
+    .service-item {
+        min-height: 300px;
+        padding: 30px 22px;
+    }
+
+}
 
 /*** Testimonial ***/
 .testimonial-carousel .owl-dots {
