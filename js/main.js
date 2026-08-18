@@ -318,3 +318,51 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
 });
+
+
+document.addEventListener("DOMContentLoaded", function () {
+
+    const filters = document.querySelectorAll(".service-filter");
+    const cards = document.querySelectorAll(".service-card");
+
+    filters.forEach(function (filter) {
+
+        filter.addEventListener("click", function () {
+
+            const selectedFilter = this.getAttribute("data-filter");
+
+            /* Remove active class */
+            filters.forEach(function (button) {
+                button.classList.remove("active");
+            });
+
+            /* Add active class */
+            this.classList.add("active");
+
+
+            /* Filter cards */
+            cards.forEach(function (card) {
+
+                const category = card.getAttribute("data-category");
+
+                if (
+                    selectedFilter === "all" ||
+                    category === selectedFilter
+                ) {
+
+                    card.classList.remove("service-hidden");
+
+                } else {
+
+                    card.classList.add("service-hidden");
+
+                }
+
+            });
+
+        });
+
+    });
+
+});
+
