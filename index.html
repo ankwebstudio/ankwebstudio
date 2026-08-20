@@ -264,7 +264,7 @@ content="web design Kerala, web designer Palakkad, website development Kerala, S
                     <a href="#faq" class="nav-item nav-link">Need Help?</a>
                 </div>
                 
-                <button type="button" class="btn text-primary ms-3" data-bs-toggle="modal" data-bs-target="#searchModal"><i class="fa fa-search"></i></butaton> 
+                <button type="button" class="btn text-primary ms-3" data-bs-toggle="modal" data-bs-target="#searchModal"><i class="fa fa-search"></i></button> 
                 <a href="https://wa.me/919656141993" class="btn btn-primary py-2 px-4 ms-3">Let's Talk</a>
             </div>
         </nav>
@@ -3047,6 +3047,61 @@ document.getElementById("quoteForm").addEventListener("submit", function(e){
         console.log(error);
 
     });
+
+});
+</script>
+    <script>
+document.addEventListener("DOMContentLoaded", function () {
+
+    const searchInput = document.getElementById("searchInput");
+    const searchBtn = document.getElementById("searchBtn");
+    const searchModal = document.getElementById("searchModal");
+
+    if (!searchInput || !searchBtn) return;
+
+    function performSearch() {
+
+        const query = searchInput.value.trim();
+
+        if (!query) {
+            searchInput.focus();
+            return;
+        }
+
+        // Search page
+        const searchURL = "search.html?q=" + encodeURIComponent(query);
+
+        window.location.href = searchURL;
+    }
+
+    // Search button
+    searchBtn.addEventListener("click", function (e) {
+        e.preventDefault();
+        performSearch();
+    });
+
+    // Enter key
+    searchInput.addEventListener("keydown", function (e) {
+        if (e.key === "Enter") {
+            e.preventDefault();
+            performSearch();
+        }
+    });
+
+    // Automatically focus search input when modal opens
+    if (searchModal) {
+
+        searchModal.addEventListener("shown.bs.modal", function () {
+            setTimeout(function () {
+                searchInput.focus();
+            }, 100);
+        });
+
+        searchModal.addEventListener("hidden.bs.modal", function () {
+            searchInput.value = "";
+        });
+
+    }
 
 });
 </script>
