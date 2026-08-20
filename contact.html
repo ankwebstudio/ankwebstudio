@@ -95,7 +95,7 @@
                     <a href="contact.html" class="nav-item nav-link active">Contact</a>
                     <a href="index.html#faq" class="nav-item nav-link">Need Help?</a>
                 </div>
-                <butaton type="button" class="btn text-primary ms-3" data-bs-toggle="modal" data-bs-target="#searchModal"><i class="fa fa-search"></i></butaton>
+                <button type="button" class="btn text-primary ms-3" data-bs-toggle="modal" data-bs-target="#searchModal"><i class="fa fa-search"></i></button>
                 <a href="https://wa.me/919656141993" class="btn btn-primary py-2 px-4 ms-3">Let's Talk</a>
             </div>
         </nav>
@@ -115,21 +115,55 @@
 
 
     <!-- Full Screen Search Start -->
-    <div class="modal fade" id="searchModal" tabindex="-1">
-        <div class="modal-dialog modal-fullscreen">
-            <div class="modal-content" style="background: rgba(9, 30, 62, .7);">
-                <div class="modal-header border-0">
-                    <button type="button" class="btn bg-white btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body d-flex align-items-center justify-content-center">
-                    <div class="input-group" style="max-width: 600px;">
-                        <input type="text" class="form-control bg-transparent border-primary p-3" placeholder="Type search keyword">
-                        <button class="btn btn-primary px-4"><i class="bi bi-search"></i></button>
-                    </div>
-                </div>
+    <!-- Full Screen Search Start -->
+<div class="modal fade" id="searchModal" tabindex="-1">
+
+    <div class="modal-dialog modal-fullscreen">
+
+        <div class="modal-content"
+             style="background: rgba(9, 30, 62, .7);">
+
+            <div class="modal-header border-0">
+
+                <button type="button"
+                        class="btn bg-white btn-close"
+                        data-bs-dismiss="modal"
+                        aria-label="Close">
+                </button>
+
             </div>
+
+            <div class="modal-body d-flex align-items-center justify-content-center">
+
+                <div class="input-group" style="max-width: 600px;">
+
+                    <input
+                        type="text"
+                        id="searchInput"
+                        class="form-control bg-transparent border-primary p-3"
+                        placeholder="Type search keyword"
+                        autocomplete="off">
+
+                    <button
+                        type="button"
+                        id="searchBtn"
+                        class="btn btn-primary px-4"
+                        aria-label="Search">
+
+                        <i class="bi bi-search"></i>
+
+                    </button>
+
+                </div>
+
+            </div>
+
         </div>
+
     </div>
+
+</div>
+<!-- Full Screen Search End -->
     <!-- Full Screen Search End -->
 
 
@@ -726,47 +760,141 @@
     <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
 
 <script>
-emailjs.init("2SovASVB7YebUwY__");
 
-document.getElementById("quoteForm").addEventListener("submit", function(e){
+document.addEventListener("DOMContentLoaded", function () {
 
-    e.preventDefault();
+    emailjs.init({
+        publicKey: "2SovASVB7YebUwY__"
+    });
 
-    const form=this;
+    const form = document.getElementById("quoteForm");
 
-    const data={
-        name:form.name.value,
-        email:form.email.value,
-        phone:form.phone.value,
-        service:form.service.value,
-        message:form.message.value
-    };
+    if (!form) {
+        console.error("quoteForm not found.");
+        return;
+    }
 
-    // Admin email
-    emailjs.send(
-        "service_4pmocl8",
-        "template_deehx57",
-        data
-    ).then(function(){
+    form.addEventListener("submit", function (e) {
 
-        // Auto reply
-        emailjs.send(
+        e.preventDefault();
+
+        const submitButton =
+            form.querySelector('button[type="submit"]');
+
+        submitButton.disabled = true;
+        submitButton.innerHTML = "Sending...";
+
+        /*
+         * Send enquiry to ANK WebStudio
+         */
+        emailjs.sendForm(
             "service_4pmocl8",
-            "template_18whk5e",
-            data
-        ).then(function(){
+            "template_deehx57",
+            form
+        )
 
-            window.location.href="thankyou.html";
+        .then(function (response) {
+
+            console.log(
+                "Admin email sent:",
+                response.status,
+                response.text
+            );
+
+            /*
+             * Send automatic reply to customer
+             */
+            return emailjs.sendForm(
+                "service_4pmocl8",
+                "template_18whk5e",
+                form
+            );
+
+        })
+
+        .then(function (response) {
+
+            console.log(
+                "Auto reply sent:",
+                response.status,
+                response.text
+            );
+
+            window.location.href = "thankyou.html";
+
+        })
+
+        .catch(function (error) {
+
+            console.error("EMAILJS ERROR:", error);
+
+            alert(
+                "Unable to send your message right now. Please try again."
+            );
+
+            submitButton.disabled = false;
+            submitButton.innerHTML = "Send Message";
 
         });
 
-    }).catch(function(error){
+    });
 
-        alert("Something went wrong. Please try again.");
+});
 
-        console.log(error);
+</script>
+    <script>
+document.addEventListener("DOMContentLoaded", function () {
+
+    const searchInput = document.getElementById("searchInput");
+    const searchBtn = document.getElementById("searchBtn");
+    const searchModal = document.getElementById("searchModal");
+
+    if (!searchInput || !searchBtn) {
+        console.error("Search elements not found.");
+        return;
+    }
+
+    function performSearch() {
+
+        const query = searchInput.value.trim();
+
+        if (!query) {
+            searchInput.focus();
+            return;
+        }
+
+        window.location.href =
+            "search.html?q=" + encodeURIComponent(query);
+    }
+
+    searchBtn.addEventListener("click", function () {
+        performSearch();
+    });
+
+    searchInput.addEventListener("keydown", function (event) {
+
+        if (event.key === "Enter") {
+            event.preventDefault();
+            performSearch();
+        }
 
     });
+
+    if (searchModal) {
+
+        searchModal.addEventListener("shown.bs.modal", function () {
+
+            setTimeout(function () {
+                searchInput.focus();
+            }, 150);
+
+        });
+
+        searchModal.addEventListener("hidden.bs.modal", function () {
+            searchInput.value = "";
+        });
+
+    }
 
 });
 </script>
