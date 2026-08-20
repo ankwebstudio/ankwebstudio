@@ -2205,7 +2205,7 @@ content="web design Kerala, web designer Palakkad, website development Kerala, S
 
 
     <!-- Technologies Start -->
-<div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
+<div id="technologies" class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
 
     <div class="container py-5">
 
@@ -3050,7 +3050,7 @@ document.getElementById("quoteForm").addEventListener("submit", function(e){
 
 });
 </script>
-    <script>
+   <script>
 document.addEventListener("DOMContentLoaded", function () {
 
     const searchInput = document.getElementById("searchInput");
@@ -3059,46 +3059,283 @@ document.addEventListener("DOMContentLoaded", function () {
 
     if (!searchInput || !searchBtn) return;
 
+
+    /* =========================================
+       SEARCH TARGETS
+    ========================================= */
+
+    const searchTargets = [
+
+        // Services
+        {
+            keywords: ["web design", "website design", "design"],
+            target: "#web-design"
+        },
+
+        {
+            keywords: ["website development", "development", "business website"],
+            target: "#website-development"
+        },
+
+        {
+            keywords: ["responsive", "mobile responsive", "mobile"],
+            target: "#responsive-design"
+        },
+
+        {
+            keywords: ["redesign", "website redesign"],
+            target: "#website-redesign"
+        },
+
+        {
+            keywords: ["seo", "seo optimization", "search engine optimization"],
+            target: "#seo"
+        },
+
+        {
+            keywords: ["geo", "generative engine optimization", "ai search"],
+            target: "#geo"
+        },
+
+        {
+            keywords: ["aeo", "answer engine optimization"],
+            target: "#aeo"
+        },
+
+        {
+            keywords: ["performance", "speed", "website speed"],
+            target: "#performance"
+        },
+
+
+        // Main Sections
+        {
+            keywords: ["about", "ank webstudio", "company"],
+            target: "#about"
+        },
+
+        {
+            keywords: ["services", "service"],
+            target: "#services"
+        },
+
+        {
+            keywords: ["case studies", "case study", "portfolio", "projects"],
+            target: "#case-studies"
+        },
+
+        {
+            keywords: ["solutions", "industries", "industry"],
+            target: "#industries"
+        },
+
+        {
+            keywords: ["testimonial", "testimonials", "reviews", "review"],
+            target: "#testimonials"
+        },
+
+        {
+            keywords: ["contact", "contact us", "quote", "free quote"],
+            target: "#contact"
+        },
+
+        {
+            keywords: ["faq", "questions", "help"],
+            target: "#faq"
+        },
+
+
+        // Technologies
+        {
+            keywords: [
+                "html",
+                "html5",
+                "css",
+                "css3",
+                "javascript",
+                "bootstrap",
+                "shopify",
+                "github",
+                "wordpress",
+                "firebase",
+                "react",
+                "figma",
+                "canva"
+            ],
+            target: "#technologies"
+        },
+
+
+        // Case Studies
+        {
+            keywords: ["panvi", "panvi chronicles"],
+            target: "#case-studies"
+        },
+
+        {
+            keywords: ["evara", "evara boutique"],
+            target: "#case-studies"
+        },
+
+        {
+            keywords: ["carenest", "carenest clinic"],
+            target: "#case-studies"
+        },
+
+        {
+            keywords: ["fitness", "gym", "palakkad fitness hub"],
+            target: "#case-studies"
+        }
+
+    ];
+
+
+    /* =========================================
+       PERFORM SEARCH
+    ========================================= */
+
     function performSearch() {
 
-        const query = searchInput.value.trim();
+        const query = searchInput.value.trim().toLowerCase();
 
         if (!query) {
             searchInput.focus();
             return;
         }
 
-        // Search page
-        const searchURL = "search.html?q=" + encodeURIComponent(query);
 
-        window.location.href = searchURL;
+        let foundTarget = null;
+
+
+        // Find matching target
+        for (const item of searchTargets) {
+
+            const matched = item.keywords.some(function (keyword) {
+
+                return query.includes(keyword) || keyword.includes(query);
+
+            });
+
+            if (matched) {
+
+                foundTarget = item.target;
+                break;
+
+            }
+
+        }
+
+
+        /* =========================================
+           CLOSE MODAL
+        ========================================= */
+
+        if (foundTarget) {
+
+            const modalElement = document.getElementById("searchModal");
+
+            const modalInstance =
+                bootstrap.Modal.getInstance(modalElement);
+
+            if (modalInstance) {
+                modalInstance.hide();
+            }
+
+
+            /* =========================================
+               SCROLL TO SECTION
+            ========================================= */
+
+            setTimeout(function () {
+
+                const targetElement =
+                    document.querySelector(foundTarget);
+
+                if (targetElement) {
+
+                    targetElement.scrollIntoView({
+                        behavior: "smooth",
+                        block: "start"
+                    });
+
+                }
+
+            }, 400);
+
+
+        } else {
+
+            // No result
+            searchInput.value = "";
+
+            searchInput.placeholder =
+                "No results found. Try SEO, services, contact...";
+
+            searchInput.focus();
+
+        }
+
     }
 
-    // Search button
+
+    /* =========================================
+       SEARCH BUTTON
+    ========================================= */
+
     searchBtn.addEventListener("click", function (e) {
+
         e.preventDefault();
+
         performSearch();
+
     });
 
-    // Enter key
+
+    /* =========================================
+       ENTER KEY
+    ========================================= */
+
     searchInput.addEventListener("keydown", function (e) {
+
         if (e.key === "Enter") {
+
             e.preventDefault();
+
             performSearch();
+
         }
+
     });
 
-    // Automatically focus search input when modal opens
+
+    /* =========================================
+       MODAL OPEN
+    ========================================= */
+
     if (searchModal) {
 
         searchModal.addEventListener("shown.bs.modal", function () {
+
             setTimeout(function () {
+
                 searchInput.focus();
+
             }, 100);
+
         });
 
+
+        /* =========================================
+           MODAL CLOSE
+        ========================================= */
+
         searchModal.addEventListener("hidden.bs.modal", function () {
+
             searchInput.value = "";
+
+            searchInput.placeholder =
+                "Search anything...";
+
         });
 
     }
