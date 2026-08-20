@@ -124,108 +124,296 @@
     
 })(jQuery);
 
-const searchItems = [
-    { keywords: ["home"], target: "#header-carousel" },
+/* =========================================================
+   ANK WEBSTUDIO SEARCH MODAL
+========================================================= */
 
-    { keywords: ["about", "about us"], target: "#about" },
+document.addEventListener("DOMContentLoaded", function () {
 
-    { keywords: ["service", "services", "website", "web design",
-                 "development", "seo", "responsive"],
-      target: "#services" },
+    const searchInput = document.getElementById("searchInput");
+    const searchBtn = document.getElementById("searchBtn");
+    const searchModalElement = document.getElementById("searchModal");
 
-    { keywords: ["portfolio", "projects", "fitness",
-                 "gym", "coconut", "resort",
-                 "aamiz", "clothz", "techmaster",
-                 "education", "learning"],
-      target: "#projects" },
+    // Stop if search elements don't exist on this page
+    if (!searchInput || !searchBtn || !searchModalElement) {
+        return;
+    }
 
-    { keywords: ["technology", "technologies", "html",
-                 "css", "javascript", "bootstrap",
-                 "react", "wordpress", "shopify"],
-      target: "#technologies" },
 
-    { keywords: ["contact", "phone", "email", "quote"],
-      target: "#contact" },
-    
-    {
-    keywords: [
-        "faq",
-        "question",
-        "questions",
-        "help",
-        "support",
-        "price",
-        "pricing",
-        "cost",
-        "website cost",
-        "business website cost",
-        "redesign",
-        "website redesign",
-        "domain",
-        "hosting",
-        "ssl",
-        "maintenance",
-        "update",
-        "seo",
-        "mobile",
-        "responsive",
-        "ecommerce",
-        "delivery",
-        "time",
-        "how long",
-        "support after launch"
-    ],
-    target: "#faq"
-}
-];
+    /* =========================================
+       SEARCH DATA
+    ========================================= */
 
-function performSearch() {
+    const searchItems = [
 
-    const value = document
-        .getElementById("searchInput")
-        .value
-        .trim()
-        .toLowerCase();
+        {
+            keywords: [
+                "home",
+                "homepage",
+                "main",
+                "ank webstudio"
+            ],
+            target: "#header-carousel"
+        },
 
-    if (!value) return;
 
-    const result = searchItems.find(item =>
-        item.keywords.some(keyword =>
-            keyword.includes(value) || value.includes(keyword)
-        )
-    );
+        {
+            keywords: [
+                "about",
+                "about us",
+                "company",
+                "founder"
+            ],
+            target: "#about"
+        },
 
-    // Close search modal
-    const modal = bootstrap.Modal.getInstance(
-        document.getElementById("searchModal")
-    );
 
-    if (modal) modal.hide();
+        {
+            keywords: [
+                "service",
+                "services",
+                "web design",
+                "website",
+                "website development",
+                "development",
+                "responsive",
+                "redesign",
+                "seo",
+                "geo",
+                "aeo",
+                "performance"
+            ],
+            target: "#services"
+        },
 
-    // If a match is found, go to that section.
-    // Otherwise, go to FAQ.
-    const target = result ? result.target : "#faq";
 
-    setTimeout(() => {
+        {
+            keywords: [
+                "portfolio",
+                "projects",
+                "case study",
+                "case studies",
+                "fitness",
+                "gym",
+                "coconut",
+                "resort",
+                "aamiz",
+                "clothz",
+                "techmaster",
+                "education",
+                "learning"
+            ],
+            target: "#case-studies"
+        },
 
-        document.querySelector(target).scrollIntoView({
-            behavior: "smooth",
-            block: "start"
+
+        {
+            keywords: [
+                "technology",
+                "technologies",
+                "html",
+                "css",
+                "javascript",
+                "bootstrap",
+                "react",
+                "wordpress",
+                "shopify"
+            ],
+            target: "#technologies"
+        },
+
+
+        {
+            keywords: [
+                "contact",
+                "phone",
+                "email",
+                "quote",
+                "enquiry",
+                "enquiry"
+            ],
+            target: "#contact"
+        },
+
+
+        {
+            keywords: [
+                "faq",
+                "question",
+                "questions",
+                "help",
+                "support",
+                "price",
+                "pricing",
+                "cost",
+                "website cost",
+                "business website cost",
+                "domain",
+                "hosting",
+                "ssl",
+                "maintenance",
+                "update",
+                "mobile",
+                "ecommerce",
+                "delivery",
+                "time",
+                "how long"
+            ],
+            target: "#faq"
+        }
+
+    ];
+
+
+    /* =========================================
+       SEARCH FUNCTION
+    ========================================= */
+
+    function performSearch() {
+
+        const value = searchInput.value
+            .trim()
+            .toLowerCase();
+
+
+        // Don't search empty input
+        if (!value) {
+
+            searchInput.focus();
+
+            return;
+
+        }
+
+
+        /* Find matching section */
+
+        const result = searchItems.find(function (item) {
+
+            return item.keywords.some(function (keyword) {
+
+                return (
+                    keyword.toLowerCase().includes(value) ||
+                    value.includes(keyword.toLowerCase())
+                );
+
+            });
+
         });
 
-    }, 300);
-}
 
-document.getElementById("searchBtn")
-.addEventListener("click", performSearch);
+        /*
+         * If nothing matches,
+         * show FAQ instead of doing nothing.
+         */
 
-document.getElementById("searchInput")
-.addEventListener("keydown", function(e){
+        const targetSelector = result
+            ? result.target
+            : "#faq";
 
-    if(e.key === "Enter"){
-        e.preventDefault();
-        performSearch();
+
+        const targetElement =
+            document.querySelector(targetSelector);
+
+
+        /* =========================================
+           CLOSE MODAL
+        ========================================= */
+
+        const modalInstance =
+            bootstrap.Modal.getInstance(searchModalElement);
+
+
+        if (modalInstance) {
+
+            modalInstance.hide();
+
+        }
+
+
+        /* =========================================
+           SCROLL TO RESULT
+        ========================================= */
+
+        if (targetElement) {
+
+            setTimeout(function () {
+
+                targetElement.scrollIntoView({
+
+                    behavior: "smooth",
+
+                    block: "start"
+
+                });
+
+            }, 400);
+
+        }
+
     }
+
+
+    /* =========================================
+       SEARCH BUTTON
+    ========================================= */
+
+    searchBtn.addEventListener("click", function (event) {
+
+        event.preventDefault();
+
+        performSearch();
+
+    });
+
+
+    /* =========================================
+       ENTER KEY
+    ========================================= */
+
+    searchInput.addEventListener("keydown", function (event) {
+
+        if (event.key === "Enter") {
+
+            event.preventDefault();
+
+            performSearch();
+
+        }
+
+    });
+
+
+    /* =========================================
+       FOCUS INPUT WHEN MODAL OPENS
+    ========================================= */
+
+    searchModalElement.addEventListener(
+        "shown.bs.modal",
+        function () {
+
+            setTimeout(function () {
+
+                searchInput.focus();
+
+            }, 150);
+
+        }
+    );
+
+
+    /* =========================================
+       CLEAR SEARCH WHEN MODAL CLOSES
+    ========================================= */
+
+    searchModalElement.addEventListener(
+        "hidden.bs.modal",
+        function () {
+
+            searchInput.value = "";
+
+        }
+    );
 
 });
 
