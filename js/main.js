@@ -572,10 +572,10 @@ document.addEventListener("DOMContentLoaded", function () {
 
         link.addEventListener("click", function () {
 
-            // Only close on mobile
             if (window.innerWidth < 992) {
 
-                const collapse = bootstrap.Collapse.getOrCreateInstance(navbar);
+                const collapse =
+                    bootstrap.Collapse.getOrCreateInstance(navbar);
 
                 collapse.hide();
             }
@@ -585,4 +585,3 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
 });
-
