@@ -554,3 +554,35 @@ document.addEventListener("DOMContentLoaded", function () {
 
 });
 
+/* =========================================
+   CLOSE MOBILE NAVBAR AFTER CLICK
+========================================= */
+
+document.addEventListener("DOMContentLoaded", function () {
+
+    const navbar = document.getElementById("navbarCollapse");
+
+    if (!navbar) return;
+
+    const navLinks = navbar.querySelectorAll(
+        "a.nav-link:not(.dropdown-toggle), .dropdown-menu .dropdown-item"
+    );
+
+    navLinks.forEach(function (link) {
+
+        link.addEventListener("click", function () {
+
+            // Only close on mobile
+            if (window.innerWidth < 992) {
+
+                const collapse = bootstrap.Collapse.getOrCreateInstance(navbar);
+
+                collapse.hide();
+            }
+
+        });
+
+    });
+
+});
+
