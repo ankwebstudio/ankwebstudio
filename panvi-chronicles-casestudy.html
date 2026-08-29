@@ -2423,6 +2423,321 @@ p {
 
 }
 
+       /* =====================================================
+   WEBSITE SCREENSHOT SHOWCASE
+===================================================== */
+
+.website-shot-large {
+
+    background:
+        var(--white);
+
+    border:
+        1px solid var(--border);
+
+    border-radius:
+        26px;
+
+    overflow:
+        hidden;
+
+    box-shadow:
+        var(--shadow-soft);
+
+    transition:
+        0.35s ease;
+
+}
+
+.website-shot-large:hover {
+
+    transform:
+        translateY(-5px);
+
+    box-shadow:
+        var(--shadow);
+
+}
+
+
+/* SCREENSHOT IMAGE */
+
+.website-shot-image {
+
+    background:
+        #f2f4f2;
+
+    overflow:
+        hidden;
+
+}
+
+.website-shot-image img {
+
+    width:
+        100%;
+
+    height:
+        auto;
+
+    display:
+        block;
+
+    transition:
+        transform 0.6s ease;
+
+}
+
+.website-shot-large:hover
+.website-shot-image img {
+
+    transform:
+        scale(1.015);
+
+}
+
+
+/* SCREENSHOT INFORMATION */
+
+.website-shot-info {
+
+    display:
+        flex;
+
+    align-items:
+        flex-start;
+
+    gap:
+        25px;
+
+    padding:
+        28px 32px;
+
+    border-top:
+        1px solid var(--border);
+
+}
+
+.website-shot-info > span {
+
+    font-family:
+        "Playfair Display",
+        serif;
+
+    font-size:
+        18px;
+
+    color:
+        var(--gold);
+
+    min-width:
+        35px;
+
+}
+
+.website-shot-info h3 {
+
+    font-family:
+        "Playfair Display",
+        serif;
+
+    font-size:
+        25px;
+
+    color:
+        var(--ink);
+
+    margin:
+        0 0 7px;
+
+}
+
+.website-shot-info p {
+
+    margin:
+        0;
+
+    color:
+        var(--text);
+
+    font-size:
+        14px;
+
+    max-width:
+        700px;
+
+}
+
+
+/* =====================================================
+   BRAND SHOWCASE
+===================================================== */
+
+.brand-showcase {
+
+    display:
+        grid;
+
+    grid-template-columns:
+        1fr 1fr;
+
+    align-items:
+        center;
+
+    gap:
+        50px;
+
+    margin-top:
+        80px;
+
+    padding:
+        45px;
+
+    background:
+        var(--cream);
+
+    border:
+        1px solid var(--border);
+
+    border-radius:
+        26px;
+
+}
+
+.brand-image {
+
+    background:
+        var(--white);
+
+    border-radius:
+        20px;
+
+    padding:
+        45px;
+
+    display:
+        flex;
+
+    align-items:
+        center;
+
+    justify-content:
+        center;
+
+    min-height:
+        280px;
+
+}
+
+.brand-image img {
+
+    width:
+        100%;
+
+    max-width:
+        420px;
+
+    height:
+        auto;
+
+    display:
+        block;
+
+}
+
+.brand-content h3 {
+
+    font-family:
+        "Playfair Display",
+        serif;
+
+    color:
+        var(--ink);
+
+    font-size:
+        35px;
+
+    margin-bottom:
+        15px;
+
+}
+
+.brand-content p {
+
+    max-width:
+        500px;
+
+    color:
+        var(--text);
+
+}
+
+
+/* =====================================================
+   MOBILE
+===================================================== */
+
+@media (max-width: 767px) {
+
+    .website-shot-info {
+
+        padding:
+            22px;
+
+        gap:
+            15px;
+
+    }
+
+    .website-shot-info h3 {
+
+        font-size:
+            21px;
+
+    }
+
+    .website-shot-info p {
+
+        font-size:
+            13px;
+
+    }
+
+    .brand-showcase {
+
+        grid-template-columns:
+            1fr;
+
+        gap:
+            30px;
+
+        padding:
+            25px;
+
+        margin-top:
+            55px;
+
+    }
+
+    .brand-image {
+
+        min-height:
+            200px;
+
+        padding:
+            30px;
+
+    }
+
+    .brand-content h3 {
+
+        font-size:
+            29px;
+
+    }
+
+}
+
 </style>
 
 
@@ -3420,78 +3735,224 @@ p {
         </section>
 
 
-        <!-- =====================================================
-             SCREENSHOTS
-        ====================================================== -->
+       <!-- =====================================================
+     SCREENSHOTS
+====================================================== -->
 
-        <section class="case-section screenshots">
+<section class="case-section screenshots">
 
-            <div class="container">
+    <div class="container">
 
-                <div class="text-center mb-5">
+        <div class="text-center mb-5">
 
-                    <span class="section-eyebrow">
-                        Design Showcase
-                    </span>
+            <span class="section-eyebrow">
+                Design Showcase
+            </span>
 
-                    <h2 class="section-heading">
-                        Inside the Website
-                    </h2>
+            <h2 class="section-heading">
+                Inside the Website
+            </h2>
 
-                    <p class="section-description mx-auto">
+            <p class="section-description mx-auto">
 
-                        Explore the visual language and content presentation
-                        created for the Panvi Chronicles travel platform.
+                Explore the key sections of Panvi Chronicles,
+                from the immersive homepage to destination storytelling
+                and engaging travel content.
 
+            </p>
+
+        </div>
+
+
+        <!-- =================================================
+             SCREENSHOT 01 — HERO
+        ================================================== -->
+
+        <div class="website-shot-large mb-5">
+
+            <div class="website-shot-image">
+
+                <img
+                    src="img/panvi-hero.png"
+                    alt="Panvi Chronicles travel website hero section"
+                    loading="lazy">
+
+            </div>
+
+            <div class="website-shot-info">
+
+                <span>01</span>
+
+                <div>
+
+                    <h3>
+                        Immersive Hero Section
+                    </h3>
+
+                    <p>
+                        A visually engaging introduction designed to
+                        immediately establish the travel-focused identity
+                        of Panvi Chronicles.
                     </p>
-
-                </div>
-
-
-                <div class="row g-4">
-
-                    <div class="col-lg-6">
-
-                        <figure class="shot">
-
-                            <img src="img/panvi.png"
-                                 alt="Panvi Chronicles travel website desktop interface"
-                                 loading="lazy">
-
-                            <figcaption class="shot-caption">
-
-                                Travel Website Homepage
-
-                            </figcaption>
-
-                        </figure>
-
-                    </div>
-
-
-                    <div class="col-lg-6">
-
-                        <figure class="shot">
-
-                            <img src="img/panvi-logo.png"
-                                 alt="Panvi Chronicles travel brand identity"
-                                 loading="lazy">
-
-                            <figcaption class="shot-caption">
-
-                                Panvi Chronicles Brand Identity
-
-                            </figcaption>
-
-                        </figure>
-
-                    </div>
 
                 </div>
 
             </div>
 
-        </section>
+        </div>
+
+
+        <!-- =================================================
+             SCREENSHOT 02 — DESTINATIONS
+        ================================================== -->
+
+        <div class="website-shot-large mb-5">
+
+            <div class="website-shot-image">
+
+                <img
+                    src="img/panvi-destinations.png"
+                    alt="Panvi Chronicles destinations section"
+                    loading="lazy">
+
+            </div>
+
+            <div class="website-shot-info">
+
+                <span>02</span>
+
+                <div>
+
+                    <h3>
+                        Destination Exploration
+                    </h3>
+
+                    <p>
+                        A clean destination-focused layout created to
+                        present travel locations in an attractive and
+                        easy-to-explore format.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- =================================================
+             SCREENSHOT 03 — TRAVEL STORIES
+        ================================================== -->
+
+        <div class="website-shot-large mb-5">
+
+            <div class="website-shot-image">
+
+                <img
+                    src="img/panvi-stories.png"
+                    alt="Panvi Chronicles travel stories section"
+                    loading="lazy">
+
+            </div>
+
+            <div class="website-shot-info">
+
+                <span>03</span>
+
+                <div>
+
+                    <h3>
+                        Travel Stories
+                    </h3>
+
+                    <p>
+                        Content-driven sections designed to make travel
+                        stories visually appealing and encourage visitors
+                        to explore more destinations.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- =================================================
+             SCREENSHOT 04 — EXPERIENCE
+        ================================================== -->
+
+        <div class="website-shot-large mb-5">
+
+            <div class="website-shot-image">
+
+                <img
+                    src="img/panvi-experience.png"
+                    alt="Panvi Chronicles travel experience section"
+                    loading="lazy">
+
+            </div>
+
+            <div class="website-shot-info">
+
+                <span>04</span>
+
+                <div>
+
+                    <h3>
+                        Travel Experience
+                    </h3>
+
+                    <p>
+                        A structured content presentation that combines
+                        imagery, typography and whitespace to create a
+                        premium editorial experience.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- =================================================
+             BRAND IDENTITY
+        ================================================== -->
+
+        <div class="brand-showcase">
+
+            <div class="brand-image">
+
+                <img
+                    src="img/panvi-logo.png"
+                    alt="Panvi Chronicles travel brand identity"
+                    loading="lazy">
+
+            </div>
+
+            <div class="brand-content">
+
+                <span class="section-eyebrow">
+                    Brand Identity
+                </span>
+
+                <h3>
+                    Panvi Chronicles
+                </h3>
+
+                <p>
+                    A distinctive visual identity created to support
+                    the travel storytelling experience across the platform.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
 
 
         <!-- =====================================================
