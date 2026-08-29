@@ -1,0 +1,2708 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!-- =====================================================
+         BASIC META
+    ====================================================== -->
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>
+        CareNest Clinic Website Case Study | ANK WebStudio
+    </title>
+
+    <meta name="description"
+        content="Explore the CareNest Clinic website case study by ANK WebStudio — a modern, responsive healthcare website designed to build trust, showcase medical services, and simplify appointment enquiries.">
+
+    <meta name="keywords"
+        content="CareNest Clinic website, healthcare website design, clinic website design Kerala, medical website development, responsive clinic website, ANK WebStudio">
+
+    <meta name="author"
+        content="ANK WebStudio">
+
+    <meta name="robots"
+        content="index, follow">
+
+    <meta name="theme-color"
+        content="#0099cc">
+
+    <link rel="canonical"
+        href="https://ankwebstudio.in/carenest-casestudy.html">
+
+
+    <!-- =====================================================
+         OPEN GRAPH
+    ====================================================== -->
+
+    <meta property="og:type"
+        content="article">
+
+    <meta property="og:title"
+        content="CareNest Clinic Website Case Study | ANK WebStudio">
+
+    <meta property="og:description"
+        content="A modern healthcare website concept designed and developed by ANK WebStudio with a focus on trust, accessibility, responsive design and appointment-driven user experience.">
+
+    <meta property="og:url"
+        content="https://ankwebstudio.in/carenest-casestudy.html">
+
+    <meta property="og:site_name"
+        content="ANK WebStudio">
+
+    <meta property="og:image"
+        content="https://ankwebstudio.in/images/carenest-case-study.jpg">
+
+    <meta property="og:image:alt"
+        content="CareNest Clinic healthcare website designed by ANK WebStudio">
+
+
+    <!-- =====================================================
+         TWITTER CARD
+    ====================================================== -->
+
+    <meta name="twitter:card"
+        content="summary_large_image">
+
+    <meta name="twitter:title"
+        content="CareNest Clinic Website Case Study | ANK WebStudio">
+
+    <meta name="twitter:description"
+        content="Explore the CareNest Clinic healthcare website concept created by ANK WebStudio.">
+
+    <meta name="twitter:image"
+        content="https://ankwebstudio.in/images/carenest-case-study.jpg">
+
+
+    <!-- =====================================================
+         FAVICON
+    ====================================================== -->
+
+    <link rel="icon"
+        href="images/favicon.png">
+
+
+    <!-- =====================================================
+         GOOGLE FONTS
+    ====================================================== -->
+
+    <link rel="preconnect"
+        href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap"
+        rel="stylesheet">
+
+
+    <!-- =====================================================
+         BOOTSTRAP
+    ====================================================== -->
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+        rel="stylesheet">
+
+
+    <!-- =====================================================
+         BOOTSTRAP ICONS
+    ====================================================== -->
+
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
+
+    <!-- =====================================================
+         AOS
+    ====================================================== -->
+
+    <link rel="stylesheet"
+        href="https://unpkg.com/aos@2.3.4/dist/aos.css">
+
+
+    <!-- =====================================================
+         CUSTOM CSS
+    ====================================================== -->
+
+    <style>
+
+        /* =====================================================
+           ROOT
+        ====================================================== */
+
+        :root {
+
+            --ink: #1d2528;
+            --text: #566166;
+            --muted: #879197;
+
+            --cream: #f5f8f8;
+            --soft: #fbfcfc;
+            --white: #ffffff;
+
+            --line: #e3e9e9;
+
+            --brand: #0099cc;
+            --brand-dark: #087da3;
+
+            --green: #b3e6cc;
+
+            --shadow:
+                0 20px 60px rgba(25, 45, 52, 0.08);
+
+            --radius: 24px;
+
+        }
+
+
+        /* =====================================================
+           GLOBAL
+        ====================================================== */
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+
+            font-family: "DM Sans", sans-serif;
+
+            color: var(--text);
+
+            background:
+                var(--soft);
+
+            line-height: 1.7;
+
+        }
+
+        img {
+            max-width: 100%;
+            display: block;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        ::selection {
+            background: var(--brand);
+            color: #fff;
+        }
+
+
+        /* =====================================================
+           NAVBAR
+        ====================================================== */
+
+        .case-navbar {
+
+            position: sticky;
+
+            top: 0;
+
+            z-index: 1000;
+
+            background:
+                rgba(255,255,255,0.94);
+
+            backdrop-filter:
+                blur(14px);
+
+            border-bottom:
+                1px solid var(--line);
+
+        }
+
+        .case-navbar .container {
+
+            min-height: 78px;
+
+        }
+
+        .brand {
+
+            display: flex;
+
+            align-items: center;
+
+            gap: 12px;
+
+            color: var(--ink);
+
+            font-weight: 700;
+
+            letter-spacing: -0.3px;
+
+        }
+
+        .brand-logo {
+
+            width: 42px;
+            height: 42px;
+
+            object-fit: contain;
+
+        }
+
+        .brand span {
+
+            font-size: 17px;
+
+        }
+
+        .back-link {
+
+            color: var(--text);
+
+            font-size: 14px;
+
+            font-weight: 600;
+
+            transition: 0.3s;
+
+        }
+
+        .back-link:hover {
+            color: var(--brand);
+        }
+
+
+        /* =====================================================
+           HERO
+        ====================================================== */
+
+        .case-hero {
+
+            padding:
+                110px 0 90px;
+
+            background:
+
+                radial-gradient(
+                    circle at 90% 10%,
+                    rgba(0,153,204,0.10),
+                    transparent 32%
+                ),
+
+                linear-gradient(
+                    180deg,
+                    #ffffff,
+                    #f5f9f9
+                );
+
+            overflow: hidden;
+
+        }
+
+        .eyebrow {
+
+            display: inline-flex;
+
+            align-items: center;
+
+            gap: 8px;
+
+            padding:
+                8px 15px;
+
+            border-radius:
+                999px;
+
+            background:
+                rgba(0,153,204,0.09);
+
+            color:
+                var(--brand-dark);
+
+            font-size: 12px;
+
+            font-weight: 700;
+
+            letter-spacing:
+                1.3px;
+
+            text-transform:
+                uppercase;
+
+        }
+
+        .case-hero h1 {
+
+            margin-top: 25px;
+
+            font-family:
+                "Playfair Display",
+                serif;
+
+            color:
+                var(--ink);
+
+            font-size:
+                clamp(44px, 7vw, 82px);
+
+            line-height:
+                1.03;
+
+            letter-spacing:
+                -2px;
+
+        }
+
+        .case-hero h1 span {
+
+            color:
+                var(--brand);
+
+        }
+
+        .hero-description {
+
+            max-width: 680px;
+
+            margin-top: 25px;
+
+            font-size: 18px;
+
+            color: var(--text);
+
+        }
+
+        .hero-buttons {
+
+            display: flex;
+
+            flex-wrap: wrap;
+
+            gap: 12px;
+
+            margin-top: 35px;
+
+        }
+
+        .btn-brand {
+
+            display: inline-flex;
+
+            align-items: center;
+
+            justify-content: center;
+
+            gap: 9px;
+
+            padding:
+                13px 22px;
+
+            border-radius:
+                999px;
+
+            background:
+                var(--brand);
+
+            color: #fff;
+
+            font-weight: 600;
+
+            transition:
+                0.3s ease;
+
+        }
+
+        .btn-brand:hover {
+
+            background:
+                var(--brand-dark);
+
+            color: #fff;
+
+            transform:
+                translateY(-2px);
+
+        }
+
+        .btn-light-outline {
+
+            display: inline-flex;
+
+            align-items: center;
+
+            gap: 9px;
+
+            padding:
+                12px 22px;
+
+            border-radius:
+                999px;
+
+            border:
+                1px solid var(--line);
+
+            color:
+                var(--ink);
+
+            background:
+                #fff;
+
+            font-weight:
+                600;
+
+            transition:
+                0.3s ease;
+
+        }
+
+        .btn-light-outline:hover {
+
+            border-color:
+                var(--brand);
+
+            color:
+                var(--brand);
+
+        }
+
+
+        /* =====================================================
+           PROJECT META
+        ====================================================== */
+
+        .project-meta {
+
+            margin-top: 65px;
+
+            padding-top: 28px;
+
+            border-top:
+                1px solid var(--line);
+
+        }
+
+        .meta-item {
+
+            padding-right: 25px;
+
+            border-right:
+                1px solid var(--line);
+
+        }
+
+        .meta-item:last-child {
+            border-right: none;
+        }
+
+        .meta-label {
+
+            display: block;
+
+            margin-bottom: 5px;
+
+            color: var(--muted);
+
+            font-size: 11px;
+
+            font-weight: 700;
+
+            letter-spacing:
+                1.2px;
+
+            text-transform:
+                uppercase;
+
+        }
+
+        .meta-value {
+
+            color:
+                var(--ink);
+
+            font-size:
+                15px;
+
+            font-weight:
+                600;
+
+        }
+
+
+        /* =====================================================
+           HERO IMAGE
+        ====================================================== */
+
+        .hero-preview {
+
+            position: relative;
+
+            margin-top: 70px;
+
+            border-radius:
+                30px;
+
+            overflow: hidden;
+
+            background:
+                #eaf3f5;
+
+            box-shadow:
+                0 30px 90px
+                rgba(26,53,62,0.13);
+
+        }
+
+        .hero-preview img {
+
+            width: 100%;
+
+            height:
+                auto;
+
+            object-fit:
+                cover;
+
+        }
+
+
+        /* =====================================================
+           SECTIONS
+        ====================================================== */
+
+        .case-section {
+
+            padding:
+                110px 0;
+
+        }
+
+        .section-label {
+
+            color:
+                var(--brand);
+
+            font-size:
+                12px;
+
+            font-weight:
+                700;
+
+            letter-spacing:
+                1.5px;
+
+            text-transform:
+                uppercase;
+
+        }
+
+        .section-title {
+
+            margin-top:
+                12px;
+
+            font-family:
+                "Playfair Display",
+                serif;
+
+            color:
+                var(--ink);
+
+            font-size:
+                clamp(34px, 5vw, 54px);
+
+            line-height:
+                1.15;
+
+            letter-spacing:
+                -1px;
+
+        }
+
+        .section-intro {
+
+            max-width:
+                700px;
+
+            margin-top:
+                18px;
+
+            font-size:
+                17px;
+
+        }
+
+
+        /* =====================================================
+           OVERVIEW CARD
+        ====================================================== */
+
+        .overview-card {
+
+            padding:
+                42px;
+
+            border:
+                1px solid var(--line);
+
+            border-radius:
+                var(--radius);
+
+            background:
+                #fff;
+
+            box-shadow:
+                var(--shadow);
+
+        }
+
+        .overview-card h3 {
+
+            color:
+                var(--ink);
+
+            font-size:
+                24px;
+
+            margin-bottom:
+                18px;
+
+        }
+
+        .overview-card p {
+            margin-bottom: 0;
+        }
+
+
+        /* =====================================================
+           CHALLENGE
+        ====================================================== */
+
+        .challenge-section {
+
+            background:
+                var(--cream);
+
+        }
+
+        .challenge-list {
+
+            margin-top:
+                35px;
+
+            display:
+                grid;
+
+            gap:
+                15px;
+
+        }
+
+        .challenge-item {
+
+            display:
+                flex;
+
+            gap:
+                15px;
+
+            padding:
+                20px;
+
+            border:
+                1px solid var(--line);
+
+            border-radius:
+                16px;
+
+            background:
+                #fff;
+
+        }
+
+        .challenge-icon {
+
+            flex:
+                0 0 42px;
+
+            width:
+                42px;
+
+            height:
+                42px;
+
+            display:
+                grid;
+
+            place-items:
+                center;
+
+            border-radius:
+                50%;
+
+            background:
+                rgba(0,153,204,0.09);
+
+            color:
+                var(--brand);
+
+        }
+
+        .challenge-item h5 {
+
+            margin-bottom:
+                3px;
+
+            color:
+                var(--ink);
+
+            font-size:
+                16px;
+
+        }
+
+        .challenge-item p {
+
+            margin:
+                0;
+
+            font-size:
+                14px;
+
+        }
+
+
+        /* =====================================================
+           APPROACH
+        ====================================================== */
+
+        .approach-card {
+
+            height:
+                100%;
+
+            padding:
+                34px;
+
+            border-radius:
+                20px;
+
+            background:
+                #fff;
+
+            border:
+                1px solid var(--line);
+
+            transition:
+                0.3s ease;
+
+        }
+
+        .approach-card:hover {
+
+            transform:
+                translateY(-6px);
+
+            box-shadow:
+                var(--shadow);
+
+        }
+
+        .approach-number {
+
+            color:
+                var(--brand);
+
+            font-family:
+                "Playfair Display",
+                serif;
+
+            font-size:
+                42px;
+
+            line-height:
+                1;
+
+        }
+
+        .approach-card h4 {
+
+            margin-top:
+                25px;
+
+            color:
+                var(--ink);
+
+        }
+
+        .approach-card p {
+
+            margin-top:
+                12px;
+
+            font-size:
+                15px;
+
+        }
+
+
+        /* =====================================================
+           FEATURE GRID
+        ====================================================== */
+
+        .feature-card {
+
+            height:
+                100%;
+
+            padding:
+                30px;
+
+            border-radius:
+                20px;
+
+            background:
+                #fff;
+
+            border:
+                1px solid var(--line);
+
+            transition:
+                0.3s ease;
+
+        }
+
+        .feature-card:hover {
+
+            transform:
+                translateY(-5px);
+
+            box-shadow:
+                var(--shadow);
+
+        }
+
+        .feature-icon {
+
+            width:
+                52px;
+
+            height:
+                52px;
+
+            display:
+                grid;
+
+            place-items:
+                center;
+
+            border-radius:
+                15px;
+
+            background:
+                rgba(0,153,204,0.09);
+
+            color:
+                var(--brand);
+
+            font-size:
+                22px;
+
+        }
+
+        .feature-card h4 {
+
+            margin-top:
+                22px;
+
+            color:
+                var(--ink);
+
+            font-size:
+                19px;
+
+        }
+
+        .feature-card p {
+
+            margin-top:
+                9px;
+
+            font-size:
+                14px;
+
+        }
+
+
+        /* =====================================================
+           DESIGN SYSTEM
+        ====================================================== */
+
+        .design-section {
+
+            background:
+                var(--ink);
+
+            color:
+                #d8e2e4;
+
+        }
+
+        .design-section .section-title {
+
+            color:
+                #fff;
+
+        }
+
+        .design-section .section-label {
+
+            color:
+                var(--green);
+
+        }
+
+        .design-box {
+
+            padding:
+                35px;
+
+            height:
+                100%;
+
+            border:
+                1px solid rgba(255,255,255,0.10);
+
+            border-radius:
+                20px;
+
+            background:
+                rgba(255,255,255,0.035);
+
+        }
+
+        .design-box h4 {
+
+            color:
+                #fff;
+
+            margin-bottom:
+                12px;
+
+        }
+
+        .design-box p {
+
+            margin:
+                0;
+
+            color:
+                #b9c7ca;
+
+        }
+
+
+        /* =====================================================
+           TECH STACK
+        ====================================================== */
+
+        .tech-pill {
+
+            display:
+                inline-flex;
+
+            align-items:
+                center;
+
+            gap:
+                8px;
+
+            padding:
+                10px 16px;
+
+            margin:
+                5px;
+
+            border:
+                1px solid var(--line);
+
+            border-radius:
+                999px;
+
+            background:
+                #fff;
+
+            color:
+                var(--ink);
+
+            font-size:
+                14px;
+
+            font-weight:
+                600;
+
+        }
+
+        .tech-pill i {
+
+            color:
+                var(--brand);
+
+        }
+
+
+        /* =====================================================
+           SEO SECTION
+        ====================================================== */
+
+        .seo-card {
+
+            padding:
+                38px;
+
+            border-radius:
+                22px;
+
+            background:
+                #fff;
+
+            border:
+                1px solid var(--line);
+
+            box-shadow:
+                var(--shadow);
+
+        }
+
+        .seo-card h4 {
+
+            color:
+                var(--ink);
+
+        }
+
+        .seo-list {
+
+            margin:
+                25px 0 0;
+
+            padding:
+                0;
+
+            list-style:
+                none;
+
+        }
+
+        .seo-list li {
+
+            display:
+                flex;
+
+            gap:
+                10px;
+
+            margin-bottom:
+                13px;
+
+            font-size:
+                15px;
+
+        }
+
+        .seo-list i {
+
+            color:
+                var(--brand);
+
+            margin-top:
+                4px;
+
+        }
+
+
+        /* =====================================================
+           RESULT
+        ====================================================== */
+
+        .result-section {
+
+            background:
+                #f1f7f7;
+
+        }
+
+        .result-number {
+
+            font-family:
+                "Playfair Display",
+                serif;
+
+            font-size:
+                58px;
+
+            color:
+                var(--brand);
+
+            line-height:
+                1;
+
+        }
+
+        .result-card {
+
+            padding:
+                35px;
+
+            height:
+                100%;
+
+            background:
+                #fff;
+
+            border-radius:
+                20px;
+
+            border:
+                1px solid var(--line);
+
+        }
+
+        .result-card h4 {
+
+            margin-top:
+                18px;
+
+            color:
+                var(--ink);
+
+        }
+
+
+        /* =====================================================
+           CTA
+        ====================================================== */
+
+        .final-cta {
+
+            padding:
+                110px 0;
+
+            background:
+                linear-gradient(
+                    135deg,
+                    #eef8fa,
+                    #ffffff
+                );
+
+            text-align:
+                center;
+
+        }
+
+        .final-cta h2 {
+
+            max-width:
+                760px;
+
+            margin:
+                auto;
+
+            font-family:
+                "Playfair Display",
+                serif;
+
+            color:
+                var(--ink);
+
+            font-size:
+                clamp(38px, 5vw, 60px);
+
+            line-height:
+                1.12;
+
+        }
+
+        .final-cta p {
+
+            max-width:
+                620px;
+
+            margin:
+                20px auto 30px;
+
+        }
+
+
+        /* =====================================================
+           FOOTER
+        ====================================================== */
+
+        footer {
+
+            padding:
+                35px 0;
+
+            background:
+                #171e20;
+
+            color:
+                #9daaad;
+
+        }
+
+        .footer-brand {
+
+            color:
+                #fff;
+
+            font-weight:
+                700;
+
+        }
+
+        .footer-link {
+
+            color:
+                #b9c4c7;
+
+            transition:
+                0.3s;
+
+        }
+
+        .footer-link:hover {
+
+            color:
+                var(--green);
+
+        }
+
+
+        /* =====================================================
+           RESPONSIVE
+        ====================================================== */
+
+        @media (max-width: 991px) {
+
+            .case-hero {
+                padding:
+                    80px 0 70px;
+            }
+
+            .project-meta {
+                gap: 25px;
+            }
+
+            .meta-item {
+                border-right: none;
+            }
+
+            .case-section {
+                padding:
+                    80px 0;
+            }
+
+        }
+
+        @media (max-width: 575px) {
+
+            .case-navbar .container {
+                min-height:
+                    68px;
+            }
+
+            .brand span {
+                font-size:
+                    15px;
+            }
+
+            .brand-logo {
+                width:
+                    36px;
+
+                height:
+                    36px;
+            }
+
+            .case-hero h1 {
+                letter-spacing:
+                    -1px;
+            }
+
+            .hero-description {
+                font-size:
+                    16px;
+            }
+
+            .overview-card {
+                padding:
+                    27px;
+            }
+
+            .hero-preview {
+                margin-top:
+                    45px;
+            }
+
+            .project-meta {
+                margin-top:
+                    45px;
+            }
+
+            .design-box,
+            .feature-card,
+            .approach-card,
+            .result-card,
+            .seo-card {
+                padding:
+                    25px;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+<!-- =====================================================
+     NAVBAR
+====================================================== -->
+
+<nav class="case-navbar">
+
+    <div class="container d-flex align-items-center justify-content-between">
+
+        <a href="index.html"
+            class="brand">
+
+            <img src="images/ank-logo.png"
+                alt="ANK WebStudio Logo"
+                class="brand-logo">
+
+            <span>
+                ANK WebStudio
+            </span>
+
+        </a>
+
+
+        <a href="index.html#portfolio"
+            class="back-link">
+
+            <i class="bi bi-arrow-left me-2"></i>
+
+            Back to Case Studies
+
+        </a>
+
+    </div>
+
+</nav>
+
+
+<!-- =====================================================
+     HERO
+====================================================== -->
+
+<header class="case-hero">
+
+    <div class="container">
+
+        <div class="row align-items-center">
+
+            <div class="col-lg-9"
+                data-aos="fade-up">
+
+                <span class="eyebrow">
+
+                    <i class="bi bi-hospital"></i>
+
+                    Healthcare Website Design
+
+                </span>
+
+                <h1>
+
+                    CareNest
+                    <span>Clinic.</span>
+
+                </h1>
+
+                <p class="hero-description">
+
+                    A modern healthcare website concept designed to
+                    communicate trust, simplify patient interactions,
+                    and create a professional digital presence for
+                    a family-focused clinic.
+
+                </p>
+
+                <div class="hero-buttons">
+
+                    <a href="carenest/index.html"
+                        class="btn-brand"
+                        target="_blank">
+
+                        View Live Website
+
+                        <i class="bi bi-arrow-up-right"></i>
+
+                    </a>
+
+                    <a href="#overview"
+                        class="btn-light-outline">
+
+                        Explore Case Study
+
+                        <i class="bi bi-arrow-down"></i>
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- Project Meta -->
+
+        <div class="row project-meta g-4">
+
+            <div class="col-6 col-lg-3">
+
+                <div class="meta-item">
+
+                    <span class="meta-label">
+                        Project
+                    </span>
+
+                    <span class="meta-value">
+                        CareNest Clinic
+                    </span>
+
+                </div>
+
+            </div>
+
+
+            <div class="col-6 col-lg-3">
+
+                <div class="meta-item">
+
+                    <span class="meta-label">
+                        Industry
+                    </span>
+
+                    <span class="meta-value">
+                        Healthcare
+                    </span>
+
+                </div>
+
+            </div>
+
+
+            <div class="col-6 col-lg-3">
+
+                <div class="meta-item">
+
+                    <span class="meta-label">
+                        Project Type
+                    </span>
+
+                    <span class="meta-value">
+                        Website Design
+                    </span>
+
+                </div>
+
+            </div>
+
+
+            <div class="col-6 col-lg-3">
+
+                <div class="meta-item">
+
+                    <span class="meta-label">
+                        Developed By
+                    </span>
+
+                    <span class="meta-value">
+                        ANK WebStudio
+                    </span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- Website Preview -->
+
+        <div class="hero-preview"
+            data-aos="fade-up"
+            data-aos-delay="150">
+
+            <img src="images/carenest-case-study.jpg"
+                alt="CareNest Clinic website homepage designed by ANK WebStudio"
+                loading="eager">
+
+        </div>
+
+    </div>
+
+</header>
+
+
+<!-- =====================================================
+     PROJECT OVERVIEW
+====================================================== -->
+
+<section id="overview"
+    class="case-section">
+
+    <div class="container">
+
+        <div class="row g-5 align-items-center">
+
+            <div class="col-lg-5"
+                data-aos="fade-right">
+
+                <span class="section-label">
+                    01 — Project Overview
+                </span>
+
+                <h2 class="section-title">
+                    Designing a healthcare experience built around trust.
+                </h2>
+
+            </div>
+
+
+            <div class="col-lg-7"
+                data-aos="fade-left">
+
+                <div class="overview-card">
+
+                    <h3>
+                        About the Project
+                    </h3>
+
+                    <p>
+
+                        CareNest Clinic is a healthcare website concept
+                        created by ANK WebStudio to demonstrate how a
+                        modern clinic can present its services,
+                        doctor information, consultation timings,
+                        appointment options and patient resources
+                        through a clear digital experience.
+
+                    </p>
+
+                    <p class="mt-3">
+
+                        The design focuses on simplicity, accessibility
+                        and trust. Important information is organized
+                        into easy-to-scan sections so visitors can
+                        quickly understand the clinic and take action.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     CHALLENGE
+====================================================== -->
+
+<section class="case-section challenge-section">
+
+    <div class="container">
+
+        <div class="row">
+
+            <div class="col-lg-6"
+                data-aos="fade-up">
+
+                <span class="section-label">
+                    02 — The Challenge
+                </span>
+
+                <h2 class="section-title">
+                    Turning healthcare information into a simple experience.
+                </h2>
+
+                <p class="section-intro">
+
+                    Healthcare websites need to communicate a lot of
+                    information without overwhelming visitors.
+                    The concept was designed around this challenge.
+
+                </p>
+
+            </div>
+
+            <div class="col-lg-6">
+
+                <div class="challenge-list">
+
+                    <div class="challenge-item"
+                        data-aos="fade-up">
+
+                        <div class="challenge-icon">
+                            <i class="bi bi-shield-check"></i>
+                        </div>
+
+                        <div>
+
+                            <h5>
+                                Build Trust
+                            </h5>
+
+                            <p>
+                                Create a professional visual identity
+                                that feels reliable and approachable.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="challenge-item"
+                        data-aos="fade-up"
+                        data-aos-delay="100">
+
+                        <div class="challenge-icon">
+                            <i class="bi bi-grid"></i>
+                        </div>
+
+                        <div>
+
+                            <h5>
+                                Organize Information
+                            </h5>
+
+                            <p>
+                                Present services, timings, doctor
+                                information and FAQs in a logical structure.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="challenge-item"
+                        data-aos="fade-up"
+                        data-aos-delay="200">
+
+                        <div class="challenge-icon">
+                            <i class="bi bi-phone"></i>
+                        </div>
+
+                        <div>
+
+                            <h5>
+                                Mobile Accessibility
+                            </h5>
+
+                            <p>
+                                Make essential healthcare information
+                                easy to access on mobile devices.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="challenge-item"
+                        data-aos="fade-up"
+                        data-aos-delay="300">
+
+                        <div class="challenge-icon">
+                            <i class="bi bi-calendar-check"></i>
+                        </div>
+
+                        <div>
+
+                            <h5>
+                                Encourage Enquiries
+                            </h5>
+
+                            <p>
+                                Keep appointment, call and WhatsApp
+                                actions visible throughout the experience.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     APPROACH
+====================================================== -->
+
+<section class="case-section">
+
+    <div class="container">
+
+        <div class="text-center mb-5"
+            data-aos="fade-up">
+
+            <span class="section-label">
+                03 — Our Approach
+            </span>
+
+            <h2 class="section-title">
+                From information to interaction.
+            </h2>
+
+            <p class="section-intro mx-auto">
+
+                Every section was planned around the questions a patient
+                is likely to have before contacting a clinic.
+
+            </p>
+
+        </div>
+
+
+        <div class="row g-4">
+
+            <div class="col-lg-3 col-md-6">
+
+                <div class="approach-card"
+                    data-aos="fade-up">
+
+                    <div class="approach-number">
+                        01
+                    </div>
+
+                    <h4>
+                        Discover
+                    </h4>
+
+                    <p>
+                        Identify the essential information patients
+                        need before visiting the clinic.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="col-lg-3 col-md-6">
+
+                <div class="approach-card"
+                    data-aos="fade-up"
+                    data-aos-delay="100">
+
+                    <div class="approach-number">
+                        02
+                    </div>
+
+                    <h4>
+                        Structure
+                    </h4>
+
+                    <p>
+                        Organize content into clear sections with
+                        simple navigation and hierarchy.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="col-lg-3 col-md-6">
+
+                <div class="approach-card"
+                    data-aos="fade-up"
+                    data-aos-delay="200">
+
+                    <div class="approach-number">
+                        03
+                    </div>
+
+                    <h4>
+                        Design
+                    </h4>
+
+                    <p>
+                        Create a clean visual system that communicates
+                        professionalism and comfort.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="col-lg-3 col-md-6">
+
+                <div class="approach-card"
+                    data-aos="fade-up"
+                    data-aos-delay="300">
+
+                    <div class="approach-number">
+                        04
+                    </div>
+
+                    <h4>
+                        Develop
+                    </h4>
+
+                    <p>
+                        Build a responsive interface optimized for
+                        desktop, tablet and mobile screens.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     FEATURES
+====================================================== -->
+
+<section class="case-section challenge-section">
+
+    <div class="container">
+
+        <div class="text-center mb-5">
+
+            <span class="section-label">
+                04 — Key Features
+            </span>
+
+            <h2 class="section-title">
+                Designed around the patient journey.
+            </h2>
+
+            <p class="section-intro mx-auto">
+
+                The website brings together the most important
+                healthcare information and actions in one place.
+
+            </p>
+
+        </div>
+
+
+        <div class="row g-4">
+
+            <!-- Feature 1 -->
+
+            <div class="col-lg-4 col-md-6">
+
+                <div class="feature-card"
+                    data-aos="fade-up">
+
+                    <div class="feature-icon">
+                        <i class="bi bi-clock-history"></i>
+                    </div>
+
+                    <h4>
+                        Doctor Availability
+                    </h4>
+
+                    <p>
+                        Consultation availability and daily schedule
+                        are presented clearly for quick reference.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- Feature 2 -->
+
+            <div class="col-lg-4 col-md-6">
+
+                <div class="feature-card"
+                    data-aos="fade-up"
+                    data-aos-delay="100">
+
+                    <div class="feature-icon">
+                        <i class="bi bi-person-badge"></i>
+                    </div>
+
+                    <h4>
+                        Doctor Profile
+                    </h4>
+
+                    <p>
+                        A dedicated doctor section highlights
+                        qualifications, experience and areas of expertise.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- Feature 3 -->
+
+            <div class="col-lg-4 col-md-6">
+
+                <div class="feature-card"
+                    data-aos="fade-up"
+                    data-aos-delay="200">
+
+                    <div class="feature-icon">
+                        <i class="bi bi-heart-pulse"></i>
+                    </div>
+
+                    <h4>
+                        Medical Services
+                    </h4>
+
+                    <p>
+                        Core healthcare services are displayed in
+                        easy-to-understand service cards.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- Feature 4 -->
+
+            <div class="col-lg-4 col-md-6">
+
+                <div class="feature-card"
+                    data-aos="fade-up">
+
+                    <div class="feature-icon">
+                        <i class="bi bi-calendar-check"></i>
+                    </div>
+
+                    <h4>
+                        Appointment Actions
+                    </h4>
+
+                    <p>
+                        Call, WhatsApp and appointment actions are
+                        strategically placed across the website.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- Feature 5 -->
+
+            <div class="col-lg-4 col-md-6">
+
+                <div class="feature-card"
+                    data-aos="fade-up"
+                    data-aos-delay="100">
+
+                    <div class="feature-icon">
+                        <i class="bi bi-question-circle"></i>
+                    </div>
+
+                    <h4>
+                        FAQ Section
+                    </h4>
+
+                    <p>
+                        Common patient questions are answered through
+                        an easy-to-use accordion interface.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- Feature 6 -->
+
+            <div class="col-lg-4 col-md-6">
+
+                <div class="feature-card"
+                    data-aos="fade-up"
+                    data-aos-delay="200">
+
+                    <div class="feature-icon">
+                        <i class="bi bi-images"></i>
+                    </div>
+
+                    <h4>
+                        Clinic Gallery
+                    </h4>
+
+                    <p>
+                        A visual gallery gives visitors a preview of
+                        the clinic environment and facilities.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- Feature 7 -->
+
+            <div class="col-lg-4 col-md-6">
+
+                <div class="feature-card"
+                    data-aos="fade-up">
+
+                    <div class="feature-icon">
+                        <i class="bi bi-sign-stop"></i>
+                    </div>
+
+                    <h4>
+                        Emergency Information
+                    </h4>
+
+                    <p>
+                        Emergency guidance is clearly separated from
+                        standard appointment information.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- Feature 8 -->
+
+            <div class="col-lg-4 col-md-6">
+
+                <div class="feature-card"
+                    data-aos="fade-up"
+                    data-aos-delay="100">
+
+                    <div class="feature-icon">
+                        <i class="bi bi-people"></i>
+                    </div>
+
+                    <h4>
+                        Patient Journey
+                    </h4>
+
+                    <p>
+                        A simple four-step journey explains what patients
+                        can expect from booking to follow-up care.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- Feature 9 -->
+
+            <div class="col-lg-4 col-md-6">
+
+                <div class="feature-card"
+                    data-aos="fade-up"
+                    data-aos-delay="200">
+
+                    <div class="feature-icon">
+                        <i class="bi bi-phone"></i>
+                    </div>
+
+                    <h4>
+                        Responsive Design
+                    </h4>
+
+                    <p>
+                        The interface adapts to different screen sizes
+                        for a consistent browsing experience.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     DESIGN DIRECTION
+====================================================== -->
+
+<section class="case-section design-section">
+
+    <div class="container">
+
+        <div class="row g-5">
+
+            <div class="col-lg-5">
+
+                <span class="section-label">
+                    05 — Design Direction
+                </span>
+
+                <h2 class="section-title">
+                    Calm, professional and approachable.
+                </h2>
+
+                <p class="section-intro">
+
+                    The visual language was intentionally kept clean
+                    and reassuring to match the expectations of a
+                    healthcare website.
+
+                </p>
+
+            </div>
+
+
+            <div class="col-lg-7">
+
+                <div class="row g-4">
+
+                    <div class="col-md-6">
+
+                        <div class="design-box">
+
+                            <h4>
+                                Clean Layout
+                            </h4>
+
+                            <p>
+                                Generous spacing and clear content
+                                hierarchy make information easier to scan.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="col-md-6">
+
+                        <div class="design-box">
+
+                            <h4>
+                                Healthcare Palette
+                            </h4>
+
+                            <p>
+                                Soft tones and a restrained blue accent
+                                create a trustworthy visual atmosphere.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="col-md-6">
+
+                        <div class="design-box">
+
+                            <h4>
+                                Clear Typography
+                            </h4>
+
+                            <p>
+                                Strong headings and readable body text
+                                improve content accessibility.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="col-md-6">
+
+                        <div class="design-box">
+
+                            <h4>
+                                Action Focused
+                            </h4>
+
+                            <p>
+                                Contact, call and appointment actions
+                                remain easy to discover.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     TECHNOLOGY
+====================================================== -->
+
+<section class="case-section">
+
+    <div class="container">
+
+        <div class="row align-items-center g-5">
+
+            <div class="col-lg-5">
+
+                <span class="section-label">
+                    06 — Technology
+                </span>
+
+                <h2 class="section-title">
+                    Lightweight technologies.
+                </h2>
+
+                <p class="section-intro">
+
+                    The website was developed using a lightweight
+                    front-end stack focused on responsive performance,
+                    maintainability and clean structure.
+
+                </p>
+
+            </div>
+
+
+            <div class="col-lg-7">
+
+                <div class="tech-pills">
+
+                    <span class="tech-pill">
+                        <i class="bi bi-code-slash"></i>
+                        HTML5
+                    </span>
+
+                    <span class="tech-pill">
+                        <i class="bi bi-palette"></i>
+                        CSS3
+                    </span>
+
+                    <span class="tech-pill">
+                        <i class="bi bi-filetype-js"></i>
+                        JavaScript
+                    </span>
+
+                    <span class="tech-pill">
+                        <i class="bi bi-bootstrap"></i>
+                        Bootstrap 5
+                    </span>
+
+                    <span class="tech-pill">
+                        <i class="bi bi-stars"></i>
+                        AOS
+                    </span>
+
+                    <span class="tech-pill">
+                        <i class="bi bi-images"></i>
+                        GLightbox
+                    </span>
+
+                    <span class="tech-pill">
+                        <i class="bi bi-phone"></i>
+                        Responsive Design
+                    </span>
+
+                    <span class="tech-pill">
+                        <i class="bi bi-search"></i>
+                        SEO Structure
+                    </span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     SEO
+====================================================== -->
+
+<section class="case-section challenge-section">
+
+    <div class="container">
+
+        <div class="row g-5 align-items-center">
+
+            <div class="col-lg-5">
+
+                <span class="section-label">
+                    07 — SEO & Accessibility
+                </span>
+
+                <h2 class="section-title">
+                    Built with search visibility in mind.
+                </h2>
+
+                <p class="section-intro">
+
+                    SEO-friendly foundations were considered while
+                    structuring the concept so that important content
+                    can be understood by both users and search engines.
+
+                </p>
+
+            </div>
+
+
+            <div class="col-lg-7">
+
+                <div class="seo-card">
+
+                    <h4>
+                        SEO Foundations
+                    </h4>
+
+                    <ul class="seo-list">
+
+                        <li>
+                            <i class="bi bi-check-circle-fill"></i>
+                            Semantic HTML structure
+                        </li>
+
+                        <li>
+                            <i class="bi bi-check-circle-fill"></i>
+                            Descriptive page title and meta description
+                        </li>
+
+                        <li>
+                            <i class="bi bi-check-circle-fill"></i>
+                            Responsive mobile-first layout
+                        </li>
+
+                        <li>
+                            <i class="bi bi-check-circle-fill"></i>
+                            Descriptive image alt attributes
+                        </li>
+
+                        <li>
+                            <i class="bi bi-check-circle-fill"></i>
+                            Clear heading hierarchy
+                        </li>
+
+                        <li>
+                            <i class="bi bi-check-circle-fill"></i>
+                            Internal navigation structure
+                        </li>
+
+                        <li>
+                            <i class="bi bi-check-circle-fill"></i>
+                            Fast-loading front-end approach
+                        </li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     OUTCOME
+====================================================== -->
+
+<section class="case-section result-section">
+
+    <div class="container">
+
+        <div class="text-center mb-5">
+
+            <span class="section-label">
+                08 — Outcome
+            </span>
+
+            <h2 class="section-title">
+                A complete digital experience for a modern clinic.
+            </h2>
+
+            <p class="section-intro mx-auto">
+
+                The final concept brings healthcare information,
+                patient guidance and contact actions together in
+                one responsive website experience.
+
+            </p>
+
+        </div>
+
+
+        <div class="row g-4">
+
+            <div class="col-lg-4">
+
+                <div class="result-card">
+
+                    <div class="result-number">
+                        01
+                    </div>
+
+                    <h4>
+                        Trust-Focused
+                    </h4>
+
+                    <p>
+                        A professional visual system designed to
+                        communicate reliability and comfort.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="col-lg-4">
+
+                <div class="result-card">
+
+                    <div class="result-number">
+                        02
+                    </div>
+
+                    <h4>
+                        Patient-Centered
+                    </h4>
+
+                    <p>
+                        Important information is organized around
+                        common patient questions and actions.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="col-lg-4">
+
+                <div class="result-card">
+
+                    <div class="result-number">
+                        03
+                    </div>
+
+                    <h4>
+                        Responsive
+                    </h4>
+
+                    <p>
+                        A flexible layout provides a consistent
+                        experience across modern screen sizes.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     FINAL CTA
+====================================================== -->
+
+<section class="final-cta">
+
+    <div class="container">
+
+        <span class="section-label">
+            Have a Project in Mind?
+        </span>
+
+        <h2 class="mt-3">
+
+            Let's build a website that works for your business.
+
+        </h2>
+
+        <p>
+
+            ANK WebStudio creates responsive, modern and
+            SEO-friendly websites designed around your business goals.
+
+        </p>
+
+        <div class="hero-buttons justify-content-center">
+
+            <a href="https://wa.me/919656141993"
+                class="btn-brand"
+                target="_blank">
+
+                Start a Conversation
+
+                <i class="bi bi-whatsapp"></i>
+
+            </a>
+
+            <a href="index.html"
+                class="btn-light-outline">
+
+                Explore ANK WebStudio
+
+                <i class="bi bi-arrow-up-right"></i>
+
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     FOOTER
+====================================================== -->
+
+<footer>
+
+    <div class="container">
+
+        <div class="d-flex flex-column flex-md-row
+                    justify-content-between
+                    align-items-center
+                    gap-3">
+
+            <div>
+
+                © 2026
+
+                <a href="index.html"
+                    class="footer-brand">
+
+                    ANK WebStudio
+
+                </a>
+
+                . All Rights Reserved.
+
+            </div>
+
+
+            <div>
+
+                <a href="index.html"
+                    class="footer-link me-3">
+
+                    Home
+
+                </a>
+
+                <a href="index.html#portfolio"
+                    class="footer-link me-3">
+
+                    Portfolio
+
+                </a>
+
+                <a href="index.html#contact"
+                    class="footer-link">
+
+                    Contact
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</footer>
+
+
+<!-- =====================================================
+     JAVASCRIPT
+====================================================== -->
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
+<script>
+
+    AOS.init({
+
+        duration: 850,
+
+        once: true,
+
+        easing: "ease-out-cubic"
+
+    });
+
+</script>
+
+
+</body>
+
+</html>
