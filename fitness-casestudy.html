@@ -1,0 +1,2801 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Palakkad Fitness Hub Case Study | ANK WebStudio</title>
+
+    <meta name="description"
+        content="Palakkad Fitness Hub case study by ANK WebStudio — a modern fitness and gym website designed with responsive layouts, fitness programs, schedules, membership CTAs and engaging visual experiences.">
+
+    <meta name="keywords"
+        content="Palakkad Fitness Hub, Fitness Website, Gym Website, Fitness Website Design, ANK WebStudio, Web Design Kerala">
+
+    <meta name="author" content="ANK WebStudio">
+
+    <link rel="canonical"
+        href="https://ankwebstudio.in/fitness-casestudy.html">
+
+    <meta name="theme-color" content="#111111">
+
+    <!-- Open Graph -->
+
+    <meta property="og:title"
+        content="Palakkad Fitness Hub Case Study | ANK WebStudio">
+
+    <meta property="og:description"
+        content="A modern fitness website designed and developed by ANK WebStudio for Palakkad Fitness Hub.">
+
+    <meta property="og:type"
+        content="article">
+
+    <meta property="og:url"
+        content="https://ankwebstudio.in/fitness-casestudy.html">
+
+    <!-- Google Fonts -->
+
+    <link rel="preconnect"
+        href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Montserrat:wght@600;700;800;900&display=swap"
+        rel="stylesheet">
+
+    <!-- Bootstrap -->
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+        rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
+
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
+
+<style>
+
+/* =========================================================
+   ANK WEBSTUDIO
+   FITNESS WEBSITE CASE STUDY
+========================================================= */
+
+:root {
+
+    --black: #101010;
+    --dark: #171717;
+    --dark-2: #202020;
+
+    --white: #ffffff;
+    --cream: #f5f5f3;
+
+    --text: #292929;
+    --muted: #777777;
+
+    --accent: #ff4d00;
+    --accent-dark: #d93d00;
+
+    --border: #e6e6e6;
+
+    --shadow:
+        0 20px 60px rgba(0,0,0,.08);
+
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+
+    font-family: "Inter", sans-serif;
+
+    color: var(--text);
+
+    background: var(--white);
+
+    line-height: 1.7;
+
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+
+    font-family: "Montserrat", sans-serif;
+
+    font-weight: 800;
+
+}
+
+
+a {
+    text-decoration: none;
+}
+
+
+/* =========================================================
+   NAVBAR
+========================================================= */
+
+.case-navbar {
+
+    position: fixed;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+
+    z-index: 9999;
+
+    padding: 18px 0;
+
+    background: rgba(16,16,16,.92);
+
+    backdrop-filter: blur(15px);
+
+}
+
+
+.case-logo {
+
+    color: var(--white);
+
+    font-size: 22px;
+
+    font-weight: 800;
+
+    letter-spacing: -1px;
+
+}
+
+
+.case-logo span {
+
+    color: var(--accent);
+
+}
+
+
+.case-nav-links {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 28px;
+
+    margin: 0;
+
+    padding: 0;
+
+    list-style: none;
+
+}
+
+
+.case-nav-links a {
+
+    color: #dddddd;
+
+    font-size: 14px;
+
+    font-weight: 500;
+
+    transition: .3s;
+
+}
+
+
+.case-nav-links a:hover {
+
+    color: var(--accent);
+
+}
+
+
+.nav-cta {
+
+    background: var(--accent);
+
+    color: var(--white) !important;
+
+    padding: 10px 20px;
+
+    border-radius: 50px;
+
+}
+
+
+.mobile-toggle {
+
+    border: 0;
+
+    background: transparent;
+
+    color: white;
+
+    font-size: 28px;
+
+}
+
+
+/* =========================================================
+   HERO
+========================================================= */
+
+.case-hero {
+
+    min-height: 100vh;
+
+    background:
+        linear-gradient(
+            135deg,
+            #111111,
+            #242424
+        );
+
+    color: white;
+
+    display: flex;
+
+    align-items: center;
+
+    padding: 130px 0 90px;
+
+    position: relative;
+
+    overflow: hidden;
+
+}
+
+
+.case-hero::before {
+
+    content: "";
+
+    position: absolute;
+
+    width: 500px;
+
+    height: 500px;
+
+    border-radius: 50%;
+
+    background: rgba(255,77,0,.12);
+
+    right: -180px;
+
+    top: 80px;
+
+}
+
+
+.case-hero::after {
+
+    content: "";
+
+    position: absolute;
+
+    width: 350px;
+
+    height: 350px;
+
+    border-radius: 50%;
+
+    background: rgba(255,255,255,.03);
+
+    left: -150px;
+
+    bottom: -100px;
+
+}
+
+
+.hero-label {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 8px;
+
+    color: var(--accent);
+
+    border: 1px solid rgba(255,77,0,.5);
+
+    border-radius: 50px;
+
+    padding: 8px 16px;
+
+    font-size: 13px;
+
+    font-weight: 700;
+
+    margin-bottom: 25px;
+
+}
+
+
+.case-hero h1 {
+
+    font-size: clamp(42px, 6vw, 78px);
+
+    line-height: 1.02;
+
+    letter-spacing: -3px;
+
+    margin-bottom: 25px;
+
+}
+
+
+.case-hero h1 span {
+
+    color: var(--accent);
+
+}
+
+
+.case-hero p {
+
+    max-width: 650px;
+
+    color: #c5c5c5;
+
+    font-size: 18px;
+
+}
+
+
+.hero-buttons {
+
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 14px;
+
+    margin-top: 35px;
+
+}
+
+
+.btn-main {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    background: var(--accent);
+
+    color: white;
+
+    padding: 14px 26px;
+
+    border-radius: 50px;
+
+    font-weight: 700;
+
+    transition: .3s;
+
+}
+
+
+.btn-main:hover {
+
+    background: var(--accent-dark);
+
+    color: white;
+
+    transform: translateY(-2px);
+
+}
+
+
+.btn-outline {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    border: 1px solid #555;
+
+    color: white;
+
+    padding: 14px 26px;
+
+    border-radius: 50px;
+
+    font-weight: 600;
+
+}
+
+
+.btn-outline:hover {
+
+    border-color: var(--accent);
+
+    color: var(--accent);
+
+}
+
+
+.hero-project-info {
+
+    margin-top: 60px;
+
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 35px;
+
+}
+
+
+.hero-info-item span {
+
+    display: block;
+
+    color: #777;
+
+    text-transform: uppercase;
+
+    font-size: 11px;
+
+    letter-spacing: 1.5px;
+
+}
+
+
+.hero-info-item strong {
+
+    display: block;
+
+    margin-top: 5px;
+
+    font-size: 14px;
+
+}
+
+
+/* =========================================================
+   GENERAL SECTION
+========================================================= */
+
+.case-section {
+
+    padding: 100px 0;
+
+}
+
+
+.case-section.dark {
+
+    background: var(--dark);
+
+    color: white;
+
+}
+
+
+.section-label {
+
+    display: inline-block;
+
+    color: var(--accent);
+
+    font-size: 12px;
+
+    font-weight: 800;
+
+    letter-spacing: 2px;
+
+    text-transform: uppercase;
+
+    margin-bottom: 15px;
+
+}
+
+
+.section-title {
+
+    font-size: clamp(32px, 4vw, 52px);
+
+    line-height: 1.1;
+
+    letter-spacing: -2px;
+
+}
+
+
+.section-description {
+
+    color: var(--muted);
+
+    max-width: 700px;
+
+}
+
+
+.dark .section-description {
+
+    color: #aaa;
+
+}
+
+
+/* =========================================================
+   PROJECT OVERVIEW
+========================================================= */
+
+.overview-card {
+
+    background: var(--cream);
+
+    border-radius: 20px;
+
+    padding: 35px;
+
+    height: 100%;
+
+}
+
+
+.overview-card h5 {
+
+    font-size: 15px;
+
+    color: #888;
+
+    text-transform: uppercase;
+
+    letter-spacing: 1px;
+
+}
+
+
+.overview-card p {
+
+    margin-bottom: 0;
+
+    font-weight: 600;
+
+}
+
+
+.overview-icon {
+
+    width: 55px;
+
+    height: 55px;
+
+    border-radius: 14px;
+
+    background: var(--black);
+
+    color: var(--accent);
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    font-size: 23px;
+
+    margin-bottom: 22px;
+
+}
+
+  /* ==========================================
+   WEBSITE PREVIEW VIDEO
+========================================== */
+
+.case-video-section {
+    padding: 100px 0;
+    background: #f8f7f4;
+}
+
+.case-video-section .section-heading {
+    max-width: 750px;
+    margin: 0 auto 50px;
+}
+
+.case-label {
+    display: inline-block;
+    margin-bottom: 15px;
+    padding: 8px 18px;
+    border-radius: 50px;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    background: #111;
+    color: #fff;
+}
+
+.case-video-section h2 {
+    font-size: clamp(32px, 5vw, 52px);
+    font-weight: 700;
+    margin-bottom: 18px;
+}
+
+.case-video-section p {
+    color: #777;
+    font-size: 17px;
+    line-height: 1.8;
+}
+
+.case-video-wrapper {
+    max-width: 1100px;
+    margin: auto;
+    overflow: hidden;
+    border-radius: 24px;
+    background: #000;
+    box-shadow: 0 25px 70px rgba(0, 0, 0, 0.15);
+}
+
+.case-video {
+    display: block;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+}
+
+
+/* ==========================================
+   MOBILE
+========================================== */
+
+@media (max-width: 768px) {
+
+    .case-video-section {
+        padding: 70px 0;
+    }
+
+    .case-video-section .section-heading {
+        margin-bottom: 35px;
+    }
+
+    .case-video-wrapper {
+        border-radius: 16px;
+    }
+
+    .case-video-section p {
+        font-size: 15px;
+    }
+
+}
+
+
+/* =========================================================
+   CHALLENGE / SOLUTION
+========================================================= */
+
+.challenge-box {
+
+    padding: 45px;
+
+    border: 1px solid var(--border);
+
+    border-radius: 20px;
+
+    height: 100%;
+
+}
+
+
+.challenge-box.dark-box {
+
+    background: var(--black);
+
+    border-color: var(--black);
+
+    color: white;
+
+}
+
+
+.challenge-box h3 {
+
+    margin-bottom: 20px;
+
+}
+
+
+.challenge-list {
+
+    list-style: none;
+
+    padding: 0;
+
+    margin: 0;
+
+}
+
+
+.challenge-list li {
+
+    display: flex;
+
+    gap: 12px;
+
+    margin-bottom: 15px;
+
+}
+
+
+.challenge-list i {
+
+    color: var(--accent);
+
+}
+
+
+/* =========================================================
+   FEATURE CARDS
+========================================================= */
+
+.feature-card {
+
+    background: var(--white);
+
+    border: 1px solid var(--border);
+
+    border-radius: 18px;
+
+    padding: 30px;
+
+    height: 100%;
+
+    transition: .3s;
+
+}
+
+
+.feature-card:hover {
+
+    transform: translateY(-7px);
+
+    box-shadow: var(--shadow);
+
+}
+
+
+.feature-number {
+
+    font-size: 13px;
+
+    color: var(--accent);
+
+    font-weight: 800;
+
+    margin-bottom: 25px;
+
+}
+
+
+.feature-card h4 {
+
+    font-size: 21px;
+
+    margin-bottom: 12px;
+
+}
+
+
+.feature-card p {
+
+    color: var(--muted);
+
+    margin-bottom: 0;
+
+}
+
+
+/* =========================================================
+   PROGRAMS
+========================================================= */
+
+.program-card {
+
+    background: #1e1e1e;
+
+    border: 1px solid #303030;
+
+    border-radius: 20px;
+
+    padding: 30px;
+
+    height: 100%;
+
+    transition: .3s;
+
+}
+
+
+.program-card:hover {
+
+    border-color: var(--accent);
+
+    transform: translateY(-5px);
+
+}
+
+
+.program-icon {
+
+    width: 55px;
+
+    height: 55px;
+
+    background: var(--accent);
+
+    color: white;
+
+    border-radius: 50%;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    font-size: 23px;
+
+    margin-bottom: 25px;
+
+}
+
+
+.program-card h4 {
+
+    color: white;
+
+    font-size: 20px;
+
+}
+
+
+.program-card p {
+
+    color: #999;
+
+    font-size: 14px;
+
+    margin-bottom: 0;
+
+}
+
+
+/* =========================================================
+   PROCESS
+========================================================= */
+
+.process-number {
+
+    width: 65px;
+
+    height: 65px;
+
+    border-radius: 50%;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    background: var(--black);
+
+    color: var(--accent);
+
+    font-size: 18px;
+
+    font-weight: 800;
+
+    margin-bottom: 25px;
+
+}
+
+
+.process-card {
+
+    padding-right: 25px;
+
+}
+
+
+.process-card h4 {
+
+    font-size: 21px;
+
+}
+
+
+.process-card p {
+
+    color: var(--muted);
+
+}
+
+
+/* =========================================================
+   TECH STACK
+========================================================= */
+
+.tech-section {
+
+    background: var(--cream);
+
+}
+
+
+.tech-item {
+
+    background: white;
+
+    border: 1px solid var(--border);
+
+    border-radius: 15px;
+
+    padding: 25px;
+
+    text-align: center;
+
+    font-weight: 700;
+
+    height: 100%;
+
+}
+
+
+.tech-item i {
+
+    display: block;
+
+    font-size: 30px;
+
+    margin-bottom: 10px;
+
+    color: var(--accent);
+
+}
+
+
+/* =========================================================
+   SEO
+========================================================= */
+
+.seo-card {
+
+    background: var(--black);
+
+    color: white;
+
+    border-radius: 25px;
+
+    padding: 50px;
+
+}
+
+
+.seo-item {
+
+    display: flex;
+
+    gap: 15px;
+
+    margin-bottom: 22px;
+
+}
+
+
+.seo-item i {
+
+    color: var(--accent);
+
+    font-size: 21px;
+
+}
+
+
+/* =========================================================
+   OUTCOME
+========================================================= */
+
+.outcome-card {
+
+    background: var(--cream);
+
+    border-radius: 20px;
+
+    padding: 35px;
+
+    height: 100%;
+
+}
+
+
+.outcome-card i {
+
+    color: var(--accent);
+
+    font-size: 30px;
+
+    margin-bottom: 20px;
+
+}
+
+
+.outcome-card h4 {
+
+    font-size: 20px;
+
+}
+
+
+/* =========================================================
+   CTA
+========================================================= */
+
+.final-cta {
+
+    padding: 110px 0;
+
+    background:
+        linear-gradient(
+            135deg,
+            #111,
+            #252525
+        );
+
+    color: white;
+
+    text-align: center;
+
+}
+
+
+.final-cta h2 {
+
+    font-size: clamp(35px, 5vw, 60px);
+
+    letter-spacing: -2px;
+
+}
+
+
+.final-cta p {
+
+    color: #aaa;
+
+    max-width: 650px;
+
+    margin: 20px auto 35px;
+
+}
+
+
+/* =========================================================
+   FOOTER
+========================================================= */
+
+.case-footer {
+
+    background: #0c0c0c;
+
+    color: #888;
+
+    padding: 30px 0;
+
+}
+
+
+.case-footer a {
+
+    color: white;
+
+}
+
+
+.case-footer a:hover {
+
+    color: var(--accent);
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 991px) {
+
+    .case-nav-links {
+
+        display: none;
+
+    }
+
+    .case-hero {
+
+        text-align: center;
+
+    }
+
+    .case-hero p {
+
+        margin-left: auto;
+
+        margin-right: auto;
+
+    }
+
+    .hero-buttons {
+
+        justify-content: center;
+
+    }
+
+    .hero-project-info {
+
+        justify-content: center;
+
+    }
+
+}
+
+
+@media (max-width: 575px) {
+
+    .case-section {
+
+        padding: 70px 0;
+
+    }
+
+    .case-hero {
+
+        padding: 120px 0 70px;
+
+    }
+
+    .case-hero h1 {
+
+        letter-spacing: -2px;
+
+    }
+
+    .challenge-box,
+    .seo-card {
+
+        padding: 30px 25px;
+
+    }
+
+}
+
+
+/* =========================================================
+   SCROLL REVEAL
+========================================================= */
+
+.reveal {
+
+    opacity: 0;
+
+    transform: translateY(25px);
+
+    transition: .7s ease;
+
+}
+
+
+.reveal.show {
+
+    opacity: 1;
+
+    transform: translateY(0);
+
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<!-- ======================================================
+     NAVBAR
+====================================================== -->
+
+<nav class="case-navbar">
+
+    <div class="container">
+
+        <div class="d-flex align-items-center justify-content-between">
+
+            <a href="index.html"
+               class="case-logo">
+
+                ANK <span>WebStudio</span>
+
+            </a>
+
+
+            <ul class="case-nav-links d-lg-flex">
+
+                <li>
+                    <a href="#overview">
+                        Overview
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#challenge">
+                        Challenge
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#features">
+                        Features
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#technology">
+                        Technology
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#outcome">
+                        Outcome
+                    </a>
+                </li>
+
+                <li>
+                    <a href="index.html"
+                       class="nav-cta">
+                        Back to Portfolio
+                    </a>
+                </li>
+
+            </ul>
+
+
+            <a href="index.html"
+               class="d-lg-none mobile-toggle">
+
+                <i class="bi bi-arrow-left"></i>
+
+            </a>
+
+        </div>
+
+    </div>
+
+</nav>
+
+
+
+<!-- ======================================================
+     HERO
+====================================================== -->
+
+<section class="case-hero">
+
+    <div class="container">
+
+        <div class="row align-items-center">
+
+            <div class="col-lg-9">
+
+                <div class="hero-label">
+
+                    <i class="bi bi-lightning-charge-fill"></i>
+
+                    Fitness Website Case Study
+
+                </div>
+
+
+                <h1>
+
+                    Palakkad Fitness Hub
+
+                    <br>
+
+                    <span>Train Strong.</span>
+
+                    Live Strong.
+
+                </h1>
+
+
+                <p>
+
+                    A modern fitness website designed to create a
+                    powerful online presence for Palakkad Fitness Hub,
+                    showcase training programs, communicate schedules,
+                    and encourage visitors to take the next step
+                    toward their fitness journey.
+
+                </p>
+
+
+                <div class="hero-buttons">
+
+                    <a href="index.html"
+                       class="btn-main">
+
+                        <i class="bi bi-arrow-left"></i>
+
+                        Back to Portfolio
+
+                    </a>
+
+
+                    <a href="#overview"
+                       class="btn-outline">
+
+                        Explore Case Study
+
+                        <i class="bi bi-arrow-down"></i>
+
+                    </a>
+
+                </div>
+
+
+                <div class="hero-project-info">
+
+                    <div class="hero-info-item">
+
+                        <span>Project</span>
+
+                        <strong>
+                            Palakkad Fitness Hub
+                        </strong>
+
+                    </div>
+
+
+                    <div class="hero-info-item">
+
+                        <span>Industry</span>
+
+                        <strong>
+                            Fitness & Wellness
+                        </strong>
+
+                    </div>
+
+
+                    <div class="hero-info-item">
+
+                        <span>Role</span>
+
+                        <strong>
+                            Design & Development
+                        </strong>
+
+                    </div>
+
+
+                    <div class="hero-info-item">
+
+                        <span>Platform</span>
+
+                        <strong>
+                            Responsive Website
+                        </strong>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ======================================================
+     PROJECT OVERVIEW
+====================================================== -->
+
+<section class="case-section"
+         id="overview">
+
+    <div class="container">
+
+        <div class="row mb-5">
+
+            <div class="col-lg-8">
+
+                <span class="section-label">
+                    01 — Project Overview
+                </span>
+
+                <h2 class="section-title">
+                    A digital fitness experience built
+                    around motivation and action.
+                </h2>
+
+                <p class="section-description mt-4">
+
+                    The Palakkad Fitness Hub website was designed
+                    as a fitness-focused digital experience.
+                    The website combines bold visual presentation,
+                    clear program information, training schedules,
+                    and strong membership calls-to-action to make
+                    the journey from visitor to potential member
+                    simple and engaging.
+
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="row g-4">
+
+            <div class="col-lg-3 col-md-6">
+
+                <div class="overview-card">
+
+                    <div class="overview-icon">
+
+                        <i class="bi bi-building"></i>
+
+                    </div>
+
+                    <h5>Project</h5>
+
+                    <p>
+                        Palakkad Fitness Hub
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="col-lg-3 col-md-6">
+
+                <div class="overview-card">
+
+                    <div class="overview-icon">
+
+                        <i class="bi bi-heart-pulse"></i>
+
+                    </div>
+
+                    <h5>Industry</h5>
+
+                    <p>
+                        Fitness & Wellness
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="col-lg-3 col-md-6">
+
+                <div class="overview-card">
+
+                    <div class="overview-icon">
+
+                        <i class="bi bi-code-slash"></i>
+
+                    </div>
+
+                    <h5>Development</h5>
+
+                    <p>
+                        Responsive Front-End
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="col-lg-3 col-md-6">
+
+                <div class="overview-card">
+
+                    <div class="overview-icon">
+
+                        <i class="bi bi-phone"></i>
+
+                    </div>
+
+                    <h5>Experience</h5>
+
+                    <p>
+                        Mobile Friendly
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+  <!-- ==========================================
+     WEBSITE PREVIEW VIDEO
+========================================== -->
+
+<section class="case-video-section">
+
+    <div class="container">
+
+        <div class="section-heading text-center">
+
+            <span class="case-label">
+                Website Preview
+            </span>
+
+            <h2>
+                See the Fitness Website in Action
+            </h2>
+
+            <p>
+                Explore the website experience, responsive layout,
+                animations, and interactive sections.
+            </p>
+
+        </div>
+
+        <div class="case-video-wrapper">
+
+            <video
+                class="case-video"
+                controls
+                muted
+                playsinline
+                preload="metadata"
+                poster="images/fitness-video-poster.jpg">
+
+                <source
+                    src="images/fitness-website-preview.mp4"
+                    type="video/mp4">
+
+                Your browser does not support the video tag.
+
+            </video>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ======================================================
+     CHALLENGE / SOLUTION
+====================================================== -->
+
+<section class="case-section"
+         id="challenge">
+
+    <div class="container">
+
+        <div class="row g-5">
+
+            <div class="col-lg-6">
+
+                <div class="challenge-box">
+
+                    <span class="section-label">
+                        The Challenge
+                    </span>
+
+                    <h3>
+                        Creating a website that feels
+                        energetic and action-oriented.
+                    </h3>
+
+                    <p class="text-muted">
+
+                        Fitness websites need to communicate
+                        energy, motivation, programs, schedules,
+                        and membership opportunities without
+                        overwhelming visitors.
+
+                    </p>
+
+
+                    <ul class="challenge-list mt-4">
+
+                        <li>
+
+                            <i class="bi bi-check-circle-fill"></i>
+
+                            Present the fitness brand with a strong
+                            first impression.
+
+                        </li>
+
+                        <li>
+
+                            <i class="bi bi-check-circle-fill"></i>
+
+                            Make fitness programs easy to discover.
+
+                        </li>
+
+                        <li>
+
+                            <i class="bi bi-check-circle-fill"></i>
+
+                            Clearly communicate weekly schedules.
+
+                        </li>
+
+                        <li>
+
+                            <i class="bi bi-check-circle-fill"></i>
+
+                            Encourage visitors to join or enquire.
+
+                        </li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+
+
+            <div class="col-lg-6">
+
+                <div class="challenge-box dark-box">
+
+                    <span class="section-label">
+                        The Solution
+                    </span>
+
+                    <h3>
+                        A bold, structured fitness
+                        experience.
+                    </h3>
+
+                    <p class="text-white-50">
+
+                        The website was structured around the
+                        user's fitness journey — introducing the
+                        brand, explaining its value, presenting
+                        programs, showing schedules, and finally
+                        guiding visitors toward membership and
+                        contact actions.
+
+                    </p>
+
+
+                    <ul class="challenge-list mt-4">
+
+                        <li>
+
+                            <i class="bi bi-lightning-fill"></i>
+
+                            Video-based hero section.
+
+                        </li>
+
+                        <li>
+
+                            <i class="bi bi-lightning-fill"></i>
+
+                            Clear fitness program presentation.
+
+                        </li>
+
+                        <li>
+
+                            <i class="bi bi-lightning-fill"></i>
+
+                            Structured weekly schedule.
+
+                        </li>
+
+                        <li>
+
+                            <i class="bi bi-lightning-fill"></i>
+
+                            Strong membership-focused CTAs.
+
+                        </li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ======================================================
+     KEY FEATURES
+====================================================== -->
+
+<section class="case-section"
+         id="features">
+
+    <div class="container">
+
+        <div class="row mb-5">
+
+            <div class="col-lg-8">
+
+                <span class="section-label">
+                    02 — Key Features
+                </span>
+
+                <h2 class="section-title">
+                    Designed to turn interest
+                    into action.
+                </h2>
+
+                <p class="section-description mt-4">
+
+                    Every major section was created to support
+                    the fitness brand's communication and
+                    conversion goals.
+
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="row g-4">
+
+            <div class="col-lg-4 col-md-6">
+
+                <div class="feature-card">
+
+                    <div class="feature-number">
+                        01 / HERO EXPERIENCE
+                    </div>
+
+                    <h4>
+                        Video Hero Section
+                    </h4>
+
+                    <p>
+
+                        A full-width fitness video creates an
+                        energetic first impression while the
+                        headline communicates the core brand
+                        message.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="col-lg-4 col-md-6">
+
+                <div class="feature-card">
+
+                    <div class="feature-number">
+                        02 / BRAND VALUE
+                    </div>
+
+                    <h4>
+                        Why Choose Us
+                    </h4>
+
+                    <p>
+
+                        The website highlights modern equipment,
+                        expert trainers, personalized workout
+                        plans, and a motivating environment.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="col-lg-4 col-md-6">
+
+                <div class="feature-card">
+
+                    <div class="feature-number">
+                        03 / PROGRAMS
+                    </div>
+
+                    <h4>
+                        Training Programs
+                    </h4>
+
+                    <p>
+
+                        Different fitness programs are presented
+                        in a structured format for different
+                        experience levels and goals.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="col-lg-4 col-md-6">
+
+                <div class="feature-card">
+
+                    <div class="feature-number">
+                        04 / SCHEDULE
+                    </div>
+
+                    <h4>
+                        Weekly Schedule
+                    </h4>
+
+                    <p>
+
+                        Visitors can explore training sessions
+                        and choose suitable workouts according
+                        to their fitness goals.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="col-lg-4 col-md-6">
+
+                <div class="feature-card">
+
+                    <div class="feature-number">
+                        05 / CONVERSION
+                    </div>
+
+                    <h4>
+                        Membership CTAs
+                    </h4>
+
+                    <p>
+
+                        Strong calls-to-action guide visitors
+                        toward membership and enquiry actions.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="col-lg-4 col-md-6">
+
+                <div class="feature-card">
+
+                    <div class="feature-number">
+                        06 / RESPONSIVE
+                    </div>
+
+                    <h4>
+                        Responsive Layout
+                    </h4>
+
+                    <p>
+
+                        The interface is structured to provide
+                        a consistent experience across desktop,
+                        tablet, and mobile devices.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ======================================================
+     TRAINING PROGRAMS
+====================================================== -->
+
+<section class="case-section dark">
+
+    <div class="container">
+
+        <div class="row mb-5">
+
+            <div class="col-lg-8">
+
+                <span class="section-label">
+                    03 — Fitness Programs
+                </span>
+
+                <h2 class="section-title">
+                    Programs presented with
+                    clarity and purpose.
+                </h2>
+
+                <p class="section-description mt-4">
+
+                    The original website includes multiple
+                    training categories designed around
+                    different fitness objectives.
+
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="row g-4">
+
+            <div class="col-lg-3 col-md-6">
+
+                <div class="program-card">
+
+                    <div class="program-icon">
+
+                        <i class="bi bi-barbell"></i>
+
+                    </div>
+
+                    <h4>
+                        Beginner Strength
+                    </h4>
+
+                    <p>
+
+                        A foundation-focused training experience
+                        designed to help newcomers build strength,
+                        endurance, flexibility, and confidence.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="col-lg-3 col-md-6">
+
+                <div class="program-card">
+
+                    <div class="program-icon">
+
+                        <i class="bi bi-lightning-charge"></i>
+
+                    </div>
+
+                    <h4>
+                        Advanced Muscle Building
+                    </h4>
+
+                    <p>
+
+                        Progressive resistance training and
+                        expert coaching designed for members
+                        looking to improve strength and muscle.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="col-lg-3 col-md-6">
+
+                <div class="program-card">
+
+                    <div class="program-icon">
+
+                        <i class="bi bi-activity"></i>
+
+                    </div>
+
+                    <h4>
+                        Cardio & Endurance
+                    </h4>
+
+                    <p>
+
+                        Dynamic cardio and interval-based
+                        workouts designed to improve stamina
+                        and overall fitness.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="col-lg-3 col-md-6">
+
+                <div class="program-card">
+
+                    <div class="program-icon">
+
+                        <i class="bi bi-person-arms-up"></i>
+
+                    </div>
+
+                    <h4>
+                        Yoga & Flexibility
+                    </h4>
+
+                    <p>
+
+                        Guided stretching, yoga and breathing
+                        practices focused on mobility, balance
+                        and flexibility.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ======================================================
+     USER JOURNEY
+====================================================== -->
+
+<section class="case-section">
+
+    <div class="container">
+
+        <div class="row mb-5">
+
+            <div class="col-lg-8">
+
+                <span class="section-label">
+                    04 — User Journey
+                </span>
+
+                <h2 class="section-title">
+                    From first impression
+                    to membership.
+                </h2>
+
+            </div>
+
+        </div>
+
+
+        <div class="row g-5">
+
+            <div class="col-lg-3 col-md-6">
+
+                <div class="process-card">
+
+                    <div class="process-number">
+                        01
+                    </div>
+
+                    <h4>
+                        Discover
+                    </h4>
+
+                    <p>
+
+                        The video hero immediately introduces
+                        the fitness brand and creates visual
+                        interest.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="col-lg-3 col-md-6">
+
+                <div class="process-card">
+
+                    <div class="process-number">
+                        02
+                    </div>
+
+                    <h4>
+                        Explore
+                    </h4>
+
+                    <p>
+
+                        Visitors can understand the benefits,
+                        programs and training options available.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="col-lg-3 col-md-6">
+
+                <div class="process-card">
+
+                    <div class="process-number">
+                        03
+                    </div>
+
+                    <h4>
+                        Plan
+                    </h4>
+
+                    <p>
+
+                        Weekly schedules help visitors identify
+                        sessions that fit their goals.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="col-lg-3 col-md-6">
+
+                <div class="process-card">
+
+                    <div class="process-number">
+                        04
+                    </div>
+
+                    <h4>
+                        Join
+                    </h4>
+
+                    <p>
+
+                        Membership and contact CTAs provide
+                        a clear next step.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ======================================================
+     TECHNOLOGY
+====================================================== -->
+
+<section class="case-section tech-section"
+         id="technology">
+
+    <div class="container">
+
+        <div class="row mb-5">
+
+            <div class="col-lg-8">
+
+                <span class="section-label">
+                    05 — Technology
+                </span>
+
+                <h2 class="section-title">
+                    Built with a practical
+                    front-end stack.
+                </h2>
+
+                <p class="section-description mt-4">
+
+                    The website uses a lightweight front-end
+                    approach focused on responsive presentation,
+                    interactive sections and a smooth browsing
+                    experience.
+
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="row g-4">
+
+            <div class="col-lg-3 col-md-6">
+
+                <div class="tech-item">
+
+                    <i class="bi bi-filetype-html"></i>
+
+                    HTML5
+
+                </div>
+
+            </div>
+
+
+            <div class="col-lg-3 col-md-6">
+
+                <div class="tech-item">
+
+                    <i class="bi bi-filetype-css"></i>
+
+                    CSS3
+
+                </div>
+
+            </div>
+
+
+            <div class="col-lg-3 col-md-6">
+
+                <div class="tech-item">
+
+                    <i class="bi bi-bootstrap"></i>
+
+                    Bootstrap
+
+                </div>
+
+            </div>
+
+
+            <div class="col-lg-3 col-md-6">
+
+                <div class="tech-item">
+
+                    <i class="bi bi-filetype-js"></i>
+
+                    JavaScript
+
+                </div>
+
+            </div>
+
+
+            <div class="col-lg-3 col-md-6">
+
+                <div class="tech-item">
+
+                    <i class="bi bi-phone"></i>
+
+                    Responsive Design
+
+                </div>
+
+            </div>
+
+
+            <div class="col-lg-3 col-md-6">
+
+                <div class="tech-item">
+
+                    <i class="bi bi-play-btn"></i>
+
+                    Video Integration
+
+                </div>
+
+            </div>
+
+
+            <div class="col-lg-3 col-md-6">
+
+                <div class="tech-item">
+
+                    <i class="bi bi-list"></i>
+
+                    Interactive Navigation
+
+                </div>
+
+            </div>
+
+
+            <div class="col-lg-3 col-md-6">
+
+                <div class="tech-item">
+
+                    <i class="bi bi-speedometer2"></i>
+
+                    Performance Focus
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ======================================================
+     SEO / PERFORMANCE
+====================================================== -->
+
+<section class="case-section">
+
+    <div class="container">
+
+        <div class="seo-card">
+
+            <div class="row align-items-center g-5">
+
+                <div class="col-lg-5">
+
+                    <span class="section-label">
+                        06 — SEO & Experience
+                    </span>
+
+                    <h2 class="section-title">
+
+                        Built with discoverability
+                        and usability in mind.
+
+                    </h2>
+
+                </div>
+
+
+                <div class="col-lg-7">
+
+                    <div class="seo-item">
+
+                        <i class="bi bi-check-circle-fill"></i>
+
+                        <div>
+
+                            <strong>
+                                Structured Content
+                            </strong>
+
+                            <p class="text-white-50 mb-0">
+
+                                Clear sections make important
+                                fitness information easier to
+                                understand.
+
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="seo-item">
+
+                        <i class="bi bi-check-circle-fill"></i>
+
+                        <div>
+
+                            <strong>
+                                Responsive Experience
+                            </strong>
+
+                            <p class="text-white-50 mb-0">
+
+                                Layouts are designed to adapt
+                                across different screen sizes.
+
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="seo-item">
+
+                        <i class="bi bi-check-circle-fill"></i>
+
+                        <div>
+
+                            <strong>
+                                Semantic HTML Structure
+                            </strong>
+
+                            <p class="text-white-50 mb-0">
+
+                                Meaningful page sections help
+                                organize the website content.
+
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="seo-item">
+
+                        <i class="bi bi-check-circle-fill"></i>
+
+                        <div>
+
+                            <strong>
+                                Conversion-Focused CTAs
+                            </strong>
+
+                            <p class="text-white-50 mb-0">
+
+                                Membership and schedule actions
+                                are positioned throughout the
+                                user journey.
+
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ======================================================
+     OUTCOME
+====================================================== -->
+
+<section class="case-section"
+         id="outcome">
+
+    <div class="container">
+
+        <div class="row mb-5">
+
+            <div class="col-lg-8">
+
+                <span class="section-label">
+                    07 — Project Outcome
+                </span>
+
+                <h2 class="section-title">
+                    A stronger digital presence
+                    for a fitness-focused brand.
+                </h2>
+
+                <p class="section-description mt-4">
+
+                    The final website creates a professional
+                    online destination where visitors can
+                    discover the fitness center, understand
+                    its programs, explore schedules and take
+                    action toward membership.
+
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="row g-4">
+
+            <div class="col-lg-4">
+
+                <div class="outcome-card">
+
+                    <i class="bi bi-display"></i>
+
+                    <h4>
+                        Strong First Impression
+                    </h4>
+
+                    <p class="text-muted">
+
+                        A bold visual direction and fitness video
+                        immediately establish the energy of the
+                        brand.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="col-lg-4">
+
+                <div class="outcome-card">
+
+                    <i class="bi bi-grid"></i>
+
+                    <h4>
+                        Clear Information Architecture
+                    </h4>
+
+                    <p class="text-muted">
+
+                        Programs, benefits and schedules are
+                        organized into easy-to-understand sections.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="col-lg-4">
+
+                <div class="outcome-card">
+
+                    <i class="bi bi-phone"></i>
+
+                    <h4>
+                        Mobile-Friendly Experience
+                    </h4>
+
+                    <p class="text-muted">
+
+                        The responsive structure allows users to
+                        browse the fitness experience across
+                        different devices.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ======================================================
+     FINAL CTA
+====================================================== -->
+
+<section class="final-cta">
+
+    <div class="container">
+
+        <span class="section-label">
+            Have a Fitness Business?
+        </span>
+
+        <h2>
+
+            Your Fitness Brand
+            <br>
+            Deserves a Strong Website.
+
+        </h2>
+
+        <p>
+
+            ANK WebStudio creates responsive, modern and
+            conversion-focused websites for gyms, fitness
+            centers, wellness brands and local businesses.
+
+        </p>
+
+
+        <div class="d-flex justify-content-center flex-wrap gap-3">
+
+            <a href="index.html"
+               class="btn-main">
+
+                Explore ANK WebStudio
+
+                <i class="bi bi-arrow-right"></i>
+
+            </a>
+
+
+            <a href="https://ankwebstudio.in/"
+               class="btn-outline">
+
+                Visit Website
+
+                <i class="bi bi-box-arrow-up-right"></i>
+
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ======================================================
+     FOOTER
+====================================================== -->
+
+<footer class="case-footer">
+
+    <div class="container">
+
+        <div class="row align-items-center gy-3">
+
+            <div class="col-md-6">
+
+                <strong class="text-white">
+                    ANK WebStudio
+                </strong>
+
+                <span class="ms-2">
+                    © 2026 All Rights Reserved.
+                </span>
+
+            </div>
+
+
+            <div class="col-md-6 text-md-end">
+
+                <a href="index.html">
+
+                    Back to Portfolio
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</footer>
+
+
+
+<!-- ======================================================
+     JAVASCRIPT
+====================================================== -->
+
+<script>
+
+const revealElements =
+document.querySelectorAll(".feature-card, .program-card, .overview-card, .challenge-box, .process-card, .outcome-card, .tech-item");
+
+const observer =
+new IntersectionObserver(
+
+    entries => {
+
+        entries.forEach(entry => {
+
+            if (entry.isIntersecting) {
+
+                entry.target.classList.add("show");
+
+            }
+
+        });
+
+    },
+
+    {
+        threshold: 0.12
+    }
+
+);
+
+
+revealElements.forEach(element => {
+
+    element.classList.add("reveal");
+
+    observer.observe(element);
+
+});
+
+
+/* Mobile navigation */
+
+const navLinks =
+document.querySelectorAll(".case-nav-links a");
+
+navLinks.forEach(link => {
+
+    link.addEventListener("click", () => {
+
+        document.querySelector(".case-nav-links")
+            ?.classList.remove("show");
+
+    });
+
+});
+
+</script>
+
+
+</body>
+
+</html>
