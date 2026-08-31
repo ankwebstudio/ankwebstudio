@@ -2002,86 +2002,81 @@ p {
 
 
 /* =========================================================
-   MOBILE NAVBAR
+   MOBILE NAVBAR — PANVI CHRONICLES
 ========================================================= */
 
 @media (max-width: 991px) {
 
-    .case-navbar .navbar-collapse {
-
-        margin-top:
-            14px;
-
-        padding:
-            18px;
-
-        background:
-            var(--panvi-white);
-
-        border:
-            1px solid var(--panvi-border);
-
-        border-radius:
-            18px;
-
-        box-shadow:
-            var(--panvi-shadow-soft);
+    /* Main navbar */
+    .case-navbar {
+        background: var(--panvi-forest);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.10);
     }
 
-    .case-navbar .navbar-nav {
+    /* Mobile menu */
+    .case-navbar .navbar-collapse {
+        margin-top: 12px;
+        padding: 20px;
 
-        align-items:
-            stretch;
+        background: var(--panvi-forest);
+
+        border: 1px solid rgba(255, 255, 255, 0.12);
+        border-radius: 18px;
+
+        box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+    }
+
+    /* Menu links */
+    .case-navbar .navbar-nav {
+        align-items: stretch;
     }
 
     .case-navbar .nav-link {
+        margin: 0;
+        padding: 13px 5px !important;
 
-        margin:
-            0;
-
-        padding:
-            10px 0 !important;
+        color: rgba(255, 255, 255, 0.88);
     }
 
+    .case-navbar .nav-link:hover,
+    .case-navbar .nav-link.active {
+        color: #ffffff;
+    }
+
+    /* Gold underline */
     .case-navbar .nav-link::after {
-
-        bottom:
-            5px;
+        bottom: 5px;
+        background: var(--panvi-gold);
     }
 
-    .case-navbar .btn-case {
+    /* Let's Talk */
+    .case-navbar .btn-forest {
+        width: 100%;
+        margin-left: 0 !important;
+        margin-top: 15px !important;
 
-        width:
-            100%;
+        background: var(--panvi-gold);
+        border-color: var(--panvi-gold);
+        color: #ffffff;
     }
 
-    .case-hero {
-
-        min-height:
-            auto;
-
-        padding:
-            130px 0 80px;
+    .case-navbar .btn-forest:hover {
+        background: #9f743c;
+        border-color: #9f743c;
+        color: #ffffff;
     }
 
-    .hero-visual {
-
-        margin-top:
-            25px;
-
-        padding:
-            10px 5px 50px;
+    /* Hamburger */
+    .case-navbar .navbar-toggler {
+        color: #ffffff;
+        border: 0;
     }
 
-    .case-section {
-
-        padding:
-            80px 0;
+    .case-navbar .navbar-toggler:focus {
+        box-shadow: none !important;
     }
 
 }
-
-
 /* =========================================================
    TABLET
 ========================================================= */
