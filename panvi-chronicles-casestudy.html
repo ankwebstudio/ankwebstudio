@@ -237,40 +237,24 @@ p {
    NAVBAR
 ========================================================= */
 
+
 .case-navbar {
+    background: #173f3a;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.10);
 
-    background:
-        rgba(255, 253, 249, 0.94);
+    padding: 12px 0;
 
-    backdrop-filter:
-        blur(18px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
 
-    -webkit-backdrop-filter:
-        blur(18px);
+    transition: all 0.3s ease;
 
-    border-bottom:
-        1px solid var(--panvi-border);
-
-    padding:
-        13px 0;
-
-    transition:
-        all 0.3s ease;
-
-    z-index:
-        1000;
+    z-index: 1000;
 }
 
 .nav-logo {
-
-    width:
-        135px;
-
-    height:
-        auto;
-
-    display:
-        block;
+    width: 125px;
+    height: auto;
+    display: block;
 }
 
 .case-navbar .navbar-nav {
@@ -279,84 +263,67 @@ p {
         center;
 }
 
+/* NAV LINKS */
+
 .case-navbar .nav-link {
+    position: relative;
 
-    position:
-        relative;
+    color: rgba(255, 255, 255, 0.88);
 
-    color:
-        var(--panvi-ink);
+    font-size: 14px;
+    font-weight: 600;
 
-    font-size:
-        14px;
+    margin-left: 22px;
+    padding: 8px 0 !important;
 
-    font-weight:
-        600;
-
-    margin-left:
-        22px;
-
-    padding:
-        8px 0 !important;
-
-    transition:
-        color 0.3s ease;
+    transition: color 0.3s ease;
 }
 
-.case-navbar .nav-link::after {
-
-    content:
-        "";
-
-    position:
-        absolute;
-
-    left:
-        0;
-
-    bottom:
-        2px;
-
-    width:
-        0;
-
-    height:
-        2px;
-
-    background:
-        var(--panvi-gold);
-
-    transition:
-        width 0.3s ease;
-}
+/* HOVER + ACTIVE */
 
 .case-navbar .nav-link:hover,
 .case-navbar .nav-link.active {
+    color: #ffffff;
+}
 
-    color:
-        var(--panvi-forest);
+
+/* GOLD UNDERLINE */
+
+.case-navbar .nav-link::after {
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+    bottom: 2px;
+
+    width: 0;
+    height: 2px;
+
+    background: #b78a4a;
+
+    transition: width 0.3s ease;
 }
 
 .case-navbar .nav-link:hover::after,
 .case-navbar .nav-link.active::after {
-
-    width:
-        100%;
+    width: 100%;
 }
 
+
+/* MOBILE MENU BUTTON */
+
 .navbar-toggler {
+    border: 0;
+    padding: 5px;
 
-    border:
-        0;
+    color: #ffffff;
 
-    padding:
-        5px;
+    box-shadow: none !important;
+}
 
-    color:
-        var(--panvi-forest);
-
-    box-shadow:
-        none !important;
+.navbar-toggler:focus {
+    box-shadow: none !important;
 }
 
 
