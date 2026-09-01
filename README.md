@@ -163,18 +163,10 @@ A premium fashion website designed around elegant visuals, product presentation,
 **Focus:**
 `Fashion` `E-Commerce` `UI/UX` `Responsive Design`
 
----
-
-### 🌴 Coconut Lagoon Stay
-
-**Luxury Resort Website**
-
-An immersive resort website designed to showcase accommodation, experiences, dining, wellness, and destination visuals with a strong visual experience.
-
-**Focus:**
-`Hospitality` `Resort` `Responsive Design` `Enquiry`
+🔎 [View Case Study]([aamiznest-case-study.html](https://ankwebstudio.in/evara-casestudy.html))
 
 ---
+
 
 ### 🛍️ AamizNest
 
