@@ -152,6 +152,8 @@ A premium travel storytelling website with category-based content organization, 
 **Focus:**
 `Travel` `Blog` `Responsive Design` `SEO`
 
+🔎 [View Case Study](https://ankwebstudio.in/panvi-chronicles-casestudy.html)
+
 ---
 
 ### 👗 Evara Boutique
@@ -190,6 +192,8 @@ A professional fitness website presenting training programs, membership informat
 
 **Focus:**
 `Fitness` `Business Website` `Mobile First`
+
+[View Case Study](https://ankwebstudio.in/fitness-casestudy.html)
 
 ---
 
