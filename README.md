@@ -163,7 +163,7 @@ A premium fashion website designed around elegant visuals, product presentation,
 **Focus:**
 `Fashion` `E-Commerce` `UI/UX` `Responsive Design`
 
-🔎 [View Case Study]([aamiznest-case-study.html](https://ankwebstudio.in/evara-casestudy.html))
+🔎 [View Case Study](https://ankwebstudio.in/evara-casestudy.html)
 
 ---
 
