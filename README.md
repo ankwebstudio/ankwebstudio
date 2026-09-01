@@ -178,12 +178,15 @@ An immersive resort website designed to showcase accommodation, experiences, din
 
 ### 🛍️ AamizNest
 
-**E-Commerce Website**
+**Shopify Dropshipping E-Commerce Store**
 
-A modern e-commerce experience focused on clean product presentation and a smooth shopping journey.
+A modern Shopify dropshipping store designed and developed by ANK WebStudio, featuring product collections, responsive design, clean product presentation, and a user-focused shopping experience.
 
-**Focus:**
-`E-Commerce` `Product UI` `Responsive`
+**Project Type:** Personal Project  
+**Platform:** Shopify  
+**Status:** Archived
+
+🔎 [View Case Study](aamiznest-case-study.html)
 
 ---
 
