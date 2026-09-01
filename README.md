@@ -351,10 +351,15 @@ Have a business idea, website requirement, redesign project, or digital presence
 
 <p align="center">
   <a href="https://ankwebstudio.in">
-    <img src="https://img.shields.io/badge/🌐%20Visit%20Website-0099cc?style=for-the-badge" />
+    <img src="https://img.shields.io/badge/🌐%20Website-Visit%20ANK%20WebStudio-0099cc?style=for-the-badge" />
   </a>
-  <a href="mailto:[ankwebstudio@gmail.com](mailto:ankwebstudio@gmail.com)">
-    <img src="https://img.shields.io/badge/✉%20Get%20in%20Touch-EA4335?style=for-the-badge" />
+
+  <a href="https://ankwebstudio.in/contact.html">
+    <img src="https://img.shields.io/badge/✉%20Contact-Get%20in%20Touch-EA4335?style=for-the-badge" />
+  </a>
+
+  <a href="https://www.instagram.com/ankwebstudio">
+    <img src="https://img.shields.io/badge/Instagram-Follow-E4405F?style=for-the-badge&logo=instagram&logoColor=white" />
   </a>
 </p>
 
