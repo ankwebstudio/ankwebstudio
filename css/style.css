@@ -1109,38 +1109,33 @@ h6,
 
 }
 
-.client-image{
-
-    width:90px;
-
-    height:90px;
-
-    object-fit:cover;
-
-    border-radius:50%;
-
-    border:4px solid #0099cc;
-
-    margin-bottom:18px;
-
+.client-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
 }
 
-.client-info h4{
-
-    color:#0B2C5F;
-
-    font-weight:700;
-
-    margin-bottom:5px;
-
+.client-image {
+    width: 90px;
+    height: 90px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid #0099cc;
+    margin-bottom: 18px;
 }
 
-.client-role{
+.client-info h4 {
+    color: #0B2C5F;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
 
-    color:#777;
-
-    font-size:15px;
-
+.client-role {
+    color: #777;
+    font-size: 15px;
+    display: block;
+    margin-bottom: 6px;
 }
 
 .instagram-link{
