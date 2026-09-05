@@ -1113,6 +1113,7 @@ h6,
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     text-align: center;
 }
 
@@ -1124,7 +1125,6 @@ h6,
     border: 4px solid #0099cc;
     margin-bottom: 18px;
 }
-
 .client-info h4 {
     color: #0B2C5F;
     font-weight: 700;
