@@ -1,61 +1,80 @@
 <!DOCTYPE html>
+
 <html lang="en">
+
 <head>
+
   <meta charset="UTF-8">
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>VOLTARA Mobile Parts Website Case Study | ANK WebStudio</title>
 
-  <meta name="description"
-        content="Explore the VOLTARA mobile parts and technology supply website concept created by ANK WebStudio. A responsive B2B website designed for mobile repair professionals, retailers and technology suppliers across the UAE.">
+<meta name="description"
+     content="Explore the completed VOLTARA mobile parts and technology supply website concept by ANK WebStudio. A premium B2B website experience designed for mobile repair professionals, retailers and technology suppliers in the UAE.">
 
-  <meta name="keywords"
-        content="VOLTARA website, mobile parts website, mobile spare parts website, UAE technology website, B2B website design, mobile repair website, ANK WebStudio, web design Kerala">
+<meta name="keywords"
+     content="VOLTARA website case study, mobile parts website, mobile spare parts website, UAE B2B website, technology supply website, mobile repair website, website design Kerala, ANK WebStudio">
 
   <meta name="author" content="ANK WebStudio">
+
   <meta name="robots" content="index, follow">
 
   <link rel="canonical"
         href="https://ankwebstudio.github.io/ANK-WebStudio/voltara-casestudy.html">
 
-  <!-- Open Graph -->
-  <meta property="og:title"
-        content="VOLTARA Mobile Parts Website Case Study | ANK WebStudio">
+  <!-- =========================
+       OPEN GRAPH
+  ========================= -->
 
-  <meta property="og:description"
-        content="A premium responsive B2B website concept for mobile parts and technology supply across the UAE.">
+<meta property="og:title"
+     content="VOLTARA Mobile Parts Website Case Study | ANK WebStudio">
 
-  <meta property="og:type" content="article">
+<meta property="og:description"
+     content="A premium responsive B2B website concept for mobile parts and technology supply businesses serving professional buyers in the UAE.">
 
-  <meta property="og:url"
-        content="https://ankwebstudio.github.io/ANK-WebStudio/voltara-casestudy.html">
+<meta property="og:type"
+     content="article">
 
-  <meta property="og:image"
-        content="https://ankwebstudio.github.io/VOLTARA/img/voltara-og.png">
+<meta property="og:url"
+     content="https://ankwebstudio.github.io/ANK-WebStudio/voltara-casestudy.html">
 
-  <meta property="og:site_name"
-        content="ANK WebStudio">
+<meta property="og:image"
+     content="https://ankwebstudio.github.io/VOLTARA/img/voltara-og.png">
 
-  <!-- Twitter -->
-  <meta name="twitter:card" content="summary_large_image">
+<meta property="og:site_name"
+     content="ANK WebStudio">
 
-  <meta name="twitter:title"
-        content="VOLTARA Mobile Parts Website Case Study | ANK WebStudio">
+  <!-- =========================
+       TWITTER
+  ========================= -->
 
-  <meta name="twitter:description"
-        content="Explore the VOLTARA mobile parts and technology supply website concept created by ANK WebStudio.">
+<meta name="twitter:card"
+     content="summary_large_image">
 
-  <meta name="twitter:image"
-        content="https://ankwebstudio.github.io/VOLTARA/img/voltara-og.png">
+<meta name="twitter:title"
+     content="VOLTARA Mobile Parts Website Case Study | ANK WebStudio">
 
-  <!-- Favicon -->
+<meta name="twitter:description"
+     content="Explore the completed VOLTARA mobile parts and technology supply website concept created by ANK WebStudio.">
+
+<meta name="twitter:image"
+     content="https://ankwebstudio.github.io/VOLTARA/img/voltara-og.png">
+
+  <!-- =========================
+       FAVICON
+  ========================= -->
+
   <link rel="icon"
         type="image/png"
         href="img/ank-logo.png">
 
-  <!-- Google Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <!-- =========================
+       GOOGLE FONTS
+  ========================= -->
+
+  <link rel="preconnect"
+        href="https://fonts.googleapis.com">
 
   <link rel="preconnect"
         href="https://fonts.gstatic.com"
@@ -64,19 +83,30 @@
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap"
         rel="stylesheet">
 
-  <!-- Bootstrap -->
+  <!-- =========================
+       BOOTSTRAP
+  ========================= -->
+
   <link
     href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
     rel="stylesheet">
 
-  <!-- Bootstrap Icons -->
+  <!-- =========================
+       BOOTSTRAP ICONS
+  ========================= -->
+
   <link
     rel="stylesheet"
     href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 
+  <!-- =========================================================
+       STYLES
+  ========================================================= -->
+
   <style>
 
     :root {
+
       --volt-black: #0A0D0F;
       --volt-dark: #111619;
       --volt-panel: #171D20;
@@ -91,14 +121,26 @@
 
       --volt-border: rgba(255,255,255,0.09);
 
-      --cream: #F4F6F3;
       --light-bg: #EDF1EE;
+      --soft-white: #F7F8F6;
 
-      --shadow: 0 25px 70px rgba(0,0,0,0.12);
+      --text-dark: #27302D;
+      --text-muted: #68736F;
+
+      --border-light: #E1E6E3;
+
+      --shadow:
+        0 25px 70px rgba(0,0,0,0.12);
 
       --radius-lg: 28px;
-      --radius-md: 18px;
+      --radius-md: 20px;
+
     }
+
+
+    /* =========================
+       RESET
+    ========================= */
 
     * {
       margin: 0;
@@ -106,907 +148,2384 @@
       box-sizing: border-box;
     }
 
+
     html {
       scroll-behavior: smooth;
+      scroll-padding-top: 90px;
     }
 
+
     body {
+
       font-family: "DM Sans", sans-serif;
-      color: #27302D;
-      background: #F7F8F6;
+
+      color: var(--text-dark);
+
+      background: var(--soft-white);
+
       line-height: 1.7;
+
+      overflow-x: hidden;
+
     }
+
 
     h1,
     h2,
     h3,
     h4 {
+
       font-family: "Manrope", sans-serif;
+
       font-weight: 800;
+
       letter-spacing: -0.03em;
+
     }
+
 
     a {
       text-decoration: none;
     }
+
 
     img {
       max-width: 100%;
       display: block;
     }
 
+
     /* =========================
        NAVBAR
     ========================= */
 
     .navbar {
+
       background: rgba(10,13,15,0.96);
-      backdrop-filter: blur(14px);
-      padding: 15px 0;
+
+      backdrop-filter: blur(16px);
+
+      padding: 14px 0;
+
+      border-bottom:
+        1px solid rgba(255,255,255,0.06);
+
       transition: 0.3s ease;
-      border-bottom: 1px solid rgba(255,255,255,0.06);
+
     }
+
 
     .navbar.scrolled {
-      box-shadow: 0 8px 30px rgba(0,0,0,0.15);
+
+      box-shadow:
+        0 10px 35px rgba(0,0,0,0.18);
+
     }
+
 
     .navbar-brand {
+
       display: flex;
+
       align-items: center;
+
       gap: 10px;
+
       color: #fff !important;
+
       font-weight: 800;
+
       font-size: 20px;
+
       letter-spacing: -0.02em;
+
     }
+
 
     .navbar-brand img {
+
       width: 42px;
       height: 42px;
+
       object-fit: contain;
+
     }
+
 
     .navbar-nav .nav-link {
-      color: rgba(255,255,255,0.78) !important;
+
+      color:
+        rgba(255,255,255,0.78) !important;
+
       font-size: 14px;
+
       font-weight: 600;
-      margin: 0 8px;
+
+      margin: 0 7px;
+
       transition: 0.25s ease;
+
     }
+
 
     .navbar-nav .nav-link:hover {
-      color: var(--volt-green) !important;
+
+      color:
+        var(--volt-green) !important;
+
     }
+
 
     .navbar-toggler {
-      border: 1px solid rgba(255,255,255,0.2);
+
+      border:
+        1px solid rgba(255,255,255,0.2);
+
     }
+
+
+    .navbar-toggler:focus {
+
+      box-shadow:
+        0 0 0 0.15rem
+        rgba(140,198,63,0.25);
+
+    }
+
 
     .navbar-toggler-icon {
+
       filter: invert(1);
+
     }
+
 
     .nav-cta {
-      background: var(--volt-green);
-      color: #0A0D0F !important;
-      padding: 10px 17px !important;
-      border-radius: 50px;
-      font-weight: 800 !important;
+
+      background:
+        var(--volt-green);
+
+      color:
+        var(--volt-black) !important;
+
+      padding:
+        10px 17px !important;
+
+      border-radius:
+        50px;
+
+      font-weight:
+        800 !important;
+
     }
 
+
     .nav-cta:hover {
-      background: #A2DD52;
-      transform: translateY(-1px);
+
+      background:
+        #A2DD52;
+
+      transform:
+        translateY(-1px);
+
     }
+
 
     /* =========================
        HERO
     ========================= */
 
     .case-hero {
+
       position: relative;
+
       overflow: hidden;
+
       background:
-        radial-gradient(circle at 85% 20%, rgba(140,198,63,0.14), transparent 30%),
-        radial-gradient(circle at 15% 80%, rgba(140,198,63,0.08), transparent 28%),
+
+        radial-gradient(
+          circle at 85% 18%,
+          rgba(140,198,63,0.16),
+          transparent 30%
+        ),
+
+        radial-gradient(
+          circle at 10% 85%,
+          rgba(140,198,63,0.08),
+          transparent 28%
+        ),
+
         var(--volt-black);
+
       color: #fff;
-      padding: 150px 0 100px;
+
+      padding:
+        155px 0 105px;
+
     }
+
 
     .case-hero::before {
+
       content: "";
+
       position: absolute;
+
       inset: 0;
+
       background-image:
-        linear-gradient(rgba(255,255,255,0.025) 1px, transparent 1px),
-        linear-gradient(90deg, rgba(255,255,255,0.025) 1px, transparent 1px);
-      background-size: 55px 55px;
+
+        linear-gradient(
+          rgba(255,255,255,0.025) 1px,
+          transparent 1px
+        ),
+
+        linear-gradient(
+          90deg,
+          rgba(255,255,255,0.025) 1px,
+          transparent 1px
+        );
+
+      background-size:
+        55px 55px;
+
       pointer-events: none;
+
     }
+
+
+    .hero-glow {
+
+      position: absolute;
+
+      width: 500px;
+
+      height: 500px;
+
+      right: -180px;
+
+      top: 100px;
+
+      background:
+        rgba(140,198,63,0.07);
+
+      filter:
+        blur(90px);
+
+      border-radius: 50%;
+
+      pointer-events: none;
+
+    }
+
 
     .hero-content {
+
       position: relative;
+
       z-index: 2;
+
     }
+
 
     .hero-label {
+
       display: inline-flex;
+
       align-items: center;
-      gap: 8px;
-      padding: 8px 14px;
-      border: 1px solid rgba(140,198,63,0.3);
-      background: rgba(140,198,63,0.08);
-      color: var(--volt-green);
-      border-radius: 50px;
+
+      gap: 9px;
+
+      padding:
+        8px 14px;
+
+      border:
+        1px solid rgba(140,198,63,0.3);
+
+      background:
+        rgba(140,198,63,0.08);
+
+      color:
+        var(--volt-green);
+
+      border-radius:
+        50px;
+
       font-size: 12px;
+
       font-weight: 800;
+
       letter-spacing: 0.08em;
+
       text-transform: uppercase;
-      margin-bottom: 25px;
+
+      margin-bottom: 26px;
+
     }
+
 
     .hero-label i {
-      font-size: 8px;
+      font-size: 7px;
     }
+
 
     .case-hero h1 {
-      font-size: clamp(44px, 7vw, 78px);
-      line-height: 0.98;
-      max-width: 900px;
-      margin-bottom: 25px;
+
+      font-size:
+        clamp(44px, 7vw, 80px);
+
+      line-height:
+        0.98;
+
+      max-width:
+        930px;
+
+      margin-bottom:
+        27px;
+
     }
+
 
     .case-hero h1 span {
-      color: var(--volt-green);
+
+      color:
+        var(--volt-green);
+
     }
+
 
     .hero-description {
-      color: #B8C2BE;
-      font-size: 19px;
-      max-width: 720px;
-      line-height: 1.7;
-      margin-bottom: 35px;
+
+      color:
+        #B8C2BE;
+
+      font-size:
+        19px;
+
+      max-width:
+        735px;
+
+      line-height:
+        1.75;
+
+      margin-bottom:
+        35px;
+
     }
+
 
     .hero-buttons {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 13px;
+
+      display:
+        flex;
+
+      flex-wrap:
+        wrap;
+
+      gap:
+        13px;
+
     }
+
 
     .btn-volt {
-      background: var(--volt-green);
-      color: #0A0D0F;
-      border: none;
-      padding: 13px 22px;
-      border-radius: 50px;
-      font-weight: 800;
-      transition: 0.25s ease;
+
+      display:
+        inline-flex;
+
+      align-items:
+        center;
+
+      justify-content:
+        center;
+
+      background:
+        var(--volt-green);
+
+      color:
+        var(--volt-black);
+
+      border:
+        none;
+
+      padding:
+        13px 22px;
+
+      border-radius:
+        50px;
+
+      font-weight:
+        800;
+
+      transition:
+        0.25s ease;
+
     }
+
 
     .btn-volt:hover {
-      background: #A2DD52;
-      color: #0A0D0F;
-      transform: translateY(-2px);
+
+      background:
+        #A2DD52;
+
+      color:
+        var(--volt-black);
+
+      transform:
+        translateY(-2px);
+
     }
+
 
     .btn-outline-light-custom {
-      color: #fff;
-      border: 1px solid rgba(255,255,255,0.18);
-      padding: 12px 22px;
-      border-radius: 50px;
-      font-weight: 700;
-      transition: 0.25s ease;
+
+      display:
+        inline-flex;
+
+      align-items:
+        center;
+
+      justify-content:
+        center;
+
+      color:
+        #fff;
+
+      border:
+        1px solid rgba(255,255,255,0.18);
+
+      padding:
+        12px 22px;
+
+      border-radius:
+        50px;
+
+      font-weight:
+        700;
+
+      transition:
+        0.25s ease;
+
     }
+
 
     .btn-outline-light-custom:hover {
-      color: var(--volt-green);
-      border-color: var(--volt-green);
+
+      color:
+        var(--volt-green);
+
+      border-color:
+        var(--volt-green);
+
     }
+
+
+    /* =========================
+       HERO STATS
+    ========================= */
 
     .hero-stats {
+
       position: relative;
+
       z-index: 2;
-      margin-top: 75px;
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      gap: 14px;
+
+      margin-top:
+        75px;
+
+      display:
+        grid;
+
+      grid-template-columns:
+        repeat(4,1fr);
+
+      gap:
+        14px;
+
     }
+
 
     .hero-stat {
-      border: 1px solid var(--volt-border);
-      background: rgba(255,255,255,0.035);
-      padding: 20px;
-      border-radius: 16px;
+
+      border:
+        1px solid var(--volt-border);
+
+      background:
+        rgba(255,255,255,0.035);
+
+      padding:
+        21px;
+
+      border-radius:
+        16px;
+
+      transition:
+        0.25s ease;
+
     }
+
+
+    .hero-stat:hover {
+
+      background:
+        rgba(255,255,255,0.055);
+
+      border-color:
+        rgba(140,198,63,0.2);
+
+    }
+
 
     .hero-stat strong {
-      display: block;
-      font-family: "Manrope", sans-serif;
-      color: #fff;
-      font-size: 15px;
-      margin-bottom: 4px;
+
+      display:
+        block;
+
+      color:
+        #fff;
+
+      font-family:
+        "Manrope", sans-serif;
+
+      font-size:
+        15px;
+
+      margin-bottom:
+        4px;
+
     }
 
+
     .hero-stat span {
-      color: #84908B;
-      font-size: 13px;
+
+      color:
+        #84908B;
+
+      font-size:
+        13px;
+
     }
+
 
     /* =========================
        BREADCRUMB
     ========================= */
 
     .breadcrumb-wrap {
-      background: #fff;
-      border-bottom: 1px solid #E6EAE7;
-      padding: 14px 0;
+
+      background:
+        #fff;
+
+      border-bottom:
+        1px solid #E6EAE7;
+
+      padding:
+        14px 0;
+
     }
+
 
     .breadcrumb {
-      margin: 0;
-      font-size: 13px;
+
+      margin:
+        0;
+
+      font-size:
+        13px;
+
     }
+
 
     .breadcrumb a {
-      color: #5D6964;
+
+      color:
+        #5D6964;
+
     }
+
+
+    .breadcrumb a:hover {
+
+      color:
+        var(--volt-green-dark);
+
+    }
+
 
     .breadcrumb-item.active {
-      color: #8B9691;
+
+      color:
+        #8B9691;
+
     }
 
+
     /* =========================
-       COMMON
+       COMMON SECTIONS
     ========================= */
 
     .section {
-      padding: 100px 0;
+
+      padding:
+        105px 0;
+
     }
+
 
     .section-soft {
-      background: var(--light-bg);
+
+      background:
+        var(--light-bg);
+
     }
+
 
     .section-dark {
-      background: var(--volt-black);
-      color: #fff;
+
+      background:
+        var(--volt-black);
+
+      color:
+        #fff;
+
     }
+
 
     .section-label {
-      display: inline-block;
-      color: var(--volt-green-dark);
-      font-size: 12px;
-      font-weight: 800;
-      letter-spacing: 0.12em;
-      text-transform: uppercase;
-      margin-bottom: 13px;
+
+      display:
+        inline-block;
+
+      color:
+        var(--volt-green-dark);
+
+      font-size:
+        12px;
+
+      font-weight:
+        800;
+
+      letter-spacing:
+        0.12em;
+
+      text-transform:
+        uppercase;
+
+      margin-bottom:
+        13px;
+
     }
+
 
     .section-dark .section-label {
-      color: var(--volt-green);
+
+      color:
+        var(--volt-green);
+
     }
+
 
     .section-title {
-      font-size: clamp(34px, 5vw, 52px);
-      line-height: 1.08;
-      margin-bottom: 18px;
+
+      font-size:
+        clamp(34px,5vw,52px);
+
+      line-height:
+        1.08;
+
+      margin-bottom:
+        18px;
+
     }
+
 
     .section-description {
-      color: #68736F;
-      max-width: 700px;
-      font-size: 17px;
+
+      color:
+        var(--text-muted);
+
+      max-width:
+        700px;
+
+      font-size:
+        17px;
+
     }
 
+
     .section-dark .section-description {
-      color: #A5B0AC;
+
+      color:
+        #A5B0AC;
+
     }
+
 
     /* =========================
        OVERVIEW
     ========================= */
 
     .overview-card {
-      background: #fff;
-      border: 1px solid #E2E7E4;
-      border-radius: var(--radius-lg);
-      padding: 40px;
-      height: 100%;
-      box-shadow: 0 10px 35px rgba(20,35,30,0.04);
+
+      background:
+        #fff;
+
+      border:
+        1px solid #E2E7E4;
+
+      border-radius:
+        var(--radius-lg);
+
+      padding:
+        42px;
+
+      height:
+        100%;
+
+      box-shadow:
+        0 10px 35px rgba(20,35,30,0.04);
+
     }
+
 
     .overview-card h3 {
-      font-size: 25px;
-      margin-bottom: 16px;
+
+      font-size:
+        25px;
+
+      margin-bottom:
+        16px;
+
     }
+
 
     .overview-card p {
-      color: #65706C;
+
+      color:
+        #65706C;
+
     }
+
 
     .project-info {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 14px;
-      margin-top: 25px;
+
+      display:
+        grid;
+
+      grid-template-columns:
+        1fr 1fr;
+
+      gap:
+        14px;
+
+      margin-top:
+        25px;
+
     }
+
 
     .info-item {
-      padding: 17px;
-      background: #F4F6F4;
-      border-radius: 14px;
+
+      padding:
+        17px;
+
+      background:
+        #F4F6F4;
+
+      border-radius:
+        14px;
+
+      border:
+        1px solid transparent;
+
     }
+
+
+    .info-item:hover {
+
+      border-color:
+        rgba(140,198,63,0.3);
+
+    }
+
 
     .info-item small {
-      display: block;
-      color: #89938F;
-      font-size: 11px;
-      text-transform: uppercase;
-      font-weight: 800;
-      letter-spacing: 0.08em;
-      margin-bottom: 5px;
+
+      display:
+        block;
+
+      color:
+        #89938F;
+
+      font-size:
+        11px;
+
+      text-transform:
+        uppercase;
+
+      font-weight:
+        800;
+
+      letter-spacing:
+        0.08em;
+
+      margin-bottom:
+        5px;
+
     }
 
+
     .info-item strong {
-      color: #27302D;
-      font-size: 14px;
+
+      color:
+        #27302D;
+
+      font-size:
+        14px;
+
     }
+
+
+    /* =========================
+       PROJECT CHALLENGE
+    ========================= */
+
+    .challenge-box {
+
+      background:
+        var(--volt-black);
+
+      color:
+        #fff;
+
+      border-radius:
+        var(--radius-lg);
+
+      padding:
+        48px;
+
+      position:
+        relative;
+
+      overflow:
+        hidden;
+
+    }
+
+
+    .challenge-box::after {
+
+      content:
+        "";
+
+      position:
+        absolute;
+
+      width:
+        300px;
+
+      height:
+        300px;
+
+      right:
+        -100px;
+
+      top:
+        -100px;
+
+      background:
+        rgba(140,198,63,0.08);
+
+      filter:
+        blur(55px);
+
+      border-radius:
+        50%;
+
+    }
+
+
+    .challenge-box h3 {
+
+      font-size:
+        31px;
+
+      max-width:
+        650px;
+
+      margin-bottom:
+        16px;
+
+    }
+
+
+    .challenge-box p {
+
+      color:
+        #A6B0AC;
+
+      max-width:
+        760px;
+
+      margin:
+        0;
+
+    }
+
 
     /* =========================
        GOALS
     ========================= */
 
     .goal-card {
-      background: #fff;
-      border: 1px solid #E3E8E5;
-      border-radius: 20px;
-      padding: 30px;
-      height: 100%;
-      transition: 0.3s ease;
+
+      background:
+        #fff;
+
+      border:
+        1px solid #E3E8E5;
+
+      border-radius:
+        20px;
+
+      padding:
+        30px;
+
+      height:
+        100%;
+
+      transition:
+        0.3s ease;
+
     }
+
 
     .goal-card:hover {
-      transform: translateY(-5px);
-      border-color: rgba(140,198,63,0.45);
-      box-shadow: 0 18px 45px rgba(20,35,30,0.08);
+
+      transform:
+        translateY(-5px);
+
+      border-color:
+        rgba(140,198,63,0.45);
+
+      box-shadow:
+        0 18px 45px rgba(20,35,30,0.08);
+
     }
+
 
     .goal-icon {
-      width: 52px;
-      height: 52px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      background: rgba(140,198,63,0.12);
-      color: var(--volt-green-dark);
-      border-radius: 15px;
-      font-size: 22px;
-      margin-bottom: 22px;
+
+      width:
+        52px;
+
+      height:
+        52px;
+
+      display:
+        flex;
+
+      align-items:
+        center;
+
+      justify-content:
+        center;
+
+      background:
+        rgba(140,198,63,0.12);
+
+      color:
+        var(--volt-green-dark);
+
+      border-radius:
+        15px;
+
+      font-size:
+        22px;
+
+      margin-bottom:
+        22px;
+
     }
+
 
     .goal-card h3 {
-      font-size: 20px;
-      margin-bottom: 10px;
+
+      font-size:
+        20px;
+
+      margin-bottom:
+        10px;
+
     }
+
 
     .goal-card p {
-      color: #68736F;
-      margin: 0;
-      font-size: 14px;
+
+      color:
+        #68736F;
+
+      margin:
+        0;
+
+      font-size:
+        14px;
+
     }
 
+
     /* =========================
-       WEBSITE PREVIEW
+       PREVIEW
     ========================= */
 
     .preview-section {
-      background: #111619;
-      padding: 100px 0;
+
+      background:
+        #111619;
+
+      padding:
+        105px 0;
+
     }
+
 
     .preview-window {
-      border: 1px solid rgba(255,255,255,0.1);
-      border-radius: 25px;
-      overflow: hidden;
-      background: #080A0B;
-      box-shadow: 0 35px 90px rgba(0,0,0,0.35);
+
+      border:
+        1px solid rgba(255,255,255,0.1);
+
+      border-radius:
+        25px;
+
+      overflow:
+        hidden;
+
+      background:
+        #080A0B;
+
+      box-shadow:
+        0 35px 90px rgba(0,0,0,0.35);
+
     }
+
 
     .window-bar {
-      height: 46px;
-      display: flex;
-      align-items: center;
-      padding: 0 18px;
-      gap: 7px;
-      border-bottom: 1px solid rgba(255,255,255,0.08);
-      background: #171C1F;
+
+      height:
+        46px;
+
+      display:
+        flex;
+
+      align-items:
+        center;
+
+      padding:
+        0 18px;
+
+      gap:
+        7px;
+
+      border-bottom:
+        1px solid rgba(255,255,255,0.08);
+
+      background:
+        #171C1F;
+
     }
+
 
     .window-dot {
-      width: 9px;
-      height: 9px;
-      border-radius: 50%;
-      background: #4A5450;
+
+      width:
+        9px;
+
+      height:
+        9px;
+
+      border-radius:
+        50%;
+
+      background:
+        #4A5450;
+
     }
+
 
     .preview-image {
-      width: 100%;
-      max-height: 720px;
-      object-fit: cover;
-      object-position: top;
+
+      width:
+        100%;
+
+      max-height:
+        760px;
+
+      object-fit:
+        cover;
+
+      object-position:
+        top;
+
     }
+
 
     .preview-note {
-      color: #89938F;
-      font-size: 13px;
-      text-align: center;
-      margin-top: 18px;
+
+      color:
+        #89938F;
+
+      font-size:
+        13px;
+
+      text-align:
+        center;
+
+      margin-top:
+        18px;
+
     }
 
+
     /* =========================
-       FEATURES
+       FEATURE ROWS
     ========================= */
 
     .feature-row {
-      display: flex;
-      gap: 22px;
-      padding: 27px 0;
-      border-bottom: 1px solid #DDE3DF;
+
+      display:
+        flex;
+
+      gap:
+        22px;
+
+      padding:
+        27px 0;
+
+      border-bottom:
+        1px solid #DDE3DF;
+
     }
+
 
     .feature-row:last-child {
-      border-bottom: none;
+
+      border-bottom:
+        none;
+
     }
+
 
     .feature-number {
-      min-width: 48px;
-      height: 48px;
-      border-radius: 14px;
-      background: var(--volt-black);
-      color: var(--volt-green);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-weight: 800;
-      font-size: 14px;
+
+      min-width:
+        48px;
+
+      height:
+        48px;
+
+      border-radius:
+        14px;
+
+      background:
+        var(--volt-black);
+
+      color:
+        var(--volt-green);
+
+      display:
+        flex;
+
+      align-items:
+        center;
+
+      justify-content:
+        center;
+
+      font-weight:
+        800;
+
+      font-size:
+        14px;
+
     }
+
 
     .feature-row h3 {
-      font-size: 21px;
-      margin-bottom: 6px;
+
+      font-size:
+        21px;
+
+      margin-bottom:
+        6px;
+
     }
+
 
     .feature-row p {
-      color: #69746F;
-      margin: 0;
-      font-size: 14px;
+
+      color:
+        #69746F;
+
+      margin:
+        0;
+
+      font-size:
+        14px;
+
     }
 
+
     /* =========================
-       SCREENSHOTS
+       DESIGN SHOWCASE
     ========================= */
 
     .screen-card {
-      background: #fff;
-      border-radius: 22px;
-      overflow: hidden;
-      border: 1px solid #E1E6E3;
-      box-shadow: 0 15px 40px rgba(20,35,30,0.06);
-      height: 100%;
+
+      background:
+        #fff;
+
+      border-radius:
+        22px;
+
+      overflow:
+        hidden;
+
+      border:
+        1px solid #E1E6E3;
+
+      box-shadow:
+        0 15px 40px rgba(20,35,30,0.06);
+
+      height:
+        100%;
+
+      transition:
+        0.3s ease;
+
     }
+
+
+    .screen-card:hover {
+
+      transform:
+        translateY(-4px);
+
+      box-shadow:
+        0 20px 50px rgba(20,35,30,0.09);
+
+    }
+
 
     .screen-card img {
-      width: 100%;
-      aspect-ratio: 16/10;
-      object-fit: cover;
-      object-position: top;
+
+      width:
+        100%;
+
+      aspect-ratio:
+        16/10;
+
+      object-fit:
+        cover;
+
+      object-position:
+        top;
+
     }
+
 
     .screen-card-content {
-      padding: 22px;
+
+      padding:
+        23px;
+
     }
+
 
     .screen-card-content h3 {
-      font-size: 18px;
-      margin-bottom: 7px;
+
+      font-size:
+        18px;
+
+      margin-bottom:
+        7px;
+
     }
 
+
     .screen-card-content p {
-      color: #717B77;
-      font-size: 13px;
-      margin: 0;
+
+      color:
+        #717B77;
+
+      font-size:
+        13px;
+
+      margin:
+        0;
+
     }
+
 
     /* =========================
        PROCESS
     ========================= */
 
     .process-card {
-      position: relative;
-      padding: 30px;
-      border-radius: 22px;
-      background: #fff;
-      border: 1px solid #E1E6E3;
-      height: 100%;
+
+      position:
+        relative;
+
+      padding:
+        31px;
+
+      border-radius:
+        22px;
+
+      background:
+        #fff;
+
+      border:
+        1px solid #E1E6E3;
+
+      height:
+        100%;
+
+      transition:
+        0.3s ease;
+
     }
+
+
+    .process-card:hover {
+
+      transform:
+        translateY(-4px);
+
+      border-color:
+        rgba(140,198,63,0.4);
+
+    }
+
 
     .process-number {
-      color: var(--volt-green-dark);
-      font-size: 12px;
-      font-weight: 900;
-      letter-spacing: 0.1em;
-      margin-bottom: 20px;
+
+      color:
+        var(--volt-green-dark);
+
+      font-size:
+        12px;
+
+      font-weight:
+        900;
+
+      letter-spacing:
+        0.1em;
+
+      margin-bottom:
+        20px;
+
     }
+
 
     .process-card h3 {
-      font-size: 20px;
-      margin-bottom: 10px;
+
+      font-size:
+        20px;
+
+      margin-bottom:
+        10px;
+
     }
+
 
     .process-card p {
-      color: #6D7773;
-      font-size: 14px;
-      margin: 0;
+
+      color:
+        #6D7773;
+
+      font-size:
+        14px;
+
+      margin:
+        0;
+
     }
 
+
     /* =========================
-       RESPONSIVE
+       RESPONSIVE DESIGN
     ========================= */
 
     .responsive-visual {
-      background: #0B0F11;
-      border-radius: 28px;
-      padding: 35px;
-      display: flex;
-      justify-content: center;
-      align-items: flex-end;
-      gap: 20px;
-      min-height: 470px;
-      overflow: hidden;
-      position: relative;
+
+      background:
+        #0B0F11;
+
+      border-radius:
+        28px;
+
+      padding:
+        35px;
+
+      display:
+        flex;
+
+      justify-content:
+        center;
+
+      align-items:
+        flex-end;
+
+      gap:
+        20px;
+
+      min-height:
+        470px;
+
+      overflow:
+        hidden;
+
+      position:
+        relative;
+
     }
+
 
     .responsive-visual::before {
-      content: "";
-      position: absolute;
-      width: 400px;
-      height: 400px;
-      background: rgba(140,198,63,0.09);
-      filter: blur(70px);
-      border-radius: 50%;
+
+      content:
+        "";
+
+      position:
+        absolute;
+
+      width:
+        400px;
+
+      height:
+        400px;
+
+      background:
+        rgba(140,198,63,0.09);
+
+      filter:
+        blur(70px);
+
+      border-radius:
+        50%;
+
     }
+
 
     .device {
-      position: relative;
-      z-index: 1;
-      background: #1C2327;
-      border: 6px solid #30393D;
-      box-shadow: 0 25px 50px rgba(0,0,0,0.4);
-      overflow: hidden;
+
+      position:
+        relative;
+
+      z-index:
+        1;
+
+      background:
+        #1C2327;
+
+      border:
+        6px solid #30393D;
+
+      box-shadow:
+        0 25px 50px rgba(0,0,0,0.4);
+
+      overflow:
+        hidden;
+
     }
+
 
     .device-desktop {
-      width: 370px;
-      height: 235px;
-      border-radius: 15px;
+
+      width:
+        370px;
+
+      height:
+        235px;
+
+      border-radius:
+        15px;
+
     }
+
 
     .device-tablet {
-      width: 180px;
-      height: 270px;
-      border-radius: 17px;
+
+      width:
+        180px;
+
+      height:
+        270px;
+
+      border-radius:
+        17px;
+
     }
+
 
     .device-mobile {
-      width: 105px;
-      height: 220px;
-      border-radius: 18px;
+
+      width:
+        105px;
+
+      height:
+        220px;
+
+      border-radius:
+        18px;
+
     }
+
 
     .device img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      object-position: top;
+
+      width:
+        100%;
+
+      height:
+        100%;
+
+      object-fit:
+        cover;
+
+      object-position:
+        top;
+
     }
+
 
     .responsive-copy {
-      padding-left: 25px;
+
+      padding-left:
+        25px;
+
     }
+
 
     .responsive-copy ul {
-      padding: 0;
-      list-style: none;
-      margin-top: 25px;
+
+      padding:
+        0;
+
+      list-style:
+        none;
+
+      margin-top:
+        25px;
+
     }
+
 
     .responsive-copy li {
-      display: flex;
-      gap: 12px;
-      margin-bottom: 14px;
-      color: #65706C;
-      font-size: 14px;
+
+      display:
+        flex;
+
+      gap:
+        12px;
+
+      margin-bottom:
+        14px;
+
+      color:
+        #65706C;
+
+      font-size:
+        14px;
+
     }
 
+
     .responsive-copy li i {
-      color: var(--volt-green-dark);
+
+      color:
+        var(--volt-green-dark);
+
     }
+
 
     /* =========================
        SEO
     ========================= */
 
     .seo-box {
-      background: #111619;
-      color: #fff;
-      border-radius: 28px;
-      padding: 45px;
+
+      background:
+        #111619;
+
+      color:
+        #fff;
+
+      border-radius:
+        28px;
+
+      padding:
+        48px;
+
     }
+
 
     .seo-box h3 {
-      font-size: 28px;
-      margin-bottom: 14px;
+
+      font-size:
+        29px;
+
+      margin-bottom:
+        14px;
+
     }
+
 
     .seo-box p {
-      color: #A6B0AC;
+
+      color:
+        #A6B0AC;
+
     }
+
 
     .seo-list {
-      list-style: none;
-      padding: 0;
-      margin: 25px 0 0;
+
+      list-style:
+        none;
+
+      padding:
+        0;
+
+      margin:
+        10px 0 0;
+
     }
+
 
     .seo-list li {
-      display: flex;
-      align-items: flex-start;
-      gap: 12px;
-      color: #CBD3D0;
-      font-size: 14px;
-      padding: 9px 0;
+
+      display:
+        flex;
+
+      align-items:
+        flex-start;
+
+      gap:
+        12px;
+
+      color:
+        #CBD3D0;
+
+      font-size:
+        14px;
+
+      padding:
+        9px 0;
+
     }
 
+
     .seo-list i {
-      color: var(--volt-green);
-      margin-top: 3px;
+
+      color:
+        var(--volt-green);
+
+      margin-top:
+        3px;
+
     }
+
 
     /* =========================
        TECHNOLOGY
     ========================= */
 
     .tech-tag {
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-      border: 1px solid #DCE2DE;
-      background: #fff;
-      padding: 12px 17px;
-      border-radius: 50px;
-      font-size: 13px;
-      font-weight: 700;
-      color: #45504C;
-      margin: 5px;
+
+      display:
+        inline-flex;
+
+      align-items:
+        center;
+
+      gap:
+        8px;
+
+      border:
+        1px solid #DCE2DE;
+
+      background:
+        #fff;
+
+      padding:
+        12px 17px;
+
+      border-radius:
+        50px;
+
+      font-size:
+        13px;
+
+      font-weight:
+        700;
+
+      color:
+        #45504C;
+
+      margin:
+        5px;
+
+      transition:
+        0.25s ease;
+
     }
 
-    .tech-tag i {
-      color: var(--volt-green-dark);
+
+    .tech-tag:hover {
+
+      border-color:
+        rgba(140,198,63,0.45);
+
+      transform:
+        translateY(-2px);
+
     }
+
+
+    .tech-tag i {
+
+      color:
+        var(--volt-green-dark);
+
+    }
+
+
+    /* =========================
+       OUTCOME
+    ========================= */
+
+    .outcome-highlight {
+
+      border-left:
+        4px solid var(--volt-green);
+
+      padding-left:
+        22px;
+
+      margin-top:
+        28px;
+
+    }
+
+
+    .outcome-highlight strong {
+
+      display:
+        block;
+
+      font-family:
+        "Manrope", sans-serif;
+
+      font-size:
+        18px;
+
+      margin-bottom:
+        5px;
+
+    }
+
+
+    .outcome-highlight span {
+
+      color:
+        #6D7773;
+
+      font-size:
+        14px;
+
+    }
+
+
+    /* =========================
+       PROJECT NOTE
+    ========================= */
+
+    .concept-note {
+
+      background:
+        #F4F6F4;
+
+      border:
+        1px solid #DEE5E1;
+
+      border-radius:
+        18px;
+
+      padding:
+        22px 25px;
+
+      color:
+        #65706C;
+
+      font-size:
+        13px;
+
+    }
+
+
+    .concept-note i {
+
+      color:
+        var(--volt-green-dark);
+
+      margin-right:
+        7px;
+
+    }
+
 
     /* =========================
        FINAL CTA
     ========================= */
 
     .final-cta {
-      padding: 110px 0;
+
+      padding:
+        115px 0;
+
       background:
-        radial-gradient(circle at 50% 0%, rgba(140,198,63,0.17), transparent 35%),
+
+        radial-gradient(
+          circle at 50% 0%,
+          rgba(140,198,63,0.17),
+          transparent 35%
+        ),
+
         #0A0D0F;
-      color: #fff;
-      text-align: center;
+
+      color:
+        #fff;
+
+      text-align:
+        center;
+
     }
+
 
     .final-cta h2 {
-      font-size: clamp(38px, 6vw, 62px);
-      max-width: 850px;
-      margin: 0 auto 18px;
+
+      font-size:
+        clamp(38px,6vw,62px);
+
+      max-width:
+        850px;
+
+      margin:
+        0 auto 18px;
+
     }
 
+
     .final-cta p {
-      max-width: 650px;
-      margin: 0 auto 30px;
-      color: #A5AFAB;
-      font-size: 17px;
+
+      max-width:
+        680px;
+
+      margin:
+        0 auto 30px;
+
+      color:
+        #A5AFAB;
+
+      font-size:
+        17px;
+
     }
+
 
     /* =========================
        FOOTER
     ========================= */
 
     footer {
-      background: #07090A;
-      color: #88928E;
-      padding: 55px 0 25px;
-      border-top: 1px solid rgba(255,255,255,0.06);
+
+      background:
+        #07090A;
+
+      color:
+        #88928E;
+
+      padding:
+        55px 0 25px;
+
+      border-top:
+        1px solid rgba(255,255,255,0.06);
+
     }
+
 
     .footer-brand {
-      color: #fff;
-      font-family: "Manrope", sans-serif;
-      font-weight: 800;
-      font-size: 21px;
+
+      color:
+        #fff;
+
+      font-family:
+        "Manrope", sans-serif;
+
+      font-weight:
+        800;
+
+      font-size:
+        21px;
+
     }
+
 
     .footer-description {
-      max-width: 420px;
-      font-size: 14px;
-      margin-top: 12px;
+
+      max-width:
+        430px;
+
+      font-size:
+        14px;
+
+      margin-top:
+        12px;
+
     }
+
 
     .footer-links {
-      display: flex;
-      gap: 18px;
-      justify-content: flex-end;
-      flex-wrap: wrap;
+
+      display:
+        flex;
+
+      gap:
+        18px;
+
+      justify-content:
+        flex-end;
+
+      flex-wrap:
+        wrap;
+
     }
+
 
     .footer-links a {
-      color: #A4AEAA;
-      font-size: 13px;
+
+      color:
+        #A4AEAA;
+
+      font-size:
+        13px;
+
+      transition:
+        0.2s ease;
+
     }
+
 
     .footer-links a:hover {
-      color: var(--volt-green);
+
+      color:
+        var(--volt-green);
+
     }
+
 
     .footer-bottom {
-      margin-top: 35px;
-      padding-top: 20px;
-      border-top: 1px solid rgba(255,255,255,0.07);
-      font-size: 12px;
-      display: flex;
-      justify-content: space-between;
-      gap: 15px;
-      flex-wrap: wrap;
+
+      margin-top:
+        35px;
+
+      padding-top:
+        20px;
+
+      border-top:
+        1px solid rgba(255,255,255,0.07);
+
+      font-size:
+        12px;
+
+      display:
+        flex;
+
+      justify-content:
+        space-between;
+
+      gap:
+        15px;
+
+      flex-wrap:
+        wrap;
+
     }
 
+
     /* =========================
-       MOBILE
+       BACK TO TOP
+    ========================= */
+
+    .back-top {
+
+      position:
+        fixed;
+
+      right:
+        20px;
+
+      bottom:
+        20px;
+
+      width:
+        44px;
+
+      height:
+        44px;
+
+      border-radius:
+        50%;
+
+      background:
+        var(--volt-green);
+
+      color:
+        var(--volt-black);
+
+      display:
+        flex;
+
+      align-items:
+        center;
+
+      justify-content:
+        center;
+
+      font-size:
+        18px;
+
+      opacity:
+        0;
+
+      visibility:
+        hidden;
+
+      transform:
+        translateY(10px);
+
+      transition:
+        0.3s ease;
+
+      z-index:
+        999;
+
+      box-shadow:
+        0 10px 30px rgba(0,0,0,0.2);
+
+    }
+
+
+    .back-top.show {
+
+      opacity:
+        1;
+
+      visibility:
+        visible;
+
+      transform:
+        translateY(0);
+
+    }
+
+
+    .back-top:hover {
+
+      background:
+        #A2DD52;
+
+      color:
+        var(--volt-black);
+
+    }
+
+
+    /* =========================
+       RESPONSIVE
     ========================= */
 
     @media (max-width: 991px) {
 
       .case-hero {
-        padding: 125px 0 80px;
+
+        padding:
+          130px 0 85px;
+
       }
+
 
       .hero-stats {
-        grid-template-columns: repeat(2, 1fr);
+
+        grid-template-columns:
+          repeat(2,1fr);
+
       }
+
 
       .responsive-copy {
-        padding-left: 0;
-        margin-top: 35px;
+
+        padding-left:
+          0;
+
+        margin-top:
+          35px;
+
       }
 
+
       .footer-links {
-        justify-content: flex-start;
+
+        justify-content:
+          flex-start;
+
       }
+
     }
+
 
     @media (max-width: 767px) {
 
       .section {
-        padding: 75px 0;
+
+        padding:
+          78px 0;
+
       }
+
 
       .case-hero h1 {
-        font-size: 46px;
+
+        font-size:
+          46px;
+
       }
+
 
       .hero-description {
-        font-size: 16px;
+
+        font-size:
+          16px;
+
       }
+
 
       .hero-stats {
-        grid-template-columns: 1fr 1fr;
-        margin-top: 50px;
+
+        grid-template-columns:
+          1fr 1fr;
+
+        margin-top:
+          50px;
+
       }
+
 
       .hero-stat {
-        padding: 15px;
+
+        padding:
+          15px;
+
       }
+
 
       .overview-card,
+      .challenge-box,
       .seo-box {
-        padding: 27px;
+
+        padding:
+          28px;
+
       }
+
 
       .project-info {
-        grid-template-columns: 1fr;
+
+        grid-template-columns:
+          1fr;
+
       }
+
 
       .responsive-visual {
-        min-height: 350px;
-        padding: 20px;
-        gap: 9px;
+
+        min-height:
+          350px;
+
+        padding:
+          20px;
+
+        gap:
+          9px;
+
       }
+
 
       .device-desktop {
-        width: 235px;
-        height: 155px;
+
+        width:
+          235px;
+
+        height:
+          155px;
+
       }
+
 
       .device-tablet {
-        width: 115px;
-        height: 180px;
+
+        width:
+          115px;
+
+        height:
+          180px;
+
       }
+
 
       .device-mobile {
-        width: 72px;
-        height: 155px;
+
+        width:
+          72px;
+
+        height:
+          155px;
+
       }
 
+
       .footer-bottom {
-        flex-direction: column;
+
+        flex-direction:
+          column;
+
       }
+
     }
+
 
     @media (max-width: 480px) {
 
       .hero-stats {
-        grid-template-columns: 1fr;
+
+        grid-template-columns:
+          1fr;
+
       }
+
 
       .hero-buttons {
-        flex-direction: column;
-        align-items: stretch;
+
+        flex-direction:
+          column;
+
+        align-items:
+          stretch;
+
       }
+
 
       .hero-buttons a {
-        text-align: center;
+
+        text-align:
+          center;
+
       }
+
 
       .case-hero h1 {
-        font-size: 40px;
+
+        font-size:
+          40px;
+
       }
+
 
       .responsive-visual {
-        min-height: 280px;
+
+        min-height:
+          280px;
+
       }
+
 
       .device-desktop {
-        width: 170px;
-        height: 115px;
+
+        width:
+          170px;
+
+        height:
+          115px;
+
       }
+
 
       .device-tablet {
-        width: 82px;
-        height: 130px;
+
+        width:
+          82px;
+
+        height:
+          130px;
+
       }
 
+
       .device-mobile {
-        width: 52px;
-        height: 110px;
+
+        width:
+          52px;
+
+        height:
+          110px;
+
       }
+
+
+      .feature-row {
+
+        gap:
+          14px;
+
+      }
+
+
+      .feature-number {
+
+        min-width:
+          42px;
+
+        height:
+          42px;
+
+      }
+
     }
 
   </style>
 
-  <!-- =========================
-       STRUCTURED DATA
-  ========================= -->
+  <!-- =========================================================
+       STRUCTURED DATA — ARTICLE
+  ========================================================= -->
 
   <script type="application/ld+json">
+
   {
     "@context": "https://schema.org",
     "@type": "Article",
     "headline": "VOLTARA Mobile Parts Website Case Study",
-    "description": "Case study of the VOLTARA mobile parts and technology supply website concept created by ANK WebStudio.",
+    "description": "Case study of the completed VOLTARA mobile parts and technology supply website concept created by ANK WebStudio.",
     "author": {
       "@type": "Organization",
       "name": "ANK WebStudio",
@@ -1020,11 +2539,18 @@
     "mainEntityOfPage": {
       "@type": "WebPage",
       "@id": "https://ankwebstudio.github.io/ANK-WebStudio/voltara-casestudy.html"
-    }
+    },
+    "inLanguage": "en"
   }
+
   </script>
 
+  <!-- =========================================================
+       STRUCTURED DATA — CREATIVE WORK
+  ========================================================= -->
+
   <script type="application/ld+json">
+
   {
     "@context": "https://schema.org",
     "@type": "CreativeWork",
@@ -1035,92 +2561,1483 @@
     },
     "url": "https://ankwebstudio.github.io/VOLTARA/",
     "genre": "B2B Website Design",
-    "inLanguage": "en"
+    "inLanguage": "en",
+    "keywords": [
+      "mobile parts website",
+      "B2B website design",
+      "technology supply website",
+      "UAE website design"
+    ]
   }
+
   </script>
 
 </head>
 
 <body>
 
-  <!-- =========================
+  <!-- =========================================================
        NAVBAR
-  ========================= -->
+  ========================================================= -->
 
-  <nav class="navbar navbar-expand-lg fixed-top" id="mainNavbar">
+  <nav class="navbar navbar-expand-lg fixed-top"
+       id="mainNavbar">
 
-    <div class="container">
+```
+<div class="container">
 
-      <a class="navbar-brand" href="index.html">
+  <a class="navbar-brand"
+     href="index.html">
 
-        <img src="img/ank-logo.png"
-             alt="ANK WebStudio Logo">
+    <img
+      src="img/ank-logo.png"
+      alt="ANK WebStudio Logo"
+      width="42"
+      height="42">
 
-        ANK WebStudio
+    ANK WebStudio
+
+  </a>
+
+
+  <button
+    class="navbar-toggler"
+    type="button"
+    data-bs-toggle="collapse"
+    data-bs-target="#mainNav"
+    aria-controls="mainNav"
+    aria-expanded="false"
+    aria-label="Toggle navigation">
+
+    <span class="navbar-toggler-icon"></span>
+
+  </button>
+
+
+  <div class="collapse navbar-collapse"
+       id="mainNav">
+
+    <ul class="navbar-nav ms-auto align-items-lg-center">
+
+      <li class="nav-item">
+
+        <a class="nav-link"
+           href="index.html">
+
+          Home
+
+        </a>
+
+      </li>
+
+
+      <li class="nav-item">
+
+        <a class="nav-link"
+           href="about.html">
+
+          About
+
+        </a>
+
+      </li>
+
+
+      <li class="nav-item">
+
+        <a class="nav-link"
+           href="services.html">
+
+          Services
+
+        </a>
+
+      </li>
+
+
+      <li class="nav-item">
+
+        <a class="nav-link"
+           href="portfolio.html">
+
+          Portfolio
+
+        </a>
+
+      </li>
+
+
+      <li class="nav-item">
+
+        <a class="nav-link"
+           href="contact.html">
+
+          Contact
+
+        </a>
+
+      </li>
+
+
+      <li class="nav-item ms-lg-2 mt-2 mt-lg-0">
+
+        <a
+          class="nav-link nav-cta"
+          href="https://ankwebstudio.github.io/VOLTARA/"
+          target="_blank"
+          rel="noopener noreferrer">
+
+          View Project
+
+          <i class="bi bi-arrow-up-right ms-1"></i>
+
+        </a>
+
+      </li>
+
+    </ul>
+
+  </div>
+
+</div>
+```
+
+  </nav>
+
+  <!-- =========================================================
+       HERO
+  ========================================================= -->
+
+  <header class="case-hero">
+
+```
+<div class="hero-glow"></div>
+
+<div class="container">
+
+  <div class="hero-content">
+
+    <div class="hero-label">
+
+      <i class="bi bi-circle-fill"></i>
+
+      Completed Website Concept
+
+    </div>
+
+
+    <h1>
+
+      VOLTARA —
+
+      <span>Precision Parts.</span>
+
+      Reliable Supply.
+
+    </h1>
+
+
+    <p class="hero-description">
+
+      A premium B2B website concept created for a mobile
+      parts and technology supply business serving repair
+      professionals, retailers and professional buyers
+      across the UAE.
+
+    </p>
+
+
+    <div class="hero-buttons">
+
+      <a
+        href="https://ankwebstudio.github.io/VOLTARA/"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="btn-volt">
+
+        Visit Live Website
+
+        <i class="bi bi-arrow-up-right ms-1"></i>
 
       </a>
 
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-bs-toggle="collapse"
-        data-bs-target="#mainNav"
-        aria-controls="mainNav"
-        aria-expanded="false"
-        aria-label="Toggle navigation">
 
-        <span class="navbar-toggler-icon"></span>
+      <a
+        href="#overview"
+        class="btn-outline-light-custom">
 
-      </button>
+        Explore Case Study
 
-      <div class="collapse navbar-collapse" id="mainNav">
+        <i class="bi bi-arrow-down ms-1"></i>
 
-        <ul class="navbar-nav ms-auto align-items-lg-center">
+      </a>
 
-          <li class="nav-item">
-            <a class="nav-link" href="index.html">
-              Home
-            </a>
+    </div>
+
+
+    <div class="hero-stats">
+
+      <div class="hero-stat">
+
+        <strong>Responsive</strong>
+
+        <span>
+          Mobile-first experience
+        </span>
+
+      </div>
+
+
+      <div class="hero-stat">
+
+        <strong>B2B Focused</strong>
+
+        <span>
+          Built around professional buyers
+        </span>
+
+      </div>
+
+
+      <div class="hero-stat">
+
+        <strong>UAE Market</strong>
+
+        <span>
+          Supply-focused positioning
+        </span>
+
+      </div>
+
+
+      <div class="hero-stat">
+
+        <strong>SEO Ready</strong>
+
+        <span>
+          Structured for discoverability
+        </span>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</div>
+```
+
+  </header>
+
+  <!-- =========================================================
+       BREADCRUMB
+  ========================================================= -->
+
+  <div class="breadcrumb-wrap">
+
+```
+<div class="container">
+
+  <nav aria-label="breadcrumb">
+
+    <ol class="breadcrumb">
+
+      <li class="breadcrumb-item">
+
+        <a href="index.html">
+          Home
+        </a>
+
+      </li>
+
+
+      <li class="breadcrumb-item">
+
+        <a href="portfolio.html">
+          Portfolio
+        </a>
+
+      </li>
+
+
+      <li
+        class="breadcrumb-item active"
+        aria-current="page">
+
+        VOLTARA
+
+      </li>
+
+    </ol>
+
+  </nav>
+
+</div>
+```
+
+  </div>
+
+  <!-- =========================================================
+       PROJECT OVERVIEW
+  ========================================================= -->
+
+  <section class="section"
+           id="overview">
+
+```
+<div class="container">
+
+  <div class="row g-4 align-items-stretch">
+
+
+    <div class="col-lg-7">
+
+      <div class="overview-card">
+
+        <span class="section-label">
+          Project Overview
+        </span>
+
+
+        <h2 class="section-title">
+
+          A modern digital presence
+          for the mobile parts industry.
+
+        </h2>
+
+
+        <p>
+
+          VOLTARA was created as a premium website concept
+          for a mobile parts and technology supply business
+          targeting the UAE market.
+
+        </p>
+
+
+        <p>
+
+          The concept focuses on a common B2B challenge:
+          professional buyers need to understand product
+          categories, compatibility and enquiry options
+          quickly without navigating a complicated website.
+
+        </p>
+
+
+        <p>
+
+          The resulting experience combines a technical
+          visual language with structured product discovery,
+          professional messaging and enquiry-focused calls
+          to action.
+
+        </p>
+
+      </div>
+
+    </div>
+
+
+    <div class="col-lg-5">
+
+      <div class="overview-card">
+
+        <span class="section-label">
+          Project Details
+        </span>
+
+
+        <h3>
+          VOLTARA Website
+        </h3>
+
+
+        <div class="project-info">
+
+
+          <div class="info-item">
+
+            <small>
+              Industry
+            </small>
+
+            <strong>
+              Mobile Parts & Technology
+            </strong>
+
+          </div>
+
+
+          <div class="info-item">
+
+            <small>
+              Market
+            </small>
+
+            <strong>
+              UAE
+            </strong>
+
+          </div>
+
+
+          <div class="info-item">
+
+            <small>
+              Project Type
+            </small>
+
+            <strong>
+              B2B Website Concept
+            </strong>
+
+          </div>
+
+
+          <div class="info-item">
+
+            <small>
+              Primary Focus
+            </small>
+
+            <strong>
+              Product Enquiries
+            </strong>
+
+          </div>
+
+
+          <div class="info-item">
+
+            <small>
+              Design Direction
+            </small>
+
+            <strong>
+              Premium Technical
+            </strong>
+
+          </div>
+
+
+          <div class="info-item">
+
+            <small>
+              Status
+            </small>
+
+            <strong>
+              Completed
+            </strong>
+
+          </div>
+
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</div>
+```
+
+  </section>
+
+  <!-- =========================================================
+       PROJECT CHALLENGE
+  ========================================================= -->
+
+  <section class="section section-soft">
+
+```
+<div class="container">
+
+  <div class="challenge-box">
+
+    <span class="section-label">
+      The Challenge
+    </span>
+
+
+    <h3>
+
+      How do you make a technical B2B product business
+      easy to understand online?
+
+    </h3>
+
+
+    <p>
+
+      Mobile parts businesses can have a large and technical
+      product range. Customers may search by device brand,
+      model, component type or specific requirement.
+      VOLTARA was therefore structured around clarity:
+      helping visitors understand what is available,
+      who the business serves and how to start an enquiry.
+
+    </p>
+
+  </div>
+
+</div>
+```
+
+  </section>
+
+  <!-- =========================================================
+       PROJECT OBJECTIVES
+  ========================================================= -->
+
+  <section class="section">
+
+```
+<div class="container">
+
+
+  <div class="row mb-5">
+
+    <div class="col-lg-8">
+
+      <span class="section-label">
+        Project Objectives
+      </span>
+
+
+      <h2 class="section-title">
+        Designed around real B2B requirements.
+      </h2>
+
+
+      <p class="section-description">
+
+        Instead of treating the website as a digital
+        brochure, the concept was structured around the
+        journey from product discovery to enquiry.
+
+      </p>
+
+    </div>
+
+  </div>
+
+
+  <div class="row g-4">
+
+
+    <div class="col-md-6 col-lg-4">
+
+      <div class="goal-card">
+
+        <div class="goal-icon">
+          <i class="bi bi-grid-3x3-gap"></i>
+        </div>
+
+
+        <h3>
+          Product Discovery
+        </h3>
+
+
+        <p>
+
+          Organise mobile components into clear categories
+          so visitors can quickly identify relevant products.
+
+        </p>
+
+      </div>
+
+    </div>
+
+
+    <div class="col-md-6 col-lg-4">
+
+      <div class="goal-card">
+
+        <div class="goal-icon">
+          <i class="bi bi-person-workspace"></i>
+        </div>
+
+
+        <h3>
+          Professional Positioning
+        </h3>
+
+
+        <p>
+
+          Create a trustworthy digital presence for
+          technicians, repair centres, retailers and
+          professional buyers.
+
+        </p>
+
+      </div>
+
+    </div>
+
+
+    <div class="col-md-6 col-lg-4">
+
+      <div class="goal-card">
+
+        <div class="goal-icon">
+          <i class="bi bi-chat-square-text"></i>
+        </div>
+
+
+        <h3>
+          Part Enquiries
+        </h3>
+
+
+        <p>
+
+          Make it easier for visitors to communicate
+          their device model, required component and
+          quantity.
+
+        </p>
+
+      </div>
+
+    </div>
+
+
+    <div class="col-md-6 col-lg-4">
+
+      <div class="goal-card">
+
+        <div class="goal-icon">
+          <i class="bi bi-graph-up-arrow"></i>
+        </div>
+
+
+        <h3>
+          B2B Lead Generation
+        </h3>
+
+
+        <p>
+
+          Guide potential buyers toward meaningful
+          enquiries rather than unnecessary browsing.
+
+        </p>
+
+      </div>
+
+    </div>
+
+
+    <div class="col-md-6 col-lg-4">
+
+      <div class="goal-card">
+
+        <div class="goal-icon">
+          <i class="bi bi-shield-check"></i>
+        </div>
+
+
+        <h3>
+          Brand Trust
+        </h3>
+
+
+        <p>
+
+          Use professional messaging, structured content
+          and a consistent visual system to communicate
+          reliability.
+
+        </p>
+
+      </div>
+
+    </div>
+
+
+    <div class="col-md-6 col-lg-4">
+
+      <div class="goal-card">
+
+        <div class="goal-icon">
+          <i class="bi bi-phone"></i>
+        </div>
+
+
+        <h3>
+          Mobile Experience
+        </h3>
+
+
+        <p>
+
+          Keep important product and enquiry information
+          accessible for professionals browsing on mobile
+          devices.
+
+        </p>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</div>
+```
+
+  </section>
+
+  <!-- =========================================================
+       WEBSITE PREVIEW
+  ========================================================= -->
+
+  <section class="preview-section">
+
+```
+<div class="container">
+
+
+  <div class="text-center mb-5">
+
+    <span class="section-label">
+      Website Preview
+    </span>
+
+
+    <h2 class="section-title text-white">
+
+      Built to look sharp.
+      <br>
+      Designed around the buyer journey.
+
+    </h2>
+
+
+    <p class="section-description mx-auto">
+
+      The VOLTARA interface combines a dark technical
+      aesthetic, strong typography, structured product
+      presentation and focused calls to action.
+
+    </p>
+
+  </div>
+
+
+  <div class="preview-window">
+
+    <div class="window-bar">
+
+      <span class="window-dot"></span>
+      <span class="window-dot"></span>
+      <span class="window-dot"></span>
+
+    </div>
+
+
+    <img
+      src="img/voltara-home.png"
+      alt="VOLTARA mobile parts and technology supply website homepage"
+      class="preview-image"
+      loading="lazy"
+      width="1600"
+      height="900">
+
+  </div>
+
+
+  <p class="preview-note">
+
+    VOLTARA homepage concept —
+    responsive B2B supply website
+
+  </p>
+
+</div>
+```
+
+  </section>
+
+  <!-- =========================================================
+       WEBSITE FEATURES
+  ========================================================= -->
+
+  <section class="section">
+
+```
+<div class="container">
+
+
+  <div class="row mb-5">
+
+    <div class="col-lg-8">
+
+      <span class="section-label">
+        Website Features
+      </span>
+
+
+      <h2 class="section-title">
+        Every section has a business purpose.
+      </h2>
+
+
+      <p class="section-description">
+
+        The website architecture was designed to answer
+        the practical questions a professional buyer may
+        have before making an enquiry.
+
+      </p>
+
+    </div>
+
+  </div>
+
+
+  <div class="row">
+
+    <div class="col-lg-9">
+
+
+      <div class="feature-row">
+
+        <div class="feature-number">
+          01
+        </div>
+
+
+        <div>
+
+          <h3>
+            Mobile Components
+          </h3>
+
+
+          <p>
+
+            A clear introduction to VOLTARA's mobile
+            component supply positioning and product focus.
+
+          </p>
+
+        </div>
+
+      </div>
+
+
+      <div class="feature-row">
+
+        <div class="feature-number">
+          02
+        </div>
+
+
+        <div>
+
+          <h3>
+            Product Categories
+          </h3>
+
+
+          <p>
+
+            Displays, batteries, charging parts, cameras,
+            flex cables, IC and board parts, back glass,
+            tools and accessories.
+
+          </p>
+
+        </div>
+
+      </div>
+
+
+      <div class="feature-row">
+
+        <div class="feature-number">
+          03
+        </div>
+
+
+        <div>
+
+          <h3>
+            Brand Compatibility
+          </h3>
+
+
+          <p>
+
+            The concept presents compatibility across
+            popular device ecosystems including Apple,
+            Samsung, Xiaomi, OPPO, vivo and OnePlus.
+
+          </p>
+
+        </div>
+
+      </div>
+
+
+      <div class="feature-row">
+
+        <div class="feature-number">
+          04
+        </div>
+
+
+        <div>
+
+          <h3>
+            Find Your Part
+          </h3>
+
+
+          <p>
+
+            An enquiry journey allows visitors to provide
+            their device model, required part and quantity
+            or specific requirement.
+
+          </p>
+
+        </div>
+
+      </div>
+
+
+      <div class="feature-row">
+
+        <div class="feature-number">
+          05
+        </div>
+
+
+        <div>
+
+          <h3>
+            Professional Solutions
+          </h3>
+
+
+          <p>
+
+            Dedicated messaging helps technicians,
+            repair centres and retailers understand how
+            the supply business can support their needs.
+
+          </p>
+
+        </div>
+
+      </div>
+
+
+      <div class="feature-row">
+
+        <div class="feature-number">
+          06
+        </div>
+
+
+        <div>
+
+          <h3>
+            Enquiry-Focused CTAs
+          </h3>
+
+
+          <p>
+
+            Clear calls to action guide visitors toward
+            availability requests, sourcing support and
+            product enquiries.
+
+          </p>
+
+        </div>
+
+      </div>
+
+
+    </div>
+
+  </div>
+
+</div>
+```
+
+  </section>
+
+  <!-- =========================================================
+       DESIGN SHOWCASE
+  ========================================================= -->
+
+  <section class="section section-soft">
+
+```
+<div class="container">
+
+
+  <div class="row mb-5">
+
+    <div class="col-lg-8">
+
+      <span class="section-label">
+        Design Showcase
+      </span>
+
+
+      <h2 class="section-title">
+
+        A visual system built
+        for technology supply.
+
+      </h2>
+
+
+      <p class="section-description">
+
+        The interface uses strong visual hierarchy,
+        focused spacing and technical styling to make
+        product information easier to scan.
+
+      </p>
+
+    </div>
+
+  </div>
+
+
+  <div class="row g-4">
+
+
+    <div class="col-md-6">
+
+      <div class="screen-card">
+
+        <img
+          src="img/voltara-hero.png"
+          alt="VOLTARA website hero section showing mobile parts supply positioning"
+          loading="lazy">
+
+
+        <div class="screen-card-content">
+
+          <h3>
+            Hero Experience
+          </h3>
+
+
+          <p>
+
+            Strong positioning with clear supply messaging
+            and direct actions for product discovery and
+            enquiries.
+
+          </p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+
+    <div class="col-md-6">
+
+      <div class="screen-card">
+
+        <img
+          src="img/voltara-products.png"
+          alt="VOLTARA mobile parts product categories section"
+          loading="lazy">
+
+
+        <div class="screen-card-content">
+
+          <h3>
+            Product Range
+          </h3>
+
+
+          <p>
+
+            A structured category system makes a broad
+            mobile component range easier to scan and
+            understand.
+
+          </p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+
+    <div class="col-md-6">
+
+      <div class="screen-card">
+
+        <img
+          src="img/voltara-request.png"
+          alt="VOLTARA request a mobile part enquiry section"
+          loading="lazy">
+
+
+        <div class="screen-card-content">
+
+          <h3>
+            Request a Part
+          </h3>
+
+
+          <p>
+
+            A focused enquiry area collects the information
+            needed to identify and source a requested part.
+
+          </p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+
+    <div class="col-md-6">
+
+      <div class="screen-card">
+
+        <img
+          src="img/voltara-solutions.png"
+          alt="VOLTARA professional solutions section for technicians and retailers"
+          loading="lazy">
+
+
+        <div class="screen-card-content">
+
+          <h3>
+            Professional Solutions
+          </h3>
+
+
+          <p>
+
+            Targeted content communicates the intended
+            value for technicians, repair centres and
+            retailers.
+
+          </p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+
+  </div>
+
+</div>
+```
+
+  </section>
+
+  <!-- =========================================================
+       DEVELOPMENT PROCESS
+  ========================================================= -->
+
+  <section class="section">
+
+```
+<div class="container">
+
+
+  <div class="row mb-5">
+
+    <div class="col-lg-8">
+
+      <span class="section-label">
+        Development Process
+      </span>
+
+
+      <h2 class="section-title">
+        From concept to completed website.
+      </h2>
+
+
+      <p class="section-description">
+
+        The project followed a focused workflow combining
+        audience research, information architecture,
+        visual design, responsive development and
+        optimisation.
+
+      </p>
+
+    </div>
+
+  </div>
+
+
+  <div class="row g-4">
+
+
+    <div class="col-md-6 col-lg-3">
+
+      <div class="process-card">
+
+        <div class="process-number">
+          STEP 01
+        </div>
+
+
+        <h3>
+          Research
+        </h3>
+
+
+        <p>
+
+          Defined the intended audience, market positioning
+          and core requirements for a mobile parts supply
+          website.
+
+        </p>
+
+      </div>
+
+    </div>
+
+
+    <div class="col-md-6 col-lg-3">
+
+      <div class="process-card">
+
+        <div class="process-number">
+          STEP 02
+        </div>
+
+
+        <h3>
+          Structure
+        </h3>
+
+
+        <p>
+
+          Planned the information architecture around
+          products, compatibility, professional users and
+          enquiries.
+
+        </p>
+
+      </div>
+
+    </div>
+
+
+    <div class="col-md-6 col-lg-3">
+
+      <div class="process-card">
+
+        <div class="process-number">
+          STEP 03
+        </div>
+
+
+        <h3>
+          Design & Development
+        </h3>
+
+
+        <p>
+
+          Built the responsive interface with a technical
+          visual system, clear typography and focused CTAs.
+
+        </p>
+
+      </div>
+
+    </div>
+
+
+    <div class="col-md-6 col-lg-3">
+
+      <div class="process-card">
+
+        <div class="process-number">
+          STEP 04
+        </div>
+
+
+        <h3>
+          Optimisation
+        </h3>
+
+
+        <p>
+
+          Refined mobile layouts, content hierarchy,
+          metadata, accessibility and user journeys.
+
+        </p>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</div>
+```
+
+  </section>
+
+  <!-- =========================================================
+       RESPONSIVE DESIGN
+  ========================================================= -->
+
+  <section class="section section-soft">
+
+```
+<div class="container">
+
+
+  <div class="row align-items-center g-5">
+
+
+    <div class="col-lg-7">
+
+      <div class="responsive-visual">
+
+
+        <div class="device device-desktop">
+
+          <img
+            src="img/voltara-home.png"
+            alt="VOLTARA desktop website responsive layout"
+            loading="lazy">
+
+        </div>
+
+
+        <div class="device device-tablet">
+
+          <img
+            src="img/voltara-home.png"
+            alt="VOLTARA tablet website responsive layout"
+            loading="lazy">
+
+        </div>
+
+
+        <div class="device device-mobile">
+
+          <img
+            src="img/voltara-home.png"
+            alt="VOLTARA mobile website responsive layout"
+            loading="lazy">
+
+        </div>
+
+
+      </div>
+
+    </div>
+
+
+    <div class="col-lg-5">
+
+      <div class="responsive-copy">
+
+
+        <span class="section-label">
+          Responsive Design
+        </span>
+
+
+        <h2 class="section-title">
+
+          Built for the way
+          professionals browse today.
+
+        </h2>
+
+
+        <p class="section-description">
+
+          Repair professionals and buyers may access
+          product information while working on mobile
+          devices. The VOLTARA interface was therefore
+          designed to remain clear and usable across
+          different screen sizes.
+
+        </p>
+
+
+        <ul>
+
+
+          <li>
+
+            <i class="bi bi-check-circle-fill"></i>
+
+            Mobile-first layouts
+
           </li>
 
-          <li class="nav-item">
-            <a class="nav-link" href="about.html">
-              About
-            </a>
-          </li>
 
-          <li class="nav-item">
-            <a class="nav-link" href="services.html">
-              Services
-            </a>
-          </li>
+          <li>
 
-          <li class="nav-item">
-            <a class="nav-link" href="portfolio.html">
-              Portfolio
-            </a>
-          </li>
+            <i class="bi bi-check-circle-fill"></i>
 
-          <li class="nav-item">
-            <a class="nav-link" href="contact.html">
-              Contact
-            </a>
-          </li>
-
-          <li class="nav-item ms-lg-2 mt-2 mt-lg-0">
-
-            <a
-              class="nav-link nav-cta"
-              href="https://ankwebstudio.github.io/VOLTARA/"
-              target="_blank"
-              rel="noopener">
-
-              View Project
-              <i class="bi bi-arrow-up-right ms-1"></i>
-
-            </a>
+            Tablet-friendly spacing
 
           </li>
+
+
+          <li>
+
+            <i class="bi bi-check-circle-fill"></i>
+
+            Desktop presentation
+
+          </li>
+
+
+          <li>
+
+            <i class="bi bi-check-circle-fill"></i>
+
+            Touch-friendly CTAs
+
+          </li>
+
+
+          <li>
+
+            <i class="bi bi-check-circle-fill"></i>
+
+            Flexible product sections
+
+          </li>
+
 
         </ul>
 
@@ -1128,387 +4045,430 @@
 
     </div>
 
-  </nav>
+  </div>
+
+</div>
+```
+
+  </section>
+
+  <!-- =========================================================
+       SEO
+  ========================================================= -->
+
+  <section class="section">
+
+```
+<div class="container">
 
 
-  <!-- =========================
-       HERO
-  ========================= -->
+  <div class="seo-box">
 
-  <header class="case-hero">
+    <div class="row align-items-center g-5">
 
-    <div class="container">
 
-      <div class="hero-content">
+      <div class="col-lg-6">
 
-        <div class="hero-label">
-          <i class="bi bi-circle-fill"></i>
-          Completed Website Concept
-        </div>
 
-        <h1>
-          VOLTARA —
-          <span>Precision Parts.</span>
-          Reliable Supply.
-        </h1>
+        <span class="section-label">
+          SEO-Friendly Development
+        </span>
 
-        <p class="hero-description">
-          A premium B2B website concept for a mobile parts and
-          technology supply business serving repair professionals,
-          retailers and buyers across the UAE.
+
+        <h3>
+          Built with discoverability in mind.
+        </h3>
+
+
+        <p>
+
+          The website structure was planned with search
+          visibility, content discoverability and user
+          experience in mind.
+
         </p>
 
-        <div class="hero-buttons">
 
-          <a
-            href="https://ankwebstudio.github.io/VOLTARA/"
-            target="_blank"
-            rel="noopener"
-            class="btn-volt">
+        <p>
 
-            Visit Live Website
-            <i class="bi bi-arrow-up-right ms-1"></i>
+          The aim was to create a clean technical
+          foundation that can support future SEO work
+          while keeping the website useful and easy to
+          navigate for real visitors.
 
-          </a>
+        </p>
 
-          <a
-            href="#overview"
-            class="btn-outline-light-custom">
-
-            Explore Case Study
-            <i class="bi bi-arrow-down ms-1"></i>
-
-          </a>
-
-        </div>
-
-        <div class="hero-stats">
-
-          <div class="hero-stat">
-
-            <strong>Responsive</strong>
-            <span>Mobile-first experience</span>
-
-          </div>
-
-          <div class="hero-stat">
-
-            <strong>B2B Focused</strong>
-            <span>Built for professional buyers</span>
-
-          </div>
-
-          <div class="hero-stat">
-
-            <strong>UAE Market</strong>
-            <span>Supply-focused positioning</span>
-
-          </div>
-
-          <div class="hero-stat">
-
-            <strong>SEO Ready</strong>
-            <span>Structured for search visibility</span>
-
-          </div>
-
-        </div>
 
       </div>
 
-    </div>
 
-  </header>
+      <div class="col-lg-6">
 
 
-  <!-- =========================
-       BREADCRUMB
-  ========================= -->
+        <ul class="seo-list">
 
-  <div class="breadcrumb-wrap">
 
-    <div class="container">
+          <li>
 
-      <nav aria-label="breadcrumb">
+            <i class="bi bi-check-circle-fill"></i>
 
-        <ol class="breadcrumb">
-
-          <li class="breadcrumb-item">
-            <a href="index.html">Home</a>
-          </li>
-
-          <li class="breadcrumb-item">
-            <a href="portfolio.html">Portfolio</a>
-          </li>
-
-          <li class="breadcrumb-item active"
-              aria-current="page">
-
-            VOLTARA
+            <span>
+              Semantic HTML structure
+              for clearer content understanding
+            </span>
 
           </li>
 
-        </ol>
 
-      </nav>
+          <li>
+
+            <i class="bi bi-check-circle-fill"></i>
+
+            <span>
+              Descriptive page titles
+              and meta descriptions
+            </span>
+
+          </li>
+
+
+          <li>
+
+            <i class="bi bi-check-circle-fill"></i>
+
+            <span>
+              Logical H1, H2 and H3
+              heading hierarchy
+            </span>
+
+          </li>
+
+
+          <li>
+
+            <i class="bi bi-check-circle-fill"></i>
+
+            <span>
+              Descriptive image alt text
+              for accessibility
+            </span>
+
+          </li>
+
+
+          <li>
+
+            <i class="bi bi-check-circle-fill"></i>
+
+            <span>
+              Responsive layouts across
+              mobile, tablet and desktop
+            </span>
+
+          </li>
+
+
+          <li>
+
+            <i class="bi bi-check-circle-fill"></i>
+
+            <span>
+              Organised content hierarchy
+              for easier scanning
+            </span>
+
+          </li>
+
+
+          <li>
+
+            <i class="bi bi-check-circle-fill"></i>
+
+            <span>
+              Search-friendly product
+              and service terminology
+            </span>
+
+          </li>
+
+
+          <li>
+
+            <i class="bi bi-check-circle-fill"></i>
+
+            <span>
+              Structured data implementation
+              for search understanding
+            </span>
+
+          </li>
+
+
+        </ul>
+
+      </div>
 
     </div>
 
   </div>
 
-
-  <!-- =========================
-       PROJECT OVERVIEW
-  ========================= -->
-
-  <section class="section" id="overview">
-
-    <div class="container">
-
-      <div class="row g-4 align-items-stretch">
-
-        <div class="col-lg-7">
-
-          <div class="overview-card">
-
-            <span class="section-label">
-              Project Overview
-            </span>
-
-            <h2 class="section-title">
-              A modern digital presence for the mobile parts industry.
-            </h2>
-
-            <p>
-              VOLTARA was designed as a premium mobile parts and
-              technology supply website concept for the UAE market.
-              The website focuses on helping repair professionals,
-              repair centres, retailers and professional buyers
-              quickly understand the product range and submit
-              part requirements.
-            </p>
-
-            <p>
-              The experience combines a technical visual language
-              with clear product categories, professional messaging
-              and enquiry-focused calls to action.
-            </p>
-
-          </div>
-
-        </div>
-
-        <div class="col-lg-5">
-
-          <div class="overview-card">
-
-            <span class="section-label">
-              Project Details
-            </span>
-
-            <h3>
-              VOLTARA Website
-            </h3>
-
-            <div class="project-info">
-
-              <div class="info-item">
-                <small>Industry</small>
-                <strong>
-                  Mobile Parts & Technology
-                </strong>
-              </div>
-
-              <div class="info-item">
-                <small>Market</small>
-                <strong>
-                  UAE
-                </strong>
-              </div>
-
-              <div class="info-item">
-                <small>Project Type</small>
-                <strong>
-                  B2B Website Concept
-                </strong>
-              </div>
-
-              <div class="info-item">
-                <small>Focus</small>
-                <strong>
-                  Product Enquiries
-                </strong>
-              </div>
-
-              <div class="info-item">
-                <small>Design</small>
-                <strong>
-                  Premium Technical
-                </strong>
-              </div>
-
-              <div class="info-item">
-                <small>Status</small>
-                <strong>
-                  Completed
-                </strong>
-              </div>
-
-            </div>
-
-          </div>
-
-        </div>
-
-      </div>
-
-    </div>
+</div>
+```
 
   </section>
 
-
-  <!-- =========================
-       PROJECT OBJECTIVES
-  ========================= -->
+  <!-- =========================================================
+       TECHNOLOGY
+  ========================================================= -->
 
   <section class="section section-soft">
 
-    <div class="container">
+```
+<div class="container text-center">
 
-      <div class="row mb-5">
 
-        <div class="col-lg-8">
+  <span class="section-label">
+    Technology
+  </span>
 
-          <span class="section-label">
-            Project Objectives
-          </span>
 
-          <h2 class="section-title">
-            Designed around real B2B requirements.
-          </h2>
+  <h2 class="section-title">
+    Tools behind the experience.
+  </h2>
 
-          <p class="section-description">
-            The website was planned to move beyond a simple
-            company introduction and create a clear path from
-            product discovery to enquiry.
-          </p>
 
-        </div>
+  <p class="section-description mx-auto mb-4">
+
+    The VOLTARA website concept was developed using
+    lightweight and widely supported web technologies
+    focused on responsiveness, maintainability,
+    performance and user experience.
+
+  </p>
+
+
+  <div class="mt-4">
+
+
+    <span class="tech-tag">
+
+      <i class="bi bi-code-slash"></i>
+
+      HTML5
+
+    </span>
+
+
+    <span class="tech-tag">
+
+      <i class="bi bi-palette"></i>
+
+      CSS3
+
+    </span>
+
+
+    <span class="tech-tag">
+
+      <i class="bi bi-filetype-js"></i>
+
+      JavaScript
+
+    </span>
+
+
+    <span class="tech-tag">
+
+      <i class="bi bi-bootstrap"></i>
+
+      Bootstrap
+
+    </span>
+
+
+    <span class="tech-tag">
+
+      <i class="bi bi-phone"></i>
+
+      Responsive Design
+
+    </span>
+
+
+    <span class="tech-tag">
+
+      <i class="bi bi-search"></i>
+
+      SEO
+
+    </span>
+
+
+    <span class="tech-tag">
+
+      <i class="bi bi-git"></i>
+
+      Git
+
+    </span>
+
+
+    <span class="tech-tag">
+
+      <i class="bi bi-github"></i>
+
+      GitHub
+
+    </span>
+
+
+  </div>
+
+</div>
+```
+
+  </section>
+
+  <!-- =========================================================
+       PROJECT OUTCOME
+  ========================================================= -->
+
+  <section class="section">
+
+```
+<div class="container">
+
+
+  <div class="row align-items-center g-5">
+
+
+    <div class="col-lg-6">
+
+
+      <span class="section-label">
+        Project Outcome
+      </span>
+
+
+      <h2 class="section-title">
+
+        A focused digital experience
+        for professional buyers.
+
+      </h2>
+
+
+      <p class="section-description">
+
+        VOLTARA was completed as a modern website concept
+        that combines strong visual presentation with a
+        practical B2B information structure.
+
+      </p>
+
+
+      <p class="section-description mt-3">
+
+        The final experience gives visitors a clear
+        understanding of the intended product range,
+        supported device brands, target customer segments
+        and enquiry journey.
+
+      </p>
+
+
+      <div class="outcome-highlight">
+
+        <strong>
+          Clearer product discovery
+        </strong>
+
+        <span>
+          Product categories and supporting content
+          are organised around professional browsing
+          behaviour.
+        </span>
 
       </div>
 
-      <div class="row g-4">
 
-        <div class="col-md-6 col-lg-4">
+      <div class="outcome-highlight">
+
+        <strong>
+          Stronger enquiry journey
+        </strong>
+
+        <span>
+          Calls to action create clear opportunities
+          to request parts, availability or sourcing
+          support.
+        </span>
+
+      </div>
+
+
+    </div>
+
+
+    <div class="col-lg-6">
+
+
+      <div class="row g-3">
+
+
+        <div class="col-sm-6">
 
           <div class="goal-card">
 
             <div class="goal-icon">
-              <i class="bi bi-grid-3x3-gap"></i>
+              <i class="bi bi-layout-text-window"></i>
             </div>
 
+
             <h3>
-              Product Discovery
+              Clear Structure
             </h3>
 
+
             <p>
-              Organise mobile components into clear product
-              categories so visitors can quickly identify
-              what they need.
+
+              Information is organised into
+              easy-to-follow sections.
+
             </p>
 
           </div>
 
         </div>
 
-        <div class="col-md-6 col-lg-4">
+
+        <div class="col-sm-6">
 
           <div class="goal-card">
 
             <div class="goal-icon">
-              <i class="bi bi-person-workspace"></i>
+              <i class="bi bi-bullseye"></i>
             </div>
 
+
             <h3>
-              Professional Positioning
+              Strong CTAs
             </h3>
 
+
             <p>
-              Create a trustworthy digital presence aimed at
-              technicians, repair centres and professional
-              buyers.
+
+              Visitors are guided toward
+              enquiries and availability requests.
+
             </p>
 
           </div>
 
         </div>
 
-        <div class="col-md-6 col-lg-4">
 
-          <div class="goal-card">
-
-            <div class="goal-icon">
-              <i class="bi bi-chat-square-text"></i>
-            </div>
-
-            <h3>
-              Part Enquiries
-            </h3>
-
-            <p>
-              Make it easy for visitors to communicate their
-              device model, required part and quantity.
-            </p>
-
-          </div>
-
-        </div>
-
-        <div class="col-md-6 col-lg-4">
-
-          <div class="goal-card">
-
-            <div class="goal-icon">
-              <i class="bi bi-graph-up-arrow"></i>
-            </div>
-
-            <h3>
-              B2B Lead Generation
-            </h3>
-
-            <p>
-              Guide professional buyers toward direct
-              enquiries instead of creating unnecessary
-              browsing complexity.
-            </p>
-
-          </div>
-
-        </div>
-
-        <div class="col-md-6 col-lg-4">
-
-          <div class="goal-card">
-
-            <div class="goal-icon">
-              <i class="bi bi-shield-check"></i>
-            </div>
-
-            <h3>
-              Brand Trust
-            </h3>
-
-            <p>
-              Use structured content and a premium interface
-              to communicate reliability and professional
-              supply capabilities.
-            </p>
-
-          </div>
-
-        </div>
-
-        <div class="col-md-6 col-lg-4">
+        <div class="col-sm-6">
 
           <div class="goal-card">
 
@@ -1516,742 +4476,227 @@
               <i class="bi bi-phone"></i>
             </div>
 
+
             <h3>
-              Mobile Experience
+              Responsive UX
             </h3>
 
+
             <p>
-              Ensure technicians and buyers can access
-              important information comfortably from
-              mobile devices.
+
+              The interface adapts across
+              desktop, tablet and mobile.
+
             </p>
 
           </div>
 
         </div>
 
+
+        <div class="col-sm-6">
+
+          <div class="goal-card">
+
+            <div class="goal-icon">
+              <i class="bi bi-stars"></i>
+            </div>
+
+
+            <h3>
+              Premium Feel
+            </h3>
+
+
+            <p>
+
+              A modern technical aesthetic
+              supports professional positioning.
+
+            </p>
+
+          </div>
+
+        </div>
+
+
       </div>
 
     </div>
 
+  </div>
+
+</div>
+```
+
   </section>
 
+  <!-- =========================================================
+       CONCEPT NOTE
+  ========================================================= -->
 
-  <!-- =========================
-       WEBSITE PREVIEW
-  ========================= -->
+  <section class="section pt-0">
 
-  <section class="preview-section">
+```
+<div class="container">
 
-    <div class="container">
+  <div class="concept-note">
 
-      <div class="text-center mb-5">
+    <i class="bi bi-info-circle-fill"></i>
 
-        <span class="section-label">
-          Website Preview
-        </span>
+    <strong>Project note:</strong>
 
-        <h2 class="section-title text-white">
-          Built to look sharp.
-          <br>
-          Designed to convert.
-        </h2>
+    VOLTARA is presented as a completed website concept
+    created by ANK WebStudio to demonstrate how a mobile
+    parts and technology supply business can be positioned
+    through a professional B2B website.
 
-        <p class="section-description mx-auto">
-          The VOLTARA interface combines dark technical
-          aesthetics, strong typography and focused calls
-          to action for a professional B2B experience.
-        </p>
+  </div>
 
+</div>
+```
+
+  </section>
+
+  <!-- =========================================================
+       FINAL CTA
+  ========================================================= -->
+
+  <section class="final-cta">
+
+```
+<div class="container">
+
+
+  <span class="section-label">
+    Explore VOLTARA
+  </span>
+
+
+  <h2>
+
+    Have a business that needs
+    a stronger digital presence?
+
+  </h2>
+
+
+  <p>
+
+    Explore the completed VOLTARA website concept and
+    see how ANK WebStudio approaches structure, design,
+    responsiveness and enquiry-focused business websites.
+
+  </p>
+
+
+  <div class="d-flex justify-content-center flex-wrap gap-3">
+
+
+    <a
+      href="https://ankwebstudio.github.io/VOLTARA/"
+      target="_blank"
+      rel="noopener noreferrer"
+      class="btn-volt">
+
+      Visit VOLTARA Website
+
+      <i class="bi bi-arrow-up-right ms-1"></i>
+
+    </a>
+
+
+    <a
+      href="contact.html"
+      class="btn-outline-light-custom">
+
+      Start a Website Project
+
+      <i class="bi bi-arrow-right ms-1"></i>
+
+    </a>
+
+
+    <a
+      href="portfolio.html"
+      class="btn-outline-light-custom">
+
+      View More Projects
+
+      <i class="bi bi-grid ms-1"></i>
+
+    </a>
+
+  </div>
+
+</div>
+```
+
+  </section>
+
+  <!-- =========================================================
+       FOOTER
+  ========================================================= -->
+
+  <footer>
+
+```
+<div class="container">
+
+
+  <div class="row g-4 align-items-start">
+
+
+    <div class="col-lg-7">
+
+
+      <div class="footer-brand">
+        ANK WebStudio
       </div>
 
-      <div class="preview-window">
 
-        <div class="window-bar">
+      <p class="footer-description">
 
-          <span class="window-dot"></span>
-          <span class="window-dot"></span>
-          <span class="window-dot"></span>
+        A founder-led web design and development studio
+        creating responsive, SEO-friendly and modern
+        websites for businesses, professionals and
+        digital brands.
 
-        </div>
-
-        <img
-          src="img/voltara-home.png"
-          alt="VOLTARA Mobile Parts Website Homepage"
-          class="preview-image"
-          loading="lazy">
-
-      </div>
-
-      <p class="preview-note">
-        VOLTARA homepage concept — responsive B2B supply website
       </p>
 
     </div>
 
-  </section>
 
+    <div class="col-lg-5">
 
-  <!-- =========================
-       WEBSITE FEATURES
-  ========================= -->
 
-  <section class="section">
+      <div class="footer-links">
 
-    <div class="container">
 
-      <div class="row mb-5">
+        <a href="index.html">
+          Home
+        </a>
 
-        <div class="col-lg-8">
 
-          <span class="section-label">
-            Website Features
-          </span>
+        <a href="about.html">
+          About
+        </a>
 
-          <h2 class="section-title">
-            Every section has a purpose.
-          </h2>
 
-          <p class="section-description">
-            The website architecture was created to answer
-            the key questions a professional buyer has before
-            making an enquiry.
-          </p>
+        <a href="services.html">
+          Services
+        </a>
 
-        </div>
 
-      </div>
+        <a href="portfolio.html">
+          Portfolio
+        </a>
 
-      <div class="row">
 
-        <div class="col-lg-8">
+        <a href="contact.html">
+          Contact
+        </a>
 
-          <div class="feature-row">
-
-            <div class="feature-number">
-              01
-            </div>
-
-            <div>
-
-              <h3>
-                Mobile Components
-              </h3>
-
-              <p>
-                A clear introduction to VOLTARA's core mobile
-                component supply and professional positioning.
-              </p>
-
-            </div>
-
-          </div>
-
-          <div class="feature-row">
-
-            <div class="feature-number">
-              02
-            </div>
-
-            <div>
-
-              <h3>
-                Product Categories
-              </h3>
-
-              <p>
-                Displays, batteries, charging parts, cameras,
-                flex cables, IC and board parts, back glass,
-                tools and accessories.
-              </p>
-
-            </div>
-
-          </div>
-
-          <div class="feature-row">
-
-            <div class="feature-number">
-              03
-            </div>
-
-            <div>
-
-              <h3>
-                Brand Compatibility
-              </h3>
-
-              <p>
-                The website highlights compatibility with
-                popular device ecosystems including Apple,
-                Samsung, Xiaomi, OPPO, vivo and OnePlus.
-              </p>
-
-            </div>
-
-          </div>
-
-          <div class="feature-row">
-
-            <div class="feature-number">
-              04
-            </div>
-
-            <div>
-
-              <h3>
-                Find Your Part
-              </h3>
-
-              <p>
-                An enquiry flow allows users to provide their
-                device model, required part and quantity or
-                requirement.
-              </p>
-
-            </div>
-
-          </div>
-
-          <div class="feature-row">
-
-            <div class="feature-number">
-              05
-            </div>
-
-            <div>
-
-              <h3>
-                Professional Solutions
-              </h3>
-
-              <p>
-                Dedicated messaging for technicians, repair
-                centres and retailers helps visitors identify
-                how VOLTARA can support their business.
-              </p>
-
-            </div>
-
-          </div>
-
-          <div class="feature-row">
-
-            <div class="feature-number">
-              06
-            </div>
-
-            <div>
-
-              <h3>
-                Enquiry-Focused CTA
-              </h3>
-
-              <p>
-                Strong calls to action guide visitors toward
-                requesting availability and sourcing support.
-              </p>
-
-            </div>
-
-          </div>
-
-        </div>
-
-      </div>
-
-    </div>
-
-  </section>
-
-
-  <!-- =========================
-       DESIGN SHOWCASE
-  ========================= -->
-
-  <section class="section section-soft">
-
-    <div class="container">
-
-      <div class="row mb-5">
-
-        <div class="col-lg-8">
-
-          <span class="section-label">
-            Design Showcase
-          </span>
-
-          <h2 class="section-title">
-            A visual system built for technology supply.
-          </h2>
-
-          <p class="section-description">
-            From product discovery to enquiry, the visual
-            hierarchy keeps the experience clean, technical
-            and professional.
-          </p>
-
-        </div>
-
-      </div>
-
-      <div class="row g-4">
-
-        <div class="col-md-6">
-
-          <div class="screen-card">
-
-            <img
-              src="img/voltara-hero.png"
-              alt="VOLTARA website hero section"
-              loading="lazy">
-
-            <div class="screen-card-content">
-
-              <h3>
-                Hero Experience
-              </h3>
-
-              <p>
-                Strong positioning with clear supply messaging
-                and direct actions for product discovery and
-                enquiries.
-              </p>
-
-            </div>
-
-          </div>
-
-        </div>
-
-        <div class="col-md-6">
-
-          <div class="screen-card">
-
-            <img
-              src="img/voltara-products.png"
-              alt="VOLTARA product categories section"
-              loading="lazy">
-
-            <div class="screen-card-content">
-
-              <h3>
-                Product Range
-              </h3>
-
-              <p>
-                A structured product category section makes
-                the wide range of mobile components easier
-                to understand.
-              </p>
-
-            </div>
-
-          </div>
-
-        </div>
-
-        <div class="col-md-6">
-
-          <div class="screen-card">
-
-            <img
-              src="img/voltara-request.png"
-              alt="VOLTARA request a part section"
-              loading="lazy">
-
-            <div class="screen-card-content">
-
-              <h3>
-                Request a Part
-              </h3>
-
-              <p>
-                A focused enquiry area collects the information
-                needed to identify and source the requested part.
-              </p>
-
-            </div>
-
-          </div>
-
-        </div>
-
-        <div class="col-md-6">
-
-          <div class="screen-card">
-
-            <img
-              src="img/voltara-solutions.png"
-              alt="VOLTARA professional solutions section"
-              loading="lazy">
-
-            <div class="screen-card-content">
-
-              <h3>
-                Professional Solutions
-              </h3>
-
-              <p>
-                Targeted content communicates the value of
-                VOLTARA to technicians, repair centres and
-                retailers.
-              </p>
-
-            </div>
-
-          </div>
-
-        </div>
-
-      </div>
-
-    </div>
-
-  </section>
-
-
-  <!-- =========================
-       PROCESS
-  ========================= -->
-
-  <section class="section">
-
-    <div class="container">
-
-      <div class="row mb-5">
-
-        <div class="col-lg-8">
-
-          <span class="section-label">
-            Development Process
-          </span>
-
-          <h2 class="section-title">
-            From concept to completed website.
-          </h2>
-
-          <p class="section-description">
-            The project followed a focused workflow combining
-            research, structure, visual design, responsive
-            development and optimisation.
-          </p>
-
-        </div>
-
-      </div>
-
-      <div class="row g-4">
-
-        <div class="col-md-6 col-lg-3">
-
-          <div class="process-card">
-
-            <div class="process-number">
-              STEP 01
-            </div>
-
-            <h3>
-              Research
-            </h3>
-
-            <p>
-              Defined the target audience, market positioning
-              and key requirements for a mobile parts supply
-              website.
-            </p>
-
-          </div>
-
-        </div>
-
-        <div class="col-md-6 col-lg-3">
-
-          <div class="process-card">
-
-            <div class="process-number">
-              STEP 02
-            </div>
-
-            <h3>
-              Structure
-            </h3>
-
-            <p>
-              Planned the information architecture around
-              products, compatibility, professional users
-              and enquiries.
-            </p>
-
-          </div>
-
-        </div>
-
-        <div class="col-md-6 col-lg-3">
-
-          <div class="process-card">
-
-            <div class="process-number">
-              STEP 03
-            </div>
-
-            <h3>
-              Design & Development
-            </h3>
-
-            <p>
-              Built the responsive interface with a technical
-              visual system, clear typography and strong CTAs.
-            </p>
-
-          </div>
-
-        </div>
-
-        <div class="col-md-6 col-lg-3">
-
-          <div class="process-card">
-
-            <div class="process-number">
-              STEP 04
-            </div>
-
-            <h3>
-              Optimisation
-            </h3>
-
-            <p>
-              Refined mobile layouts, content hierarchy,
-              metadata and user journeys for a stronger
-              digital experience.
-            </p>
-
-          </div>
-
-        </div>
-
-      </div>
-
-    </div>
-
-  </section>
-
-
-  <!-- =========================
-       RESPONSIVE DESIGN
-  ========================= -->
-
-  <section class="section section-soft">
-
-    <div class="container">
-
-      <div class="row align-items-center g-5">
-
-        <div class="col-lg-7">
-
-          <div class="responsive-visual">
-
-            <div class="device device-desktop">
-
-              <img
-                src="img/voltara-home.png"
-                alt="VOLTARA desktop responsive website"
-                loading="lazy">
-
-            </div>
-
-            <div class="device device-tablet">
-
-              <img
-                src="img/voltara-home.png"
-                alt="VOLTARA tablet responsive website"
-                loading="lazy">
-
-            </div>
-
-            <div class="device device-mobile">
-
-              <img
-                src="img/voltara-home.png"
-                alt="VOLTARA mobile responsive website"
-                loading="lazy">
-
-            </div>
-
-          </div>
-
-        </div>
-
-        <div class="col-lg-5">
-
-          <div class="responsive-copy">
-
-            <span class="section-label">
-              Responsive Design
-            </span>
-
-            <h2 class="section-title">
-              Built for the way professionals browse today.
-            </h2>
-
-            <p class="section-description">
-              Repair technicians and buyers often access
-              product information while working on mobile
-              devices. The VOLTARA interface was therefore
-              designed to remain clear and usable across
-              screen sizes.
-            </p>
-
-            <ul>
-
-              <li>
-                <i class="bi bi-check-circle-fill"></i>
-                Mobile-first layouts
-              </li>
-
-              <li>
-                <i class="bi bi-check-circle-fill"></i>
-                Tablet-friendly spacing
-              </li>
-
-              <li>
-                <i class="bi bi-check-circle-fill"></i>
-                Desktop presentation
-              </li>
-
-              <li>
-                <i class="bi bi-check-circle-fill"></i>
-                Touch-friendly CTAs
-              </li>
-
-              <li>
-                <i class="bi bi-check-circle-fill"></i>
-                Flexible product sections
-              </li>
-
-            </ul>
-
-          </div>
-
-        </div>
-
-      </div>
-
-    </div>
-
-  </section>
-
-  
-  <!-- =========================
-     SEO
-========================= -->
-
-<section class="section">
-
-  <div class="container">
-
-    <div class="seo-box">
-
-      <div class="row align-items-center g-5">
-
-        <!-- SEO INTRO -->
-        <div class="col-lg-6">
-
-          <span class="section-label">
-            SEO-Friendly Development
-          </span>
-
-          <h3>
-            Built with visibility in mind.
-          </h3>
-
-          <p>
-            The website structure was planned with search
-            visibility, content discoverability and user
-            experience in mind. The goal was to create a
-            clean digital foundation that can support future
-            SEO growth while keeping the website easy to
-            navigate.
-          </p>
-
-          <p>
-            From semantic HTML and heading hierarchy to
-            descriptive metadata and responsive layouts,
-            the website was developed with both users and
-            search engines in mind.
-          </p>
-
-        </div>
-
-
-        <!-- SEO FEATURES -->
-        <div class="col-lg-6">
-
-          <ul class="seo-list">
-
-            <li>
-              <i class="bi bi-check-circle-fill"></i>
-              <span>
-                Semantic HTML structure for better
-                content understanding
-              </span>
-            </li>
-
-            <li>
-              <i class="bi bi-check-circle-fill"></i>
-              <span>
-                Descriptive page title and meta description
-              </span>
-            </li>
-
-            <li>
-              <i class="bi bi-check-circle-fill"></i>
-              <span>
-                Proper H1, H2 and H3 heading hierarchy
-              </span>
-            </li>
-
-            <li>
-              <i class="bi bi-check-circle-fill"></i>
-              <span>
-                Descriptive image alt text for accessibility
-                and image search
-              </span>
-            </li>
-
-            <li>
-              <i class="bi bi-check-circle-fill"></i>
-              <span>
-                Responsive design for mobile, tablet
-                and desktop users
-              </span>
-            </li>
-
-            <li>
-              <i class="bi bi-check-circle-fill"></i>
-              <span>
-                Clean and organised content hierarchy
-              </span>
-            </li>
-
-            <li>
-              <i class="bi bi-check-circle-fill"></i>
-              <span>
-                Search-friendly product and service content
-              </span>
-            </li>
-
-            <li>
-              <i class="bi bi-check-circle-fill"></i>
-              <span>
-                Structured data implementation for
-                improved search understanding
-              </span>
-            </li>
-
-          </ul>
-
-        </div>
 
       </div>
 
@@ -2259,410 +4704,152 @@
 
   </div>
 
-</section>
 
-  <!-- =========================
-     TECHNOLOGY
-========================= -->
+  <div class="footer-bottom">
 
-<section class="section section-soft">
 
-  <div class="container text-center">
+    <span>
 
-    <span class="section-label">
-      Technology
+      © 2026 ANK WebStudio.
+      All rights reserved.
+
     </span>
 
-    <h2 class="section-title">
-      Tools behind the experience.
-    </h2>
 
-    <p class="section-description mx-auto mb-4">
-      The VOLTARA website concept was developed using
-      lightweight and reliable web technologies focused
-      on responsiveness, performance, maintainability
-      and a professional user experience.
-    </p>
+    <span>
 
-    <div class="mt-4">
+      VOLTARA Website Concept
+      • UAE
+      • Mobile Parts & Technology Supply
 
-      <span class="tech-tag">
-        <i class="bi bi-code-slash"></i>
-        HTML5
-      </span>
-
-      <span class="tech-tag">
-        <i class="bi bi-palette"></i>
-        CSS3
-      </span>
-
-      <span class="tech-tag">
-        <i class="bi bi-filetype-js"></i>
-        JavaScript
-      </span>
-
-      <span class="tech-tag">
-        <i class="bi bi-bootstrap"></i>
-        Bootstrap
-      </span>
-
-      <span class="tech-tag">
-        <i class="bi bi-phone"></i>
-        Responsive Design
-      </span>
-
-      <span class="tech-tag">
-        <i class="bi bi-search"></i>
-        SEO
-      </span>
-
-      <span class="tech-tag">
-        <i class="bi bi-git"></i>
-        Git
-      </span>
-
-      <span class="tech-tag">
-        <i class="bi bi-github"></i>
-        GitHub
-      </span>
-
-    </div>
-
-  </div>
-
-</section>
-
-
-<!-- =========================
-     PROJECT OUTCOME
-========================= -->
-
-<section class="section">
-
-  <div class="container">
-
-    <div class="row align-items-center g-5">
-
-      <div class="col-lg-6">
-
-        <span class="section-label">
-          Project Outcome
-        </span>
-
-        <h2 class="section-title">
-          A focused digital experience for professional buyers.
-        </h2>
-
-        <p class="section-description">
-          VOLTARA was completed as a modern website concept
-          that combines strong visual presentation with
-          practical B2B functionality.
-        </p>
-
-        <p class="section-description mt-3">
-          The final experience gives visitors a clear
-          understanding of the product range, supported
-          device brands, target customer segments and
-          enquiry process.
-        </p>
-
-      </div>
-
-
-      <div class="col-lg-6">
-
-        <div class="row g-3">
-
-          <div class="col-sm-6">
-
-            <div class="goal-card">
-
-              <div class="goal-icon">
-                <i class="bi bi-layout-text-window"></i>
-              </div>
-
-              <h3>
-                Clear Structure
-              </h3>
-
-              <p>
-                Information is organised into easy-to-follow
-                sections for faster discovery.
-              </p>
-
-            </div>
-
-          </div>
-
-
-          <div class="col-sm-6">
-
-            <div class="goal-card">
-
-              <div class="goal-icon">
-                <i class="bi bi-bullseye"></i>
-              </div>
-
-              <h3>
-                Strong CTAs
-              </h3>
-
-              <p>
-                Visitors are guided naturally toward
-                product enquiries and availability requests.
-              </p>
-
-            </div>
-
-          </div>
-
-
-          <div class="col-sm-6">
-
-            <div class="goal-card">
-
-              <div class="goal-icon">
-                <i class="bi bi-phone"></i>
-              </div>
-
-              <h3>
-                Responsive UX
-              </h3>
-
-              <p>
-                The interface adapts smoothly across
-                desktop, tablet and mobile devices.
-              </p>
-
-            </div>
-
-          </div>
-
-
-          <div class="col-sm-6">
-
-            <div class="goal-card">
-
-              <div class="goal-icon">
-                <i class="bi bi-stars"></i>
-              </div>
-
-              <h3>
-                Premium Feel
-              </h3>
-
-              <p>
-                A modern technical aesthetic helps position
-                the brand professionally.
-              </p>
-
-            </div>
-
-          </div>
-
-        </div>
-
-      </div>
-
-    </div>
-
-  </div>
-
-</section>
-
-
-<!-- =========================
-     FINAL CTA
-========================= -->
-
-<section class="final-cta">
-
-  <div class="container">
-
-    <span class="section-label">
-      Explore VOLTARA
     </span>
 
-    <h2>
-      Precision design for a professional supply business.
-    </h2>
-
-    <p>
-      Explore the completed VOLTARA website concept and
-      see how a focused B2B digital experience can present
-      products, communicate trust and encourage enquiries.
-    </p>
-
-    <div class="d-flex justify-content-center flex-wrap gap-3">
-
-      <a
-        href="https://ankwebstudio.github.io/VOLTARA/"
-        target="_blank"
-        rel="noopener"
-        class="btn-volt">
-
-        Visit VOLTARA Website
-
-        <i class="bi bi-arrow-up-right ms-1"></i>
-
-      </a>
-
-      <a
-        href="portfolio.html"
-        class="btn-outline-light-custom">
-
-        View More Projects
-
-        <i class="bi bi-grid ms-1"></i>
-
-      </a>
-
-    </div>
-
   </div>
 
-</section>
+</div>
+```
+
+  </footer>
+
+  <!-- =========================================================
+       BACK TO TOP
+  ========================================================= -->
+
+<a
+ href="#"
+ class="back-top"
+ id="backTop"
+ aria-label="Back to top">
+
+```
+<i class="bi bi-arrow-up"></i>
+```
+
+  </a>
+
+  <!-- =========================================================
+       BOOTSTRAP JS
+  ========================================================= -->
+
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
+  </script>
+
+  <!-- =========================================================
+       PAGE JAVASCRIPT
+  ========================================================= -->
+
+  <script>
+
+    const navbar =
+      document.getElementById("mainNavbar");
+
+    const backTop =
+      document.getElementById("backTop");
 
 
-<!-- =========================
-     FOOTER
-========================= -->
+    /* =========================
+       NAVBAR SCROLL
+    ========================= */
 
-<footer>
+    window.addEventListener("scroll", function () {
 
-  <div class="container">
+      if (window.scrollY > 30) {
 
-    <div class="row g-4 align-items-start">
+        navbar.classList.add("scrolled");
 
-      <!-- BRAND -->
-      <div class="col-lg-7">
+      } else {
 
-        <div class="footer-brand">
-          ANK WebStudio
-        </div>
+        navbar.classList.remove("scrolled");
 
-        <p class="footer-description">
-          A founder-led web design and development studio
-          creating responsive, SEO-friendly and modern
-          websites for businesses, professionals and
-          digital brands.
-        </p>
-
-      </div>
+      }
 
 
-      <!-- FOOTER LINKS -->
-      <div class="col-lg-5">
+      /* Back to top */
 
-        <div class="footer-links">
+      if (window.scrollY > 500) {
 
-          <a href="index.html">
-            Home
-          </a>
+        backTop.classList.add("show");
 
-          <a href="about.html">
-            About
-          </a>
+      } else {
 
-          <a href="services.html">
-            Services
-          </a>
+        backTop.classList.remove("show");
 
-          <a href="portfolio.html">
-            Portfolio
-          </a>
+      }
 
-          <a href="contact.html">
-            Contact
-          </a>
-
-        </div>
-
-      </div>
-
-    </div>
+    });
 
 
-    <!-- FOOTER BOTTOM -->
+    /* =========================
+       BACK TO TOP
+    ========================= */
 
-    <div class="footer-bottom">
+    backTop.addEventListener("click", function (event) {
 
-      <span>
-        © 2026 ANK WebStudio. All rights reserved.
-      </span>
+      event.preventDefault();
 
-      <span>
-        VOLTARA Website Concept • UAE • Mobile Parts & Technology Supply
-      </span>
+      window.scrollTo({
 
-    </div>
+        top: 0,
 
-  </div>
-
-</footer>
-
-
-<!-- =========================
-     BOOTSTRAP JS
-========================= -->
-
-<script
-  src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
-</script>
-
-
-<!-- =========================
-     NAVBAR SCRIPT
-========================= -->
-
-<script>
-
-  const navbar = document.getElementById("mainNavbar");
-
-  window.addEventListener("scroll", function () {
-
-    if (window.scrollY > 30) {
-
-      navbar.classList.add("scrolled");
-
-    } else {
-
-      navbar.classList.remove("scrolled");
-
-    }
-
-  });
-
-
-  /* =========================
-     CLOSE MOBILE NAVBAR
-  ========================= */
-
-  document
-    .querySelectorAll(".navbar-nav .nav-link")
-    .forEach(link => {
-
-      link.addEventListener("click", () => {
-
-        const nav =
-          document.getElementById("mainNav");
-
-        if (nav.classList.contains("show")) {
-
-          const bsCollapse =
-            bootstrap.Collapse.getInstance(nav) ||
-            new bootstrap.Collapse(nav);
-
-          bsCollapse.hide();
-
-        }
+        behavior: "smooth"
 
       });
 
     });
 
-</script>
 
+    /* =========================
+       CLOSE MOBILE NAVBAR
+    ========================= */
+
+    document
+      .querySelectorAll(".navbar-nav .nav-link")
+      .forEach(function (link) {
+
+        link.addEventListener("click", function () {
+
+          const nav =
+            document.getElementById("mainNav");
+
+
+          if (nav.classList.contains("show")) {
+
+            const bsCollapse =
+              bootstrap.Collapse.getInstance(nav) ||
+              new bootstrap.Collapse(nav);
+
+
+            bsCollapse.hide();
+
+          }
+
+        });
+
+      });
+
+  </script>
 
 </body>
+
 </html>
