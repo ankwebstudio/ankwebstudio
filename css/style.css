@@ -2359,6 +2359,21 @@ img {
   pointer-events: none;
 }
 
+
+/* Floating Email Button */
+.ank-email {
+  background: #0099cc;
+  color: #fff !important;
+  box-shadow: 0 0 12px #0099cc,
+              0 0 25px #0099cc70;
+}
+
+.ank-email:hover {
+  transform: scale(1.12);
+  color: #fff !important;
+}
+
+
 @keyframes ankGlow {
   0%, 100% {
     filter: brightness(1);
