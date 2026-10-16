@@ -2313,6 +2313,8 @@ img {
 }
 
 .ank-float-btn {
+  position: relative;
+  overflow: hidden;
   width: 54px;
   height: 54px;
   border-radius: 50%;
@@ -2323,22 +2325,53 @@ img {
   font-size: 26px;
   text-decoration: none !important;
   transition: transform .3s ease;
+  animation: ankGlow 2s ease-in-out infinite;
 }
 
 .ank-whatsapp {
   background: #25D366;
-  box-shadow: 0 0 14px #25D36699;
+  box-shadow: 0 0 12px #25D366, 0 0 25px #25D36670;
 }
 
 .ank-instagram {
   background: linear-gradient(
     45deg, #feda75, #fa7e1e, #d62976, #962fbf, #4f5bd5
   );
-  box-shadow: 0 0 14px #d6297699;
+  box-shadow: 0 0 12px #d62976, 0 0 25px #962fbf70;
 }
 
 .ank-float-btn:hover {
-  transform: scale(1.1);
+  transform: scale(1.12);
+  color: #fff !important;
+  animation-play-state: paused;
+}
+
+.ank-float-btn::after {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -100%;
+  width: 45%;
+  height: 200%;
+  background: rgba(255,255,255,.65);
+  transform: rotate(25deg);
+  animation: ankShine 3s ease-in-out infinite;
+  pointer-events: none;
+}
+
+@keyframes ankGlow {
+  0%, 100% {
+    filter: brightness(1);
+    box-shadow: 0 0 8px currentColor;
+  }
+  50% {
+    filter: brightness(1.2);
+  }
+}
+
+@keyframes ankShine {
+  0%, 60% { left: -100%; }
+  100% { left: 150%; }
 }
 
 @media (max-width: 576px) {
@@ -2347,10 +2380,16 @@ img {
     bottom: 18px;
     gap: 12px;
   }
-
   .ank-float-btn {
     width: 49px;
     height: 49px;
     font-size: 23px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .ank-float-btn,
+  .ank-float-btn::after {
+    animation: none;
   }
 }
