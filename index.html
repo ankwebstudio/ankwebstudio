@@ -154,15 +154,190 @@ content="web design Kerala, web designer Palakkad, website development Kerala, S
   }
 }
 </script>
+  
+    
+    <style>
+/* ========================================
+   ANK WEBSTUDIO PREMIUM LOGO LOADER
+======================================== */
+
+#ank-page-loader {
+  position: fixed;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 999999;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background: #071b33;
+
+  opacity: 1;
+  visibility: visible;
+
+  transition:
+    opacity 0.5s ease,
+    visibility 0.5s ease;
+}
+
+/* Loader Content */
+.ank-loader-content {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  gap: 25px;
+  padding: 25px;
+}
+
+/* Rotating Blue Ring */
+.ank-loader-ring {
+  position: absolute;
+  top: 25px;
+
+  width: 150px;
+  height: 150px;
+
+  border: 3px solid #24435c;
+  border-top-color: #0099cc;
+  border-right-color: #66d9ff;
+
+  border-radius: 50%;
+
+  animation: ankRingSpin 1.2s linear infinite;
+
+  box-shadow: 0 0 18px #0099cc30;
+}
+
+/* Original White Logo */
+.ank-loader-logo {
+  position: relative;
+  z-index: 1;
+
+  width: 120px;
+  max-width: 70vw;
+  height: auto;
+  max-height: 90px;
+
+  object-fit: contain;
+
+  animation: ankLogoFade 1.4s ease-in-out infinite alternate;
+}
+
+/* Loading Message */
+.ank-loader-text {
+  margin: 0;
+  padding-top: 5px;
+
+  color: #dceefa;
+
+  font-family: inherit;
+  font-size: 13px;
+  font-weight: 400;
+  letter-spacing: 0.6px;
+  text-align: center;
+}
+
+/* Fade Out */
+#ank-page-loader.ank-loader-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+/* Ring Rotation */
+@keyframes ankRingSpin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Gentle Logo Animation */
+@keyframes ankLogoFade {
+  from {
+    opacity: 0.75;
+    transform: scale(0.96);
+  }
+
+  to {
+    opacity: 1;
+    transform: scale(1.04);
+  }
+}
+
+/* Mobile Responsive */
+@media (max-width: 576px) {
+  .ank-loader-ring {
+    width: 130px;
+    height: 130px;
+  }
+
+  .ank-loader-logo {
+    width: 105px;
+    max-height: 80px;
+  }
+
+  .ank-loader-text {
+    font-size: 12px;
+  }
+}
+
+/* Accessibility */
+@media (prefers-reduced-motion: reduce) {
+  .ank-loader-ring,
+  .ank-loader-logo {
+    animation: none;
+  }
+
+  #ank-page-loader {
+    transition: none;
+  }
+}
+
+    </style>
     
 </head>
 
 <body>
-    <!-- Spinner Start -->
+    <!-- Spinner Start 
     <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
         <div class="spinner"></div>
     </div>
-    <!-- Spinner End -->
+     Spinner End -->
+
+
+<!-- ANK WebStudio Premium Logo Loader -->
+<div id="ank-page-loader" role="status" aria-label="Loading ANK WebStudio">
+
+  <div class="ank-loader-content">
+
+    <!-- Animated Ring -->
+    <div class="ank-loader-ring"></div>
+
+    <!-- Original White ANK Logo -->
+    <img
+      src="img/ank-logo.png"
+      alt="ANK WebStudio"
+      class="ank-loader-logo"
+    >
+
+    <!-- Loading Text -->
+    <p class="ank-loader-text">
+      Creating better web experiences
+    </p>
+
+  </div>
+</div>
+
 
 
     <!-- Topbar Start -->
@@ -3722,6 +3897,41 @@ document.addEventListener("DOMContentLoaded", function () {
 
 });
 </script>
+
+    
+<script>
+(function () {
+  const loader = document.getElementById("ank-page-loader");
+
+  if (!loader) return;
+
+  let isHidden = false;
+
+  function hideLoader() {
+    if (isHidden) return;
+
+    isHidden = true;
+    loader.classList.add("ank-loader-hidden");
+
+    setTimeout(function () {
+      loader.remove();
+    }, 600);
+  }
+
+  // Hide when the page and its resources finish loading.
+  if (document.readyState === "complete") {
+    hideLoader();
+  } else {
+    window.addEventListener("load", hideLoader, {
+      once: true
+    });
+  }
+
+  // Fallback to prevent the loader staying indefinitely.
+  setTimeout(hideLoader, 4000);
+})();
+</script>
+
 </body>
 
 </html>
