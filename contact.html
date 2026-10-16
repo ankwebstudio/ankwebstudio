@@ -65,6 +65,99 @@
   ]
 }
 </script>
+    <style>
+        .ank-floating-social {
+  position: fixed;
+  right: 22px;
+  bottom: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  z-index: 99999;
+}
+
+.ank-float-btn {
+  position: relative;
+  overflow: hidden;
+  width: 54px;
+  height: 54px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff !important;
+  font-size: 26px;
+  text-decoration: none !important;
+  transition: transform .3s ease;
+  animation: ankGlow 2s ease-in-out infinite;
+}
+
+.ank-whatsapp {
+  background: #25D366;
+  box-shadow: 0 0 12px #25D366, 0 0 25px #25D36670;
+}
+
+.ank-instagram {
+  background: linear-gradient(
+    45deg, #feda75, #fa7e1e, #d62976, #962fbf, #4f5bd5
+  );
+  box-shadow: 0 0 12px #d62976, 0 0 25px #962fbf70;
+}
+
+.ank-float-btn:hover {
+  transform: scale(1.12);
+  color: #fff !important;
+  animation-play-state: paused;
+}
+
+.ank-float-btn::after {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -100%;
+  width: 45%;
+  height: 200%;
+  background: rgba(255,255,255,.65);
+  transform: rotate(25deg);
+  animation: ankShine 3s ease-in-out infinite;
+  pointer-events: none;
+}
+
+@keyframes ankGlow {
+  0%, 100% {
+    filter: brightness(1);
+    box-shadow: 0 0 8px currentColor;
+  }
+  50% {
+    filter: brightness(1.2);
+  }
+}
+
+@keyframes ankShine {
+  0%, 60% { left: -100%; }
+  100% { left: 150%; }
+}
+
+@media (max-width: 576px) {
+  .ank-floating-social {
+    right: 14px;
+    bottom: 18px;
+    gap: 12px;
+  }
+  .ank-float-btn {
+    width: 49px;
+    height: 49px;
+    font-size: 23px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .ank-float-btn,
+  .ank-float-btn::after {
+    animation: none;
+  }
+}
+    </style>
 </head>
 
 <body>
@@ -441,12 +534,15 @@
                 style="height:55px;"
                 required>
 
-                <option value="" selected disabled>Select Web Service</option>
-                <option>Business Website</option>
-                <option>Ecommerce Website</option>
-                <option>Portfolio Website</option>
-                <option>SEO Optimization</option>
-                <option>Website Redesign</option>
+               <option value="" selected disabled>Select a Service</option>
+                <option value="Business Website">Business Website</option>
+                <option value="Ecommerce Website">E-commerce Website</option>
+                <option value="Portfolio Website">Portfolio Website</option>
+                <option value="Wedding Memory Website">Wedding Memory Website</option>
+                <option value="Website Redesign">Website Redesign</option>
+                <option value="SEO Optimization">SEO Optimization</option>
+                <option value="Google Visibility Improvement">Google Visibility Improvement</option>
+                <option value="Other">Other</option>
 
             </select>
         </div>
@@ -502,6 +598,28 @@
 
 </div>
 <!-- Contact End -->
+
+    
+<!-- Floating WhatsApp & Instagram Buttons -->
+<div class="ank-floating-social">
+
+  <a href="https://www.instagram.com/ankwebstudio/"
+     class="ank-float-btn ank-instagram"
+     target="_blank"
+     rel="noopener noreferrer"
+     aria-label="Follow us on Instagram">
+    <i class="fab fa-instagram"></i>
+  </a>
+
+  <a href="https://wa.me/919656141993"
+     class="ank-float-btn ank-whatsapp"
+     target="_blank"
+     rel="noopener noreferrer"
+     aria-label="Chat with us on WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+
+</div>
 
     
 
@@ -565,6 +683,7 @@
                 </div>
 
             </div>
+            
 
             <!-- Footer Links -->
             <div class="col-lg-8 col-md-6">
@@ -603,7 +722,9 @@
                             <i class="bi bi-telephone text-primary me-2"></i>
 
                             <p class="mb-0">
+                               <a href="tel:+919656141993" style="text-decoration:none;">
                                 +91 9656141993
+                            </a>
                             </p>
                         </div>
 
@@ -775,6 +896,8 @@
 <!-- Footer End -->
     
 </footer>
+
+    
     <!-- Back to Top -->
     <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded back-to-top"><i class="bi bi-arrow-up"></i></a>
 
