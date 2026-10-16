@@ -2391,7 +2391,7 @@ img {
 
 @media (max-width: 576px) {
   .ank-floating-social {
-    right: 14px;
+    left: 14px;
     bottom: 18px;
     gap: 12px;
   }
