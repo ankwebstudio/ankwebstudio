@@ -4096,8 +4096,8 @@ document.addEventListener("DOMContentLoaded", function () {
 })();
 </script>
 
-    <!-- new case study carousal -->
-    <script>
+    <!-- ANK WebStudio - Animated Case Study Carousel -->
+<script>
 document.addEventListener("DOMContentLoaded", function () {
 
     const carousel = document.getElementById("caseCarousel");
@@ -4112,9 +4112,14 @@ document.addEventListener("DOMContentLoaded", function () {
 
     const slides = Array.from(track.querySelectorAll(".case-slide"));
 
+    if (slides.length === 0) return;
+
     let currentIndex = 0;
     let startX = 0;
     let endX = 0;
+    let autoSlide;
+
+    const AUTO_SLIDE_DELAY = 3000; // 3 seconds
 
     function getVisibleCards() {
         if (window.innerWidth <= 600) return 1;
@@ -4125,6 +4130,8 @@ document.addEventListener("DOMContentLoaded", function () {
     function getMaxIndex() {
         return Math.max(0, slides.length - getVisibleCards());
     }
+
+    /* UPDATE CAROUSEL */
 
     function updateCarousel() {
 
@@ -4150,6 +4157,7 @@ document.addEventListener("DOMContentLoaded", function () {
         }
 
         if (progressBar) {
+
             const progress =
                 ((currentIndex + 1) / slides.length) * 100;
 
@@ -4157,51 +4165,138 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     }
 
-    if (nextBtn) {
-        nextBtn.addEventListener("click", function () {
-            if (currentIndex < getMaxIndex()) {
-                currentIndex++;
-                updateCarousel();
-            }
-        });
+    /* NEXT SLIDE */
+
+    function nextSlide() {
+
+        if (currentIndex < getMaxIndex()) {
+            currentIndex++;
+        } else {
+            currentIndex = 0;
+        }
+
+        updateCarousel();
     }
+
+    /* PREVIOUS SLIDE */
+
+    function previousSlide() {
+
+        if (currentIndex > 0) {
+            currentIndex--;
+        } else {
+            currentIndex = getMaxIndex();
+        }
+
+        updateCarousel();
+    }
+
+    /* AUTOMATIC SLIDE */
+
+    function startAutoSlide() {
+
+        stopAutoSlide();
+
+        if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+            return;
+        }
+
+        autoSlide = setInterval(function () {
+
+            if (!document.hidden) {
+                nextSlide();
+            }
+
+        }, AUTO_SLIDE_DELAY);
+    }
+
+    function stopAutoSlide() {
+        clearInterval(autoSlide);
+    }
+
+    function resetAutoSlide() {
+        stopAutoSlide();
+        startAutoSlide();
+    }
+
+    /* NEXT BUTTON */
+
+    if (nextBtn) {
+
+        nextBtn.addEventListener("click", function () {
+
+            nextSlide();
+            resetAutoSlide();
+
+        });
+
+    }
+
+    /* PREVIOUS BUTTON */
 
     if (prevBtn) {
+
         prevBtn.addEventListener("click", function () {
-            if (currentIndex > 0) {
-                currentIndex--;
-                updateCarousel();
-            }
+
+            previousSlide();
+            resetAutoSlide();
+
         });
+
     }
 
-    /* Touch swipe support */
+    /* TOUCH SWIPE SUPPORT */
+
     carousel.addEventListener("touchstart", function (event) {
+
         startX = event.touches[0].clientX;
+        stopAutoSlide();
+
     }, { passive: true });
 
     carousel.addEventListener("touchend", function (event) {
+
         endX = event.changedTouches[0].clientX;
 
         const difference = startX - endX;
 
         if (Math.abs(difference) > 45) {
-            if (difference > 0 && currentIndex < getMaxIndex()) {
-                currentIndex++;
-            } else if (difference < 0 && currentIndex > 0) {
-                currentIndex--;
+
+            if (difference > 0) {
+                nextSlide();
+            } else {
+                previousSlide();
             }
 
-            updateCarousel();
         }
+
+        startAutoSlide();
+
     }, { passive: true });
 
-    /* Recalculate on resize */
+    /* PAUSE WHEN MOUSE HOVERS */
+
+    carousel.addEventListener("mouseenter", stopAutoSlide);
+
+    carousel.addEventListener("mouseleave", startAutoSlide);
+
+    /* PAUSE WHEN CAROUSEL HAS KEYBOARD FOCUS */
+
+    carousel.addEventListener("focusin", stopAutoSlide);
+
+    carousel.addEventListener("focusout", startAutoSlide);
+
+    /* RECALCULATE ON RESIZE */
+
     window.addEventListener("resize", updateCarousel);
 
-    updateCarousel();
+    /* INITIALIZE */
 
-    /* Section scroll reveal */
+    updateCarousel();
+    startAutoSlide();
+
+    /* SECTION SCROLL REVEAL */
+
     const section = document.querySelector(".ank-case-studies");
 
     if ("IntersectionObserver" in window && section) {
@@ -4211,7 +4306,9 @@ document.addEventListener("DOMContentLoaded", function () {
             entries.forEach(function (entry) {
 
                 if (entry.isIntersecting) {
+
                     section.classList.add("is-visible");
+
                     observer.unobserve(section);
                 }
 
@@ -4224,7 +4321,9 @@ document.addEventListener("DOMContentLoaded", function () {
         observer.observe(section);
 
     } else if (section) {
+
         section.classList.add("is-visible");
+
     }
 
 });
