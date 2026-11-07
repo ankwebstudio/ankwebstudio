@@ -2686,3 +2686,112 @@ img {
     animation: none;
   }
 }
+
+/* =====================================
+   ANK CAROUSEL LAYOUT FIX
+===================================== */
+
+.ank-case-studies .case-carousel {
+    width: 100% !important;
+    overflow: hidden !important;
+    position: relative;
+}
+
+.ank-case-studies .case-carousel-track {
+    display: flex !important;
+    flex-wrap: nowrap !important;
+    gap: 26px !important;
+    width: 100%;
+    transition: transform 0.65s ease-in-out !important;
+}
+
+.ank-case-studies .case-slide {
+    display: block !important;
+    flex: 0 0 calc((100% - 52px) / 3) !important;
+    width: calc((100% - 52px) / 3) !important;
+    max-width: none !important;
+    min-width: 0 !important;
+}
+
+.ank-case-studies .case-slide .case-study-item {
+    width: 100% !important;
+    height: 100%;
+}
+
+.ank-case-studies .case-slide .case-study-image {
+    height: 270px !important;
+}
+
+/* Progress alignment */
+.ank-case-studies .case-carousel-controls {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+    width: 100%;
+}
+
+.ank-case-studies .case-carousel-progress {
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: center !important;
+    gap: 13px !important;
+}
+
+/* Arrow buttons */
+.ank-case-studies .case-carousel-arrows {
+    display: flex !important;
+    flex-direction: row !important;
+    gap: 10px !important;
+}
+
+.ank-case-studies .case-carousel-arrows button {
+    appearance: none !important;
+    -webkit-appearance: none !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    width: 46px !important;
+    height: 46px !important;
+    padding: 0 !important;
+    border: 1px solid #dce8ee !important;
+    border-radius: 50% !important;
+    background: #ffffff !important;
+    color: #172b4d !important;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.ank-case-studies .case-carousel-arrows button:hover {
+    background: #0099cc !important;
+    border-color: #0099cc !important;
+    color: #ffffff !important;
+}
+
+.ank-case-studies .case-carousel-arrows button:disabled {
+    opacity: 0.35;
+    cursor: not-allowed;
+}
+
+/* Tablet */
+@media (max-width: 991px) {
+    .ank-case-studies .case-slide {
+        flex: 0 0 calc((100% - 26px) / 2) !important;
+        width: calc((100% - 26px) / 2) !important;
+    }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+    .ank-case-studies .case-carousel-track {
+        gap: 16px !important;
+    }
+
+    .ank-case-studies .case-slide {
+        flex: 0 0 88% !important;
+        width: 88% !important;
+    }
+
+    .ank-case-studies .case-slide .case-study-image {
+        height: 245px !important;
+    }
+}
