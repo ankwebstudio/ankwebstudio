@@ -302,6 +302,105 @@ content="web design Kerala, web designer Palakkad, website development Kerala, S
     transition: none;
   }
 }
+         .ank-about-section {
+        --ank-blue:#0099cc; --ank-blue-dark:#007eae; --ank-navy:#102b50;
+        position:relative; isolation:isolate; overflow:hidden; padding:100px 0 70px;
+        background:radial-gradient(circle at 8% 15%,rgba(0,153,204,.08),transparent 27%),
+        radial-gradient(circle at 92% 72%,rgba(94,205,245,.13),transparent 28%),
+        linear-gradient(135deg,#fff 0%,#f8fcff 52%,#eef9ff 100%);
+    }
+    .ank-about-container{position:relative;z-index:2}
+    .ank-about-bg{position:absolute;z-index:-1;border-radius:50%;pointer-events:none}
+    .ank-about-bg-one{width:300px;height:300px;top:-180px;right:-90px;background:rgba(0,153,204,.08);animation:ankDrift 10s ease-in-out infinite alternate}
+    .ank-about-bg-two{width:220px;height:220px;bottom:-150px;left:-90px;background:rgba(95,205,245,.14);animation:ankDrift 12s ease-in-out infinite alternate-reverse}
+    .ank-about-eyebrow{display:flex;align-items:center;gap:12px;margin-bottom:20px;color:var(--ank-blue);font-size:13px;font-weight:800;letter-spacing:2px}
+    .ank-about-eyebrow span{width:34px;height:2px;background:var(--ank-blue)}
+    .ank-about-eyebrow i{width:8px;height:8px;border-radius:50%;background:var(--ank-blue);box-shadow:0 0 0 5px #0099cc1c;animation:ankPulse 2s infinite}
+    .ank-about-heading{max-width:650px;margin:0 0 24px;color:var(--ank-navy);font-size:clamp(36px,4.1vw,58px);font-weight:700;line-height:1.13;letter-spacing:-1.5px}
+    .ank-about-heading em{font-style:normal;color:var(--ank-blue);background:linear-gradient(90deg,#007eae,#35c4ed,#007eae);background-size:220% auto;background-clip:text;-webkit-background-clip:text;-webkit-text-fill-color:transparent;animation:ankGradient 6s linear infinite}
+    .ank-about-description{max-width:650px;margin-bottom:27px;color:#52647b;font-size:15.5px;line-height:1.9}
+    .ank-inline-link{color:var(--ank-blue-dark);font-weight:800;text-decoration:none;text-underline-offset:4px}
+    .ank-inline-link:hover{color:var(--ank-navy);text-decoration:underline}
+    .ank-feature-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;max-width:590px;margin-bottom:28px}
+    .ank-feature-card{display:flex;align-items:center;gap:14px;min-height:76px;padding:14px 17px;border:1px solid #0099cc18;border-radius:16px;background:#ffffffd9;box-shadow:0 10px 30px #1042690e;color:var(--ank-navy);font-size:14px;font-weight:800;line-height:1.4;transition:transform .35s,box-shadow .35s,border-color .35s}
+    .ank-feature-card:hover{transform:translateY(-7px);border-color:#0099cc66;box-shadow:0 18px 38px #007dae22}
+    .ank-feature-icon{display:flex;flex:0 0 43px;align-items:center;justify-content:center;width:43px;height:43px;border-radius:13px;background:linear-gradient(145deg,#e9f8ff,#fff);color:var(--ank-blue);font-size:20px;transition:transform .35s}
+    .ank-feature-card:hover .ank-feature-icon{transform:rotate(-8deg) scale(1.08)}
+    .ank-about-actions{display:flex;flex-wrap:wrap;align-items:center;gap:22px;margin-bottom:24px}
+    .ank-primary-cta,.ank-secondary-cta{display:inline-flex;align-items:center;justify-content:center;gap:13px;min-height:52px;border-radius:50px;font-size:14px;font-weight:800;text-decoration:none;transition:all .3s}
+    .ank-primary-cta{padding:0 27px;color:#fff;background:linear-gradient(110deg,#0099cc,#0879b5);background-size:180% auto;box-shadow:0 12px 25px #0099cc38;animation:ankButtonShine 7s ease-in-out infinite}
+    .ank-primary-cta:hover{color:#fff;transform:translateY(-4px);box-shadow:0 17px 30px #0099cc4d}
+    .ank-primary-cta i,.ank-secondary-cta i{transition:transform .3s}
+    .ank-primary-cta:hover i,.ank-secondary-cta:hover i{transform:translateX(5px)}
+    .ank-secondary-cta{min-height:42px;border-bottom:2px solid var(--ank-blue);border-radius:0;color:var(--ank-navy)}
+    .ank-secondary-cta:hover{color:var(--ank-blue-dark)}
+    .ank-about-contact{display:flex;align-items:center;gap:13px;margin:5px 0 18px}
+    .ank-contact-icon{display:flex;align-items:center;justify-content:center;width:45px;height:45px;border-radius:13px;color:white;background:var(--ank-blue);box-shadow:0 8px 20px #0099cc38}
+    .ank-about-contact small{display:block;margin-bottom:2px;color:#6b7b8e;font-size:12px}
+    .ank-about-contact a{color:var(--ank-blue-dark);font-size:20px;font-weight:800;text-decoration:none}
+    .ank-about-links{display:flex;flex-wrap:wrap;align-items:center;gap:9px;color:#9aa9b8;font-size:12px}
+    .ank-about-links a{color:var(--ank-blue-dark);font-weight:800;text-decoration:none}
+    .ank-about-links a:hover{text-decoration:underline}
+    .ank-about-visual{position:relative;max-width:590px;margin:10px auto 20px;padding:22px 16px 70px}
+    .ank-image-frame{position:relative;z-index:2;overflow:hidden;height:510px;border:8px solid #fffffff0;border-radius:34px;background:#eaf7fd;box-shadow:0 28px 65px #1248702e;transform:rotate(1deg);animation:ankImageFloat 7s ease-in-out infinite}
+    .ank-about-image{display:block;width:100%;height:100%;object-fit:cover;object-position:left center;transition:transform .8s}
+    .ank-image-frame:hover .ank-about-image{transform:scale(1.045)}
+    .ank-visual-glow{position:absolute;z-index:0;inset:12% 4% 14% 8%;border-radius:45%;background:#0099cc2e;filter:blur(48px);animation:ankGlow 5s ease-in-out infinite alternate}
+    .ank-visual-orbit{position:absolute;z-index:1;border:1px solid #0099cc55;border-radius:50%;pointer-events:none}
+    .ank-orbit-one{width:108%;height:68%;top:17%;left:-5%;transform:rotate(-22deg);animation:ankOrbit 18s linear infinite}
+    .ank-orbit-two{width:94%;height:85%;top:7%;left:4%;border-style:dashed;opacity:.5;animation:ankOrbit 28s linear infinite reverse}
+    .ank-floating-badge{position:absolute;z-index:3;display:flex;align-items:center;justify-content:center;border:1px solid #0099cc1a;background:#fffffff0;box-shadow:0 14px 35px #10426924;backdrop-filter:blur(12px)}
+    .ank-code-badge{top:0;left:-2px;width:65px;height:65px;border-radius:50%;color:var(--ank-blue);font-size:25px;animation:ankBadgeFloat 4.5s ease-in-out infinite}
+    .ank-growth-badge{top:13%;right:-5px;gap:10px;padding:14px 17px;border-radius:17px;color:var(--ank-navy);font-size:12px;line-height:1.5;transform:rotate(4deg);animation:ankBadgeFloat 5.5s ease-in-out infinite reverse}
+    .ank-growth-badge i{color:var(--ank-blue);font-size:24px}
+    .ank-image-caption{position:absolute;z-index:3;right:25px;bottom:25px;display:flex;flex-direction:column;gap:4px;padding:13px 18px;border:1px solid #ffffffcc;border-radius:14px;background:#ffffffe8;box-shadow:0 10px 28px #1042691a;backdrop-filter:blur(10px)}
+    .ank-image-caption strong{color:var(--ank-blue-dark);font-size:11px;letter-spacing:1.7px}
+    .ank-image-caption span{color:#66788c;font-size:11px}
+    .ank-image-dots{position:absolute;right:-7px;bottom:4px;width:75px;height:75px;opacity:.6;background-image:radial-gradient(var(--ank-blue) 1.5px,transparent 1.5px);background-size:12px 12px;animation:ankDots 5s ease-in-out infinite alternate}
+    .ank-about-marquee{display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:18px;margin-top:42px;padding:18px 10px;border-top:1px solid #0099cc29;border-bottom:1px solid #0099cc29;color:var(--ank-blue-dark);font-size:11px;font-weight:900;letter-spacing:2.2px;text-align:center}
+    .ank-about-marquee i{width:5px;height:5px;border-radius:50%;background:var(--ank-blue);box-shadow:0 0 0 4px #0099cc18}
+    .ank-reveal{opacity:0;transform:translateY(26px);transition:opacity .8s ease,transform .8s cubic-bezier(.2,.7,.2,1)}
+    .ank-reveal.ank-visible{opacity:1;transform:translateY(0)}
+    @keyframes ankPulse{50%{box-shadow:0 0 0 9px #0099cc08}}
+    @keyframes ankGradient{to{background-position:220% center}}
+    @keyframes ankDrift{to{transform:translate(22px,-18px)}}
+    @keyframes ankImageFloat{50%{transform:translateY(-10px) rotate(.2deg)}}
+    @keyframes ankBadgeFloat{50%{translate:0 -10px}}
+    @keyframes ankOrbit{to{rotate:360deg}}
+    @keyframes ankGlow{to{opacity:.95;transform:scale(1.06)}}
+    @keyframes ankDots{to{transform:translateY(-9px);opacity:.8}}
+    @keyframes ankButtonShine{0%,70%,100%{background-position:0% center}85%{background-position:100% center}}
+    @media(max-width:991.98px){.ank-about-section{padding:78px 0 58px}.ank-about-visual{max-width:620px}.ank-image-frame{height:470px}}
+    @media(max-width:575.98px){
+        .ank-about-section{padding:58px 0 42px}
+        .ank-about-eyebrow{font-size:11px;letter-spacing:1.5px}
+        .ank-about-heading{font-size:clamp(34px,9vw,43px);letter-spacing:-1px}
+        .ank-about-description{font-size:14px;line-height:1.85}
+        .ank-feature-grid{gap:9px}
+        .ank-feature-card{min-height:73px;gap:9px;padding:10px 9px;border-radius:13px;font-size:12px}
+        .ank-feature-icon{flex-basis:35px;width:35px;height:35px;border-radius:10px;font-size:16px}
+        .ank-about-actions{gap:14px}
+        .ank-primary-cta{min-height:48px;padding:0 20px}
+        .ank-secondary-cta{font-size:12px}
+        .ank-about-contact a{font-size:18px}
+        .ank-about-links{gap:6px;font-size:10px}
+        .ank-about-visual{padding:20px 7px 62px}
+        .ank-image-frame{height:360px;border-width:6px;border-radius:25px}
+        .ank-code-badge{width:52px;height:52px;font-size:20px}
+        .ank-growth-badge{right:-2px;padding:10px 12px;font-size:10px}
+        .ank-growth-badge i{font-size:19px}
+        .ank-image-caption{right:10px;bottom:18px;padding:10px 12px}
+        .ank-image-caption span{font-size:9px}
+        .ank-image-caption strong{font-size:9px}
+        .ank-about-marquee{gap:10px;margin-top:24px;font-size:9px;letter-spacing:1px}
+    }
+    @media(prefers-reduced-motion:reduce){
+        .ank-about-section *, .ank-about-section *::before, .ank-about-section *::after{
+            animation-duration:.01ms!important;animation-iteration-count:1!important;
+            scroll-behavior:auto!important;transition-duration:.01ms!important
+        }
+        .ank-reveal{opacity:1;transform:none}
+    }
 
     </style>
     
@@ -774,7 +873,7 @@ content="web design Kerala, web designer Palakkad, website development Kerala, S
 
             </div>
 
-           <div class="col-lg-5">
+          <!-- <div class="col-lg-5">
 
     <div class="position-relative h-100">
 
@@ -793,7 +892,36 @@ content="web design Kerala, web designer Palakkad, website development Kerala, S
 
     </div>
 
-</div>
+</div>-->
+            <div class="col-lg-6 ank-about-visual-column">
+                    <div class="ank-about-visual ank-reveal">
+                        <div class="ank-visual-orbit ank-orbit-one"></div>
+                        <div class="ank-visual-orbit ank-orbit-two"></div>
+                        <div class="ank-visual-glow"></div>
+
+                        <div class="ank-image-frame">
+                            <img src="img/about.png"
+                                 alt="Founder of ANK WebStudio working on website design and development"
+                                 class="ank-about-image"
+                                 width="700" height="700" loading="lazy">
+                        </div>
+
+                        <div class="ank-floating-badge ank-code-badge" aria-hidden="true">
+                            <i class="fas fa-code"></i>
+                        </div>
+
+                        <div class="ank-floating-badge ank-growth-badge">
+                            <i class="fas fa-chart-line"></i>
+                            <span>Your Growth<br><strong>Our Priority</strong></span>
+                        </div>
+
+                        <div class="ank-image-caption">
+                            <strong>DESIGN. DEVELOP. GROW.</strong>
+                            <span>Building a stronger digital presence.</span>
+                        </div>
+                        <div class="ank-image-dots" aria-hidden="true"></div>
+                    </div>
+                </div>
 
         </div>
 
